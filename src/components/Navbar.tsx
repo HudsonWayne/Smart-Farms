@@ -35,14 +35,14 @@ const Navbar = () => {
             {links.map(({ name, href }) => {
               const isActive = pathname === href;
               return (
-                <Link key={name} href={href}>
-                  <a
-                    className={`font-semibold px-3 py-2 rounded-md transition-colors ${
-                      isActive ? "text-[#72AE1C]" : "text-white hover:text-[#72AE1C]"
-                    }`}
-                  >
-                    {name}
-                  </a>
+                <Link
+                  key={name}
+                  href={href}
+                  className={`font-semibold px-3 py-2 rounded-md transition-colors ${
+                    isActive ? "text-[#72AE1C]" : "text-white hover:text-[#72AE1C]"
+                  }`}
+                >
+                  {name}
                 </Link>
               );
             })}
@@ -88,15 +88,15 @@ const Navbar = () => {
             {links.map(({ name, href }) => {
               const isActive = pathname === href;
               return (
-                <Link key={name} href={href}>
-                  <a
-                    onClick={() => setMenuOpen(false)}
-                    className={`block px-4 py-3 font-semibold transition-colors ${
-                      isActive ? "text-[#72AE1C]" : "text-white hover:text-[#72AE1C]"
-                    }`}
-                  >
-                    {name}
-                  </a>
+                <Link
+                  key={name}
+                  href={href}
+                  className={`block px-4 py-3 font-semibold transition-colors ${
+                    isActive ? "text-[#72AE1C]" : "text-white hover:text-[#72AE1C]"
+                  }`}
+                  onClick={() => setMenuOpen(false)}
+                >
+                  {name}
                 </Link>
               );
             })}
