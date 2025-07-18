@@ -9,7 +9,6 @@ const links = [
   { name: "Services", href: "/services" },
   { name: "About", href: "/about" },
   { name: "Blog", href: "/blog" },
-  { name: "Contact Us", href: "/contact" },
 ];
 
 const Navbar = () => {
@@ -17,7 +16,7 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-[#0C0332] text-white fixed w-full z-50 top-0 shadow-md">
+    <nav className="bg-[#0C0332] text-white fixed w-full z-50 top-0 shadow-md font-['Avenir']">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           {/* Logo */}
@@ -31,7 +30,7 @@ const Navbar = () => {
           </Link>
 
           {/* Desktop Links */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex items-center space-x-8">
             {links.map(({ name, href }) => {
               const isActive = pathname === href;
               return (
@@ -46,6 +45,16 @@ const Navbar = () => {
                 </Link>
               );
             })}
+
+            {/* Contact Us button */}
+            <Link href="/contact">
+              <button
+                type="button"
+                className="ml-4 rounded-md bg-white px-4 py-2 font-semibold text-[#0C0332] hover:bg-gray-200 transition"
+              >
+                Contact Us
+              </button>
+            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -84,7 +93,7 @@ const Navbar = () => {
 
         {/* Mobile menu */}
         {menuOpen && (
-          <div className="md:hidden bg-[#0C0332] mt-2 rounded-b-md">
+          <div className="md:hidden bg-[#0C0332] mt-2 rounded-b-md flex flex-col px-4 pb-4">
             {links.map(({ name, href }) => {
               const isActive = pathname === href;
               return (
@@ -100,6 +109,16 @@ const Navbar = () => {
                 </Link>
               );
             })}
+
+            {/* Mobile Contact Us button */}
+            <Link href="/contact" onClick={() => setMenuOpen(false)}>
+              <button
+                type="button"
+                className="mt-2 w-full rounded-md bg-white px-4 py-2 font-semibold text-[#0C0332] hover:bg-gray-200 transition"
+              >
+                Contact Us
+              </button>
+            </Link>
           </div>
         )}
       </div>
