@@ -19,18 +19,20 @@ const Navbar = () => {
     <nav className="bg-[#0C0332] text-white fixed w-full z-50 top-0 shadow-md font-['Avenir']">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
-          {/* Logo */}
-          <Link href="/">
-            <img
-              src="/logo.png"
-              alt="Smart Farms Logo"
-              className="h-10 w-auto cursor-pointer"
-              draggable={false}
-            />
-          </Link>
+          {/* Logo with negative left margin */}
+          <div className="-ml-5">
+            <Link href="/">
+              <img
+                src="/logo.png"
+                alt="Smart Farms Logo"
+                className="h-10 w-auto cursor-pointer"
+                draggable={false}
+              />
+            </Link>
+          </div>
 
-          {/* Desktop Links */}
-          <div className="hidden md:flex items-center space-x-8">
+          {/* Desktop Links with left padding */}
+          <div className="hidden md:flex items-center space-x-8 pl-5">
             {links.map(({ name, href }) => {
               const isActive = pathname === href;
               return (
