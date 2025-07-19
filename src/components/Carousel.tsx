@@ -27,7 +27,7 @@ const Carousel = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-[90vh] overflow-hidden px-5">
+    <div className="relative w-full h-[90vh] overflow-hidden">
       <img
         src={images[index]}
         alt={`Slide ${index}`}
@@ -35,12 +35,14 @@ const Carousel = () => {
         draggable={false}
       />
       <div className="absolute inset-0 bg-black opacity-60" />
-      <div className="absolute inset-0 z-20 flex items-center justify-center">
-        <h2 className="text-white text-3xl md:text-5xl font-bold text-center leading-relaxed px-5" style={{
-          fontFamily: "Georgia, serif",
-          maxWidth: "70%",
-          letterSpacing: "0.05em"
-        }}>
+      <div className="relative z-20 flex items-center justify-center h-full px-5 md:px-8">
+        <h2
+          className="text-white text-3xl md:text-5xl font-bold text-center leading-relaxed max-w-3xl"
+          style={{
+            fontFamily: "Georgia, serif",
+            letterSpacing: "0.05em",
+          }}
+        >
           “Revolutionizing agriculture in Zimbabwe through advanced drone technology”
         </h2>
       </div>
