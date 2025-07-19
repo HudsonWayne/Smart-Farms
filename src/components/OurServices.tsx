@@ -9,7 +9,7 @@ export default function OurServices() {
       <div className="max-w-7xl mx-auto text-center">
         {/* Section Header */}
         <h2 className="text-green-700 text-3xl font-bold mb-2">Our Services</h2>
-        <p className="text-gray-700 text-base mb-10">
+        <p className="text-gray-700 text-base mb-10 w-1/2 mx-auto">
           At Smart Farms, we provide innovative solutions to enhance agricultural practices
           for small and medium-scale farmers.
         </p>
@@ -18,7 +18,7 @@ export default function OurServices() {
         <h3 className="text-green-700 text-lg font-bold text-left mb-2">DJI Mavic 3 Multispectral</h3>
 
         {/* First Row of Images */}
-        <div className="grid md:grid-cols-3 gap-6 mb-10">
+        <div className="grid md:grid-cols-3 gap-6 mb-10 mt-[10px]">
           <div className="text-center">
             <Image
               src="/Rectangle 8.png"
@@ -27,7 +27,7 @@ export default function OurServices() {
               height={250}
               className="w-full object-cover"
             />
-            <p className="mt-2 text-sm font-medium">High Resolution Camera</p>
+            <p className="mt-2 text-sm font-bold">High Resolution Camera</p>
           </div>
           <div className="text-center">
             <Image
@@ -37,7 +37,7 @@ export default function OurServices() {
               height={250}
               className="w-full object-cover"
             />
-            <p className="mt-2 text-sm font-medium">AI integrated</p>
+            <p className="mt-2 text-sm font-bold">AI integrated</p>
           </div>
           <div className="text-center">
             <Image
@@ -47,7 +47,7 @@ export default function OurServices() {
               height={250}
               className="w-full object-cover"
             />
-            <p className="mt-2 text-sm font-medium">Multispectral sensor</p>
+            <p className="mt-2 text-sm font-bold">Multispectral sensor</p>
           </div>
         </div>
 
@@ -71,7 +71,7 @@ export default function OurServices() {
               height={250}
               className="w-full object-cover"
             />
-            <p className="mt-2 text-sm font-medium">Precision input delivery</p>
+            <p className="mt-2 text-sm font-bold">Precision input delivery</p>
           </div>
           <div className="text-center">
             <Image
@@ -81,7 +81,7 @@ export default function OurServices() {
               height={250}
               className="w-full object-cover"
             />
-            <p className="mt-2 text-sm font-medium">Labor cost reduction</p>
+            <p className="mt-2 text-sm font-bold">Labor cost reduction</p>
           </div>
           <div className="text-center">
             <Image
@@ -91,7 +91,7 @@ export default function OurServices() {
               height={250}
               className="w-full object-cover"
             />
-            <p className="mt-2 text-sm font-medium">Remote operation capability</p>
+            <p className="mt-2 text-sm font-bold">Remote operation capability</p>
           </div>
         </div>
 
