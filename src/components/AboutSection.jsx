@@ -12,20 +12,18 @@ const AboutSection = () => {
       />
 
       {/* Slight dark overlay */}
-      <div
-        className="absolute inset-0 bg-black"
-        style={{ opacity: 0.4 }}
-      />
+      <div className="absolute inset-0 bg-black" style={{ opacity: 0.4 }} />
 
       {/* Text content */}
       <div className="absolute inset-0 flex items-center justify-center px-6">
         <p
-          className="text-white text-center leading-relaxed"
+          className="text-white text-center"
           style={{
             fontFamily: "Georgia, serif",
             fontSize: "27px",
             maxWidth: "80%",
             zIndex: 10,
+            lineHeight: "1.7", // Set custom line height
           }}
         >
           Smart Farms seeks to improve food security in Zimbabwe using advanced drone technology
