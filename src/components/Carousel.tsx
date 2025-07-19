@@ -27,31 +27,20 @@ const Carousel = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-[90vh] overflow-hidden">
-      {/* Background image */}
+    <div className="relative w-full h-[90vh] overflow-hidden px-5">
       <img
         src={images[index]}
         alt={`Slide ${index}`}
         className="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out"
         draggable={false}
       />
-
-      {/* Dark overlay (same as About section) */}
-      <div
-        className="absolute inset-0 bg-black"
-        style={{ opacity: 0.6 }}
-      />
-
-      {/* Text content */}
-      <div className="absolute inset-0 z-20 flex items-center justify-center px-4">
-        <h2
-          className="text-white text-3xl md:text-5xl font-bold text-center leading-relaxed"
-          style={{
-            fontFamily: "Georgia, serif",
-            maxWidth: "70%",
-            letterSpacing: "0.05em",
-          }}
-        >
+      <div className="absolute inset-0 bg-black opacity-60" />
+      <div className="absolute inset-0 z-20 flex items-center justify-center">
+        <h2 className="text-white text-3xl md:text-5xl font-bold text-center leading-relaxed px-5" style={{
+          fontFamily: "Georgia, serif",
+          maxWidth: "70%",
+          letterSpacing: "0.05em"
+        }}>
           “Revolutionizing agriculture in Zimbabwe through advanced drone technology”
         </h2>
       </div>

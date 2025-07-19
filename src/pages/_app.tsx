@@ -1,7 +1,6 @@
-// src/pages/_app.tsx
-
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
+import Footer from "@/components/Footer";
 
 import Navbar from "@/components/Navbar";
 import Carousel from "@/components/Carousel";
@@ -21,6 +20,9 @@ export default function App({ Component, pageProps }: AppProps) {
       <main className="pt-8">
         <Component {...pageProps} />
       </main>
+
+      {/* 👇 Footer at the bottom */}
+      <Footer />
     </>
   );
 }
