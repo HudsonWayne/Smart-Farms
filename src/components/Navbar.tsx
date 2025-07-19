@@ -16,7 +16,7 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-[#0C0332] text-white fixed w-full z-50 top-0 shadow-md font-['Avenir']">
+    <nav className="bg-[#0C0332] text-white w-full z-50 top-0 shadow-md font-['Avenir']">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           {/* Logo with negative left margin */}
