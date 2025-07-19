@@ -22,7 +22,7 @@ const Carousel = () => {
   }, []);
 
   return (
-    <div className="relative w-screen h-[70vh] overflow-hidden -mx-4 sm:-mx-6 lg:-mx-8">
+    <div className="relative w-screen h-screen overflow-hidden">
       {/* Static Text Overlay */}
       <div className="absolute inset-0 z-20 flex items-center justify-center px-4">
         <h2
