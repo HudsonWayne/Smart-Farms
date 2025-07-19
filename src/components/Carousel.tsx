@@ -19,7 +19,6 @@ const Carousel = () => {
       setIndex((prevIndex) => (prevIndex + 1) % images.length);
     }, 3000);
 
-    // Optional: Prevent scroll shaking (only if needed)
     document.body.style.overflow = "hidden";
     return () => {
       clearInterval(interval);
@@ -28,7 +27,7 @@ const Carousel = () => {
   }, []);
 
   return (
-    <div className="relative w-screen h-screen overflow-hidden">
+    <div className="relative w-full h-[90vh] overflow-hidden">
       {/* Background image */}
       <img
         src={images[index]}
@@ -37,17 +36,21 @@ const Carousel = () => {
         draggable={false}
       />
 
-      {/* Overlay */}
+      {/* Dark overlay (same as About section) */}
       <div
-        className="absolute inset-0 z-10"
-        style={{ backgroundColor: "#2c2a2a", opacity: 0.6 }}
+        className="absolute inset-0 bg-black"
+        style={{ opacity: 0.6 }}
       />
 
-      {/* Text */}
+      {/* Text content */}
       <div className="absolute inset-0 z-20 flex items-center justify-center px-4">
         <h2
           className="text-white text-3xl md:text-5xl font-bold text-center leading-relaxed"
-          style={{ fontFamily: "Georgia, serif", maxWidth: "70%" }}
+          style={{
+            fontFamily: "Georgia, serif",
+            maxWidth: "70%",
+            letterSpacing: "0.05em",
+          }}
         >
           “Revolutionizing agriculture in Zimbabwe through advanced drone technology”
         </h2>
