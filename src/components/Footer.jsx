@@ -53,33 +53,36 @@ export default function Footer() {
           </p>
           <div className="flex flex-wrap justify-center md:justify-start items-center space-x-6 w-full md:w-auto">
             <a
-              href="#"
+              href="https://www.linkedin.com/company/smart-farms-tech/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center space-x-2 hover:text-blue-400"
             >
               <FaLinkedinIn />
               <span>LinkedIn</span>
             </a>
             <a
-              href="#"
+              href="https://www.facebook.com/share/1GWHfCdWvJ/?mibextid=wwXIfr"
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center space-x-2 hover:text-blue-400"
             >
               <FaFacebookF />
               <span>Facebook</span>
             </a>
             <a
-              href="#"
+              href="https://www.instagram.com/smart_farms_tech?igsh=OTNoMzlpdWVvbGZk"
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center space-x-2 hover:text-pink-400"
             >
               <FaInstagram />
               <span>Instagram</span>
             </a>
-            <a
-              href="#"
-              className="flex items-center space-x-2 hover:text-blue-300"
-            >
+            <div className="flex items-center space-x-2 text-blue-300">
               <FaTwitter />
               <span>Twitter</span>
-            </a>
+            </div>
           </div>
         </div>
       </div>
