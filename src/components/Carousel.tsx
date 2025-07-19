@@ -19,6 +19,7 @@ const Carousel = () => {
       setIndex((prevIndex) => (prevIndex + 1) % images.length);
     }, 3000);
 
+    // Optional: Prevent scroll shaking (only if needed)
     document.body.style.overflow = "hidden";
     return () => {
       clearInterval(interval);
@@ -27,9 +28,7 @@ const Carousel = () => {
   }, []);
 
   return (
-    <div
-      className="relative w-screen h-screen overflow-hidden"
-    >
+    <div className="relative w-screen h-screen overflow-hidden">
       {/* Background image */}
       <img
         src={images[index]}
@@ -44,7 +43,7 @@ const Carousel = () => {
         style={{ backgroundColor: "#2c2a2a", opacity: 0.6 }}
       />
 
-      {/* Text on top */}
+      {/* Text */}
       <div className="absolute inset-0 z-20 flex items-center justify-center px-4">
         <h2
           className="text-white text-3xl md:text-5xl font-bold text-center leading-relaxed"

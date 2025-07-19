@@ -1,9 +1,11 @@
+// src/components/AboutSection.tsx
+
 "use client";
 
 const AboutSection = () => {
   return (
-    <div className="relative mt-[20px] w-full h-[700px]">
-      {/* About image */}
+    <div className="relative mt-8 w-full h-[70vh]">
+      {/* Background image */}
       <img
         src="/about.png"
         alt="About Smart Farms"
@@ -11,8 +13,11 @@ const AboutSection = () => {
         draggable={false}
       />
 
-      {/* Slight dark overlay */}
-      <div className="absolute inset-0 bg-black" style={{ opacity: 0.4 }} />
+      {/* Dark overlay with stronger opacity */}
+      <div
+        className="absolute inset-0 bg-black"
+        style={{ opacity: 0.6 }}
+      />
 
       {/* Text content */}
       <div className="absolute inset-0 flex items-center justify-center px-6">
@@ -21,9 +26,10 @@ const AboutSection = () => {
           style={{
             fontFamily: "Georgia, serif",
             fontSize: "27px",
-            maxWidth: "80%",
+            maxWidth: "60%",
             zIndex: 10,
-            lineHeight: "1.7",
+            lineHeight: "1.3",
+            letterSpacing: "0.05em",  // Added letter spacing here
           }}
         >
           Smart Farms seeks to improve food security in Zimbabwe using advanced drone technology

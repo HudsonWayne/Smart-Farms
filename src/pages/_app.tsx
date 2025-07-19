@@ -1,5 +1,8 @@
+// src/pages/_app.tsx
+
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
+
 import Navbar from "@/components/Navbar";
 import Carousel from "@/components/Carousel";
 import AboutSection from "@/components/AboutSection";
@@ -10,8 +13,10 @@ export default function App({ Component, pageProps }: AppProps) {
       <Navbar />
       <Carousel />
 
-      {/* Margin of 20px below carousel */}
-      <AboutSection />
+      {/* Add margin above AboutSection if needed */}
+      <div className="mt-[20px]">
+        <AboutSection />
+      </div>
 
       <main className="pt-8">
         <Component {...pageProps} />
