@@ -11,15 +11,23 @@ import {
 export default function Footer() {
   return (
     <footer className="bg-[#0C0332] text-white font-['Avenir'] w-full">
-      <div className="max-w-7xl mx-auto px-5 py-8">
+      <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-8">
         {/* Top section with nav links and logo */}
         <div className="flex flex-col md:flex-row justify-between items-center mb-6">
-          <div className="flex space-x-8 text-base font-medium mb-4 md:mb-0">
-            <a href="/" className="text-[#72AE1C] hover:text-[#72AE1C]">Home</a>
-            <a href="/services" className="hover:text-[#72AE1C]">Services</a>
-            <a href="/about" className="hover:text-[#72AE1C]">About Us</a>
-            <a href="/blog" className="hover:text-[#72AE1C]">Blog</a>
-          </div>
+          <nav className="flex flex-wrap justify-center md:justify-start space-x-4 md:space-x-8 text-base font-medium mb-4 md:mb-0">
+            <a href="/" className="text-[#72AE1C] hover:text-[#72AE1C]">
+              Home
+            </a>
+            <a href="/services" className="hover:text-[#72AE1C]">
+              Services
+            </a>
+            <a href="/about" className="hover:text-[#72AE1C]">
+              About Us
+            </a>
+            <a href="/blog" className="hover:text-[#72AE1C]">
+              Blog
+            </a>
+          </nav>
           <img
             src="/logo.png"
             alt="Smart Farms Logo"
@@ -29,9 +37,9 @@ export default function Footer() {
         </div>
 
         {/* Gradient line */}
-        <div className="w-full">
+        <div className="mb-6">
           <div
-            className="h-1 rounded-full mx-[15px] mb-6"
+            className="h-1 rounded-full w-full"
             style={{
               background: "linear-gradient(to right, #72AE1C, #22D3EE)",
             }}
@@ -40,23 +48,35 @@ export default function Footer() {
 
         {/* Bottom section with copyright and social icons */}
         <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-300">
-          <p className="mb-4 md:mb-0 text-center md:text-left">
+          <p className="mb-4 md:mb-0 text-center md:text-left w-full md:w-auto">
             Copyright © 2025 Smart Farms. All rights reserved.
           </p>
-          <div className="flex items-center space-x-6">
-            <a href="#" className="flex items-center space-x-2 hover:text-blue-400">
+          <div className="flex flex-wrap justify-center md:justify-start items-center space-x-6 w-full md:w-auto">
+            <a
+              href="#"
+              className="flex items-center space-x-2 hover:text-blue-400"
+            >
               <FaLinkedinIn />
               <span>LinkedIn</span>
             </a>
-            <a href="#" className="flex items-center space-x-2 hover:text-blue-400">
+            <a
+              href="#"
+              className="flex items-center space-x-2 hover:text-blue-400"
+            >
               <FaFacebookF />
               <span>Facebook</span>
             </a>
-            <a href="#" className="flex items-center space-x-2 hover:text-pink-400">
+            <a
+              href="#"
+              className="flex items-center space-x-2 hover:text-pink-400"
+            >
               <FaInstagram />
               <span>Instagram</span>
             </a>
-            <a href="#" className="flex items-center space-x-2 hover:text-blue-300">
+            <a
+              href="#"
+              className="flex items-center space-x-2 hover:text-blue-300"
+            >
               <FaTwitter />
               <span>Twitter</span>
             </a>
