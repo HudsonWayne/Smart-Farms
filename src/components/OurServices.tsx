@@ -17,7 +17,7 @@ export default function OurServices() {
         {/* Section 1 Title */}
         <h3 className="text-green-700 text-lg font-bold text-left mb-2">DJI Mavic 3 Multispectral</h3>
 
-        {/* First Row */}
+        {/* First Row of Images */}
         <div className="grid md:grid-cols-3 gap-6 mb-10">
           <div className="text-center">
             <Image
@@ -25,7 +25,7 @@ export default function OurServices() {
               alt="High Resolution Camera"
               width={400}
               height={250}
-              className="w-full object-cover border border-green-300"
+              className="w-full object-cover"
             />
             <p className="mt-2 text-sm font-medium">High Resolution Camera</p>
           </div>
@@ -35,7 +35,7 @@ export default function OurServices() {
               alt="AI Integrated"
               width={400}
               height={250}
-              className="w-full object-cover border border-green-300"
+              className="w-full object-cover"
             />
             <p className="mt-2 text-sm font-medium">AI integrated</p>
           </div>
@@ -45,7 +45,7 @@ export default function OurServices() {
               alt="Multispectral Sensor"
               width={400}
               height={250}
-              className="w-full object-cover border border-green-300"
+              className="w-full object-cover"
             />
             <p className="mt-2 text-sm font-medium">Multispectral sensor</p>
           </div>
@@ -61,7 +61,7 @@ export default function OurServices() {
           </p>
         </div>
 
-        {/* Second Row */}
+        {/* Second Row of Images */}
         <div className="grid md:grid-cols-3 gap-6 mt-6">
           <div className="text-center">
             <Image
@@ -69,7 +69,7 @@ export default function OurServices() {
               alt="Precision input delivery"
               width={400}
               height={250}
-              className="w-full object-cover border border-gray-300"
+              className="w-full object-cover"
             />
             <p className="mt-2 text-sm font-medium">Precision input delivery</p>
           </div>
@@ -79,7 +79,7 @@ export default function OurServices() {
               alt="Labor cost reduction"
               width={400}
               height={250}
-              className="w-full object-cover border border-gray-300"
+              className="w-full object-cover"
             />
             <p className="mt-2 text-sm font-medium">Labor cost reduction</p>
           </div>
@@ -89,7 +89,7 @@ export default function OurServices() {
               alt="Remote operation capability"
               width={400}
               height={250}
-              className="w-full object-cover border border-gray-300"
+              className="w-full object-cover"
             />
             <p className="mt-2 text-sm font-medium">Remote operation capability</p>
           </div>
@@ -98,7 +98,7 @@ export default function OurServices() {
         {/* View All Button */}
         <div className="mt-10 text-left">
           <Link href="/services">
-            <button className="bg-[#0C0332] text-white px-6 py-2 text-sm font-semibold rounded hover:bg-opacity-90">
+            <button className="bg-[#0C0332] text-white px-6 py-2 text-sm font-semibold hover:bg-opacity-90">
               View All
             </button>
           </Link>
