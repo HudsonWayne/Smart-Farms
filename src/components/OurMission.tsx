@@ -9,16 +9,16 @@ export default function OurMission() {
         {/* Mission Block */}
         <div>
           <Image
-            src="/Rectangle 55.png"
+            src="/about.png" // Make sure this image exists in /public
             alt="Drone spraying crops"
-            width={600}
-            height={400}
+            width={500}
+            height={350}
             className="rounded-lg shadow-lg w-full object-cover"
           />
         </div>
         <div>
-          <h2 className="text-green-700 text-xl font-bold mb-3">Our Mission</h2>
-          <p className="text-gray-800 text-base leading-relaxed">
+          <h2 className="text-green-700 text-2xl font-bold mb-4">Our Mission</h2>
+          <p className="text-gray-800 text-lg leading-relaxed">
             Our mission is to empower small-scale farmers in Zimbabwe by leveraging
             drone technology to enhance agricultural productivity, reduce labor inefficiencies,
             and promote sustainable farming practices.
@@ -27,8 +27,8 @@ export default function OurMission() {
 
         {/* Vision Block */}
         <div className="order-2 md:order-1">
-          <h2 className="text-green-700 text-xl font-bold mb-3">Our Vision</h2>
-          <p className="text-gray-800 text-base leading-relaxed">
+          <h2 className="text-green-700 text-2xl font-bold mb-4">Our Vision</h2>
+          <p className="text-gray-800 text-lg leading-relaxed">
             <em>
               We envision to become a leading force in transforming African agriculture
               through technology, creating a future where every small-scale farmer
@@ -38,10 +38,10 @@ export default function OurMission() {
         </div>
         <div className="order-1 md:order-2">
           <Image
-            src="/Rectangle 61.png"
+            src="/Rectangle 61.png" // Make sure this image exists in /public
             alt="Drone on grass"
-            width={600}
-            height={400}
+            width={500}
+            height={350}
             className="rounded-lg shadow-lg w-full object-cover"
           />
         </div>
