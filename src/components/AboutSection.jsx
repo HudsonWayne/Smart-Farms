@@ -2,7 +2,7 @@
 
 const AboutSection = () => {
   return (
-    <div className="relative mt-[30px] w-full h-[700px]">
+    <div className="relative mt-[20px] w-full h-[700px]">
       {/* About image */}
       <img
         src="/about.png"
@@ -23,7 +23,7 @@ const AboutSection = () => {
             fontSize: "27px",
             maxWidth: "80%",
             zIndex: 10,
-            lineHeight: "1.7", // Set custom line height
+            lineHeight: "1.7",
           }}
         >
           Smart Farms seeks to improve food security in Zimbabwe using advanced drone technology
