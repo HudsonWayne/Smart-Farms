@@ -22,14 +22,14 @@ const Carousel = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-[70vh] overflow-hidden">
+    <div className="relative w-screen h-[70vh] overflow-hidden -mx-4 sm:-mx-6 lg:-mx-8">
       {/* Static Text Overlay */}
-      <div className="absolute inset-0 z-20 flex items-center justify-center text-center px-4">
+      <div className="absolute inset-0 z-20 flex items-center justify-center px-4">
         <h2
-          className="text-white text-3xl md:text-5xl font-bold"
-          style={{ fontFamily: "Georgia, serif" }}
+          className="text-white text-3xl md:text-5xl font-bold text-center"
+          style={{ fontFamily: "Georgia, serif", maxWidth: "70%" }}
         >
-          Revolutionizing agriculture in Zimbabwe through advanced drone technology
+          “Revolutionizing agriculture in Zimbabwe through advanced drone technology”
         </h2>
       </div>
 
@@ -47,10 +47,10 @@ const Carousel = () => {
             className="w-full h-full object-cover"
             draggable={false}
           />
-          {/* Overlay with color #050404 */}
+          {/* Overlay with color #2c2a2aff */}
           <div
             className="absolute inset-0"
-            style={{ backgroundColor: "#050404", opacity: 0.6 }}
+            style={{ backgroundColor: "#2c2a2aff", opacity: 0.6 }}
           />
         </div>
       ))}
