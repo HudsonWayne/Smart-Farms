@@ -44,7 +44,7 @@ const Carousel = () => {
           <img
             src={img}
             alt={`Slide ${i}`}
-            className="w-full h-full object-contain"
+            className="w-full h-full object-cover"
             draggable={false}
           />
           {/* Overlay with color #050404 */}
