@@ -17,13 +17,32 @@ const Carousel = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 3000); // change every 3 seconds
-    return () => clearInterval(interval);
+    }, 3000);
+
+    document.body.style.overflow = "hidden";
+    return () => {
+      clearInterval(interval);
+      document.body.style.overflow = "";
+    };
   }, []);
 
   return (
     <div className="relative w-screen h-screen overflow-hidden">
-      {/* Static Text Overlay */}
+      {/* Background image layer */}
+      <img
+        src={images[index]}
+        alt={`Slide ${index}`}
+        className="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out"
+        draggable={false}
+      />
+      
+      {/* Dark overlay */}
+      <div
+        className="absolute inset-0 z-10"
+        style={{ backgroundColor: "#2c2a2a", opacity: 0.6 }}
+      />
+
+      {/* Text Overlay */}
       <div className="absolute inset-0 z-20 flex items-center justify-center px-4">
         <h2
           className="text-white text-3xl md:text-5xl font-bold text-center"
@@ -32,28 +51,6 @@ const Carousel = () => {
           “Revolutionizing agriculture in Zimbabwe through advanced drone technology”
         </h2>
       </div>
-
-      {/* Background Images */}
-      {images.map((img, i) => (
-        <div
-          key={i}
-          className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
-            index === i ? "opacity-100 z-10" : "opacity-0 z-0"
-          }`}
-        >
-          <img
-            src={img}
-            alt={`Slide ${i}`}
-            className="w-full h-full object-cover"
-            draggable={false}
-          />
-          {/* Overlay with color #2c2a2aff */}
-          <div
-            className="absolute inset-0"
-            style={{ backgroundColor: "#2c2a2aff", opacity: 0.6 }}
-          />
-        </div>
-      ))}
     </div>
   );
 };
