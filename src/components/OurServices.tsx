@@ -11,7 +11,7 @@ export default function OurServices() {
         <h2 className="text-green-700 text-4xl font-bold mb-4">Our Services</h2>
         <p
           className="text-gray-700 mb-10 mx-auto font-[Georgia]"
-          style={{ width: "50%", fontSize: "180px" }}
+          style={{ width: "50%", fontSize: "22px" }}
         >
           At Smart Farms, we provide innovative solutions to enhance agricultural practices
           for small and medium-scale farmers.
@@ -63,7 +63,7 @@ export default function OurServices() {
           </h3>
           <p
             className="text-gray-700 font-[Georgia]"
-            style={{ fontSize: "180px" }}
+            style={{ fontSize: "22px" }}
           >
             Optimized resource use to improve yields while reducing waste.
           </p>
