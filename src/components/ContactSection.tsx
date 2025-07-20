@@ -1,6 +1,7 @@
 // components/ContactSection.tsx
 import { GoogleMap, useLoadScript, Marker } from "@react-google-maps/api";
 import { useState, useCallback } from "react";
+import { EnvelopeIcon, PhoneIcon, MapPinIcon } from "@heroicons/react/24/solid";
 
 const containerStyle = {
   width: "100%",
@@ -13,7 +14,7 @@ const center = {
 };
 
 const ContactSection = () => {
-  const { isLoaded } = useLoadScript({
+  const { isLoaded, loadError } = useLoadScript({
     googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY!,
   });
 
@@ -28,6 +29,10 @@ const ContactSection = () => {
     }
   }, []);
 
+  if (loadError) {
+    return <p className="text-center text-red-500">Map failed to load. Check your API key and billing.</p>;
+  }
+
   if (!isLoaded) return <p className="text-center">Loading map...</p>;
 
   return (
@@ -39,25 +44,25 @@ const ContactSection = () => {
 
         <div className="space-y-6 text-gray-800 text-base">
           <div className="flex items-start gap-4">
-            <span className="text-green-600 text-xl">📧</span>
+            <EnvelopeIcon className="text-green-600 w-6 h-6 mt-1" />
             <div>
-              <p className="font-semibold">Email</p>
+              <p className="font-semibold text-lg">Email</p>
               <p>info@smartfarms-tech.com</p>
             </div>
           </div>
 
           <div className="flex items-start gap-4">
-            <span className="text-green-600 text-xl">📞</span>
+            <PhoneIcon className="text-green-600 w-6 h-6 mt-1" />
             <div>
-              <p className="font-semibold">Phone</p>
+              <p className="font-semibold text-lg">Phone</p>
               <p>+263 777 963 398</p>
             </div>
           </div>
 
           <div className="flex items-start gap-4">
-            <span className="text-green-600 text-xl">📍</span>
+            <MapPinIcon className="text-green-600 w-6 h-6 mt-1" />
             <div>
-              <p className="font-semibold">Address</p>
+              <p className="font-semibold text-lg">Address</p>
               <p>443 Grasmere Lane, Borrowdale<br />Harare</p>
             </div>
           </div>
