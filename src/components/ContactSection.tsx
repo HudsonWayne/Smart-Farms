@@ -1,40 +1,20 @@
+// components/ContactSection.tsx
 import { GoogleMap, useLoadScript, Marker } from "@react-google-maps/api";
 import { useState, useCallback } from "react";
 import {
   EnvelopeIcon,
   PhoneIcon,
   MapPinIcon,
-} from "@heroicons/react/24/outline";
+} from "@heroicons/react/24/outline"; // ✅ Correct import path
 
-// Map container dimensions
 const containerStyle = {
   width: "100%",
   height: "400px",
 };
 
-// Borrowdale Junior School location
 const center = {
-  lat: -17.7596,
-  lng: 31.0923,
-};
-
-// Light map style
-const mapOptions = {
-  styles: [
-    {
-      featureType: "all",
-      elementType: "all",
-      stylers: [
-        { saturation: 0 },
-        { lightness: 0 },
-        { visibility: "on" },
-      ],
-    },
-  ],
-  disableDefaultUI: true,
-  zoomControl: true,
-  mapTypeControl: false,
-  fullscreenControl: false,
+  lat: -17.7722,
+  lng: 31.0928,
 };
 
 const ContactSection = () => {
@@ -67,16 +47,12 @@ const ContactSection = () => {
     <section className="px-6 md:px-20 py-16 bg-white flex flex-col md:flex-row gap-10 items-start justify-between">
       {/* Left Info Panel */}
       <div className="md:w-1/2">
-        <p className="text-green-600 font-bold text-sm tracking-[0.15em] mb-2 uppercase font-[Georgia]">
-          Contact
-        </p>
-        <h2 className="text-4xl font-bold text-gray-800 mb-8 font-[Georgia]">
-          Talk to Us
-        </h2>
+        <p className="text-green-600 font-bold text-sm tracking-widest mb-2 uppercase">Contact</p>
+        <h2 className="text-3xl font-bold text-gray-800 mb-8">Talk to Us</h2>
 
-        <div className="space-y-6 text-gray-800 text-base font-[Georgia]">
+        <div className="space-y-6 text-gray-800 text-base">
           <div className="flex items-start gap-4">
-            <EnvelopeIcon className="text-green-700 w-7 h-7 mt-1" />
+            <EnvelopeIcon className="text-green-600 w-6 h-6 mt-1" />
             <div>
               <p className="font-semibold text-lg">Email</p>
               <p>info@smartfarms-tech.com</p>
@@ -84,7 +60,7 @@ const ContactSection = () => {
           </div>
 
           <div className="flex items-start gap-4">
-            <PhoneIcon className="text-green-700 w-7 h-7 mt-1" />
+            <PhoneIcon className="text-green-600 w-6 h-6 mt-1" />
             <div>
               <p className="font-semibold text-lg">Phone</p>
               <p>+263 777 963 398</p>
@@ -92,14 +68,10 @@ const ContactSection = () => {
           </div>
 
           <div className="flex items-start gap-4">
-            <MapPinIcon className="text-green-700 w-7 h-7 mt-1" />
+            <MapPinIcon className="text-green-600 w-6 h-6 mt-1" />
             <div>
               <p className="font-semibold text-lg">Address</p>
-              <p>
-                Borrowdale Junior School<br />
-                63GQ+VWR, Ridgeway N<br />
-                Harare, Zimbabwe
-              </p>
+              <p>443 Grasmere Lane, Borrowdale<br />Harare</p>
             </div>
           </div>
         </div>
@@ -110,14 +82,13 @@ const ContactSection = () => {
         <GoogleMap
           mapContainerStyle={containerStyle}
           center={marker || center}
-          zoom={16}
+          zoom={15}
           onClick={onMapClick}
-          options={mapOptions}
         >
           {marker && <Marker position={marker} />}
         </GoogleMap>
-        <p className="mt-2 text-sm text-gray-500 italic font-[Georgia]">
-          Click on the map to pin the company’s exact location.
+        <p className="mt-2 text-sm text-gray-500 italic">
+          {/* Click on the map to pin the company’s exact location. */}
         </p>
       </div>
     </section>
