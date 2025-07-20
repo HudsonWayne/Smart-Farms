@@ -1,116 +1,54 @@
 "use client";
 
-import Image from "next/image";
-import Link from "next/link";
+import React from "react";
+
+const services = [
+  {
+    title: "Precision Input Delivery",
+    img: "/images/Rectangle 55.png",
+  },
+  {
+    title: "Labor Cost Reduction",
+    img: "/images/Rectangle 56.png",
+  },
+  {
+    title: "Remote Operation Capability",
+    img: "/images/Rectangle 58.png",
+  },
+  {
+    title: "High Resolution Camera",
+    img: "/images/Rectangle 59.png",
+  },
+  {
+    title: "AI Integrated",
+    img: "/images/Rectangle 60.png",
+  },
+  {
+    title: "Multispectral Sensor",
+    img: "/images/Rectangle 61.png",
+  },
+];
 
 export default function OurServices() {
   return (
-    <section className="w-full bg-white px-4 md:px-12 lg:px-20 py-12 font-[Georgia]">
-      <div className="max-w-7xl mx-auto text-center">
-        {/* Section Header */}
-        <h2 className="text-green-700 text-4xl font-bold mb-4">Our Services</h2>
-        <p
-          className="text-gray-700 mb-10 mx-auto font-[Georgia]"
-          style={{ width: "50%", fontSize: "22px" }}
-        >
-          At Smart Farms, we provide innovative solutions to enhance agricultural practices
-          for small and medium-scale farmers.
-        </p>
+    <section className="w-full bg-white px-4 md:px-12 lg:px-20 py-12 font-['Poppins']">
+      <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center text-[#0C0332]">
+        Our Services
+      </h2>
 
-        {/* Section 1 Title */}
-        <h3 className="text-green-700 text-2xl font-bold text-left mb-2">
-          DJI Mavic 3 Multispectral
-        </h3>
-
-        {/* First Row of Images */}
-        <div className="grid md:grid-cols-3 gap-6 mb-10">
-          <div className="mt-[20px] text-left">
-            <Image
-              src="/Rectangle 8.png"
-              alt="High Resolution Camera"
-              width={400}
-              height={250}
-              className="w-full object-cover"
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        {services.map((service, index) => (
+          <div key={index} className="w-full">
+            <img
+              src={service.img}
+              alt={service.title}
+              className={`w-full object-cover ${
+                index === 0 ? "h-[280px]" : "h-[220px]"
+              }`}
             />
-            <p className="mt-2 font-bold font-[Poppins] text-[21px]">High Resolution Camera</p>
+            <p className="text-lg mt-3 text-[#0C0332] pl-[5px]">{service.title}</p>
           </div>
-          <div className="mt-[20px] text-left">
-            <Image
-              src="/Rectangle 9.png"
-              alt="AI Integrated"
-              width={400}
-              height={250}
-              className="w-full object-cover"
-            />
-            <p className="mt-2 font-bold font-[Poppins] text-[21px]">AI Integrated</p>
-          </div>
-          <div className="mt-[20px] text-left">
-            <Image
-              src="/Rectangle 10.png"
-              alt="Multispectral Sensor"
-              width={400}
-              height={250}
-              className="w-full object-cover"
-            />
-            <p className="mt-2 font-bold font-[Poppins] text-[21px]">Multispectral Sensor</p>
-          </div>
-        </div>
-
-        {/* Section 2 Title */}
-        <div className="text-left mb-2">
-          <h3 className="text-green-700 text-2xl font-bold">
-            2. Pesticides and Fertilizer Application
-          </h3>
-          <p
-            className="text-gray-700 font-[Georgia]"
-            style={{ fontSize: "22px" }}
-          >
-            Optimized resource use to improve yields while reducing waste.
-          </p>
-        </div>
-
-        {/* Second Row of Images */}
-        <div className="grid md:grid-cols-3 gap-6">
-          <div className="mt-[20px] text-left">
-            <Image
-              src="/Rectangle 88.png"
-              alt="Precision input delivery"
-              width={400}
-              height={250}
-              className="w-full object-cover"
-            />
-            <p className="mt-2 font-bold font-[Poppins] text-[21px]">Precision input delivery</p>
-          </div>
-          <div className="mt-[20px] text-left">
-            <Image
-              src="/Rectangle 99.png"
-              alt="Labor cost reduction"
-              width={400}
-              height={250}
-              className="w-full object-cover"
-            />
-            <p className="mt-2 font-bold font-[Poppins] text-[21px]">Labor cost reduction</p>
-          </div>
-          <div className="mt-[20px] text-left">
-            <Image
-              src="/Rectangle 100.png"
-              alt="Remote operation capability"
-              width={400}
-              height={250}
-              className="w-full object-cover"
-            />
-            <p className="mt-2 font-bold font-[Poppins] text-[21px]">Remote operation capability</p>
-          </div>
-        </div>
-
-        {/* View All Button */}
-        <div className="mt-10 text-left">
-          <Link href="/services">
-            <button className="bg-[#0C0332] text-white px-6 py-2 text-base font-semibold font-[Avenir] hover:bg-opacity-90">
-              View All
-            </button>
-          </Link>
-        </div>
+        ))}
       </div>
     </section>
   );
