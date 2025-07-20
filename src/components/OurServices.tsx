@@ -22,9 +22,9 @@ export default function OurServices() {
           DJI Mavic 3 Multispectral
         </h3>
 
-        {/* First Row of Images (each block moved 20px down) */}
+        {/* First Row of Images */}
         <div className="grid md:grid-cols-3 gap-6 mb-10">
-          <div className="text-center mt-[20px]">
+          <div className="mt-[20px] text-left">
             <Image
               src="/Rectangle 8.png"
               alt="High Resolution Camera"
@@ -32,9 +32,9 @@ export default function OurServices() {
               height={250}
               className="w-full object-cover"
             />
-            <p className="mt-2 text-base font-bold font-[Poppins]">High Resolution Camera</p>
+            <p className="mt-2 font-bold font-[Poppins] text-[21px]">High Resolution Camera</p>
           </div>
-          <div className="text-center mt-[20px]">
+          <div className="mt-[20px] text-left">
             <Image
               src="/Rectangle 9.png"
               alt="AI Integrated"
@@ -42,9 +42,9 @@ export default function OurServices() {
               height={250}
               className="w-full object-cover"
             />
-            <p className="mt-2 text-base font-bold font-[Poppins]">AI Integrated</p>
+            <p className="mt-2 font-bold font-[Poppins] text-[21px]">AI Integrated</p>
           </div>
-          <div className="text-center mt-[20px]">
+          <div className="mt-[20px] text-left">
             <Image
               src="/Rectangle 10.png"
               alt="Multispectral Sensor"
@@ -52,7 +52,7 @@ export default function OurServices() {
               height={250}
               className="w-full object-cover"
             />
-            <p className="mt-2 text-base font-bold font-[Poppins]">Multispectral Sensor</p>
+            <p className="mt-2 font-bold font-[Poppins] text-[21px]">Multispectral Sensor</p>
           </div>
         </div>
 
@@ -69,9 +69,9 @@ export default function OurServices() {
           </p>
         </div>
 
-        {/* Second Row of Images (each block moved 20px down) */}
+        {/* Second Row of Images */}
         <div className="grid md:grid-cols-3 gap-6">
-          <div className="text-center mt-[20px]">
+          <div className="mt-[20px] text-left">
             <Image
               src="/Rectangle 88.png"
               alt="Precision input delivery"
@@ -79,9 +79,9 @@ export default function OurServices() {
               height={250}
               className="w-full object-cover"
             />
-            <p className="mt-2 text-base font-bold font-[Poppins]">Precision input delivery</p>
+            <p className="mt-2 font-bold font-[Poppins] text-[21px]">Precision input delivery</p>
           </div>
-          <div className="text-center mt-[20px]">
+          <div className="mt-[20px] text-left">
             <Image
               src="/Rectangle 99.png"
               alt="Labor cost reduction"
@@ -89,9 +89,9 @@ export default function OurServices() {
               height={250}
               className="w-full object-cover"
             />
-            <p className="mt-2 text-base font-bold font-[Poppins]">Labor cost reduction</p>
+            <p className="mt-2 font-bold font-[Poppins] text-[21px]">Labor cost reduction</p>
           </div>
-          <div className="text-center mt-[20px]">
+          <div className="mt-[20px] text-left">
             <Image
               src="/Rectangle 100.png"
               alt="Remote operation capability"
@@ -99,14 +99,14 @@ export default function OurServices() {
               height={250}
               className="w-full object-cover"
             />
-            <p className="mt-2 text-base font-bold font-[Poppins]">Remote operation capability</p>
+            <p className="mt-2 font-bold font-[Poppins] text-[21px]">Remote operation capability</p>
           </div>
         </div>
 
         {/* View All Button */}
         <div className="mt-10 text-left">
           <Link href="/services">
-            <button className="bg-[#0C0332] text-white px-6 py-2 text-base font-semibold hover:bg-opacity-90">
+            <button className="bg-[#0C0332] text-white px-6 py-2 text-base font-semibold font-[Avenir] hover:bg-opacity-90">
               View All
             </button>
           </Link>
