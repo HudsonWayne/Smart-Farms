@@ -8,7 +8,8 @@ import Carousel from "@/components/Carousel";
 import AboutSection from "@/components/AboutSection";
 import OurMission from "@/components/OurMission";
 import OurServices from "@/components/OurServices";
-import SmartFarming from "@/components/SmartFarming"; // ✅ Import the new component
+import SmartFarming from "@/components/SmartFarming";
+import ContactSection from "@/components/ContactSection"; // ✅ Import it
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -20,7 +21,8 @@ export default function App({ Component, pageProps }: AppProps) {
       </div>
       <OurMission />
       <OurServices />
-      <SmartFarming /> {/* ✅ Now added below OurServices */}
+      <SmartFarming />
+      <ContactSection /> {/* ✅ Add here */}
       <main className="pt-8">
         <Component {...pageProps} />
       </main>
