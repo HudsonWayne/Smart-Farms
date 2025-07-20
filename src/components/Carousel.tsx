@@ -43,7 +43,7 @@ const Carousel = () => {
       {/* Content container with padding only here */}
       <div className="relative z-20 flex items-center justify-center h-full px-5 md:px-8">
         <h2
-          className="text-white text-3xl md:text-5xl font-bold text-center leading-relaxed max-w-3xl"
+          className="text-white text-3xl md:text-5xl font-bold text-center leading-relaxed max-w-6xl"
           style={{
             fontFamily: "Georgia, serif",
             letterSpacing: "0.05em",
