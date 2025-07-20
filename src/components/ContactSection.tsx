@@ -1,7 +1,11 @@
 // components/ContactSection.tsx
 import { GoogleMap, useLoadScript, Marker } from "@react-google-maps/api";
 import { useState, useCallback } from "react";
-import { EnvelopeIcon, PhoneIcon, MapPinIcon } from "@heroicons/react/24/solid";
+import {
+  EnvelopeIcon,
+  PhoneIcon,
+  MapPinIcon,
+} from "@heroicons/react/24/outline"; // ✅ Correct import path
 
 const containerStyle = {
   width: "100%",
@@ -30,7 +34,11 @@ const ContactSection = () => {
   }, []);
 
   if (loadError) {
-    return <p className="text-center text-red-500">Map failed to load. Check your API key and billing.</p>;
+    return (
+      <p className="text-center text-red-500">
+        Map failed to load. Check your API key and billing setup.
+      </p>
+    );
   }
 
   if (!isLoaded) return <p className="text-center">Loading map...</p>;
@@ -79,7 +87,9 @@ const ContactSection = () => {
         >
           {marker && <Marker position={marker} />}
         </GoogleMap>
-        <p className="mt-2 text-sm text-gray-500 italic">Click on the map to pin the company’s exact location.</p>
+        <p className="mt-2 text-sm text-gray-500 italic">
+          Click on the map to pin the company’s exact location.
+        </p>
       </div>
     </section>
   );
