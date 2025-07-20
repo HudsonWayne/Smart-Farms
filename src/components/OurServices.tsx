@@ -22,9 +22,9 @@ export default function OurServices() {
           DJI Mavic 3 Multispectral
         </h3>
 
-        {/* First Row of Images (moved 20px down) */}
-        <div className="grid md:grid-cols-3 gap-6 mb-10 mt-[20px]">
-          <div className="text-center">
+        {/* First Row of Images (each block moved 20px down) */}
+        <div className="grid md:grid-cols-3 gap-6 mb-10">
+          <div className="text-center mt-[20px]">
             <Image
               src="/Rectangle 8.png"
               alt="High Resolution Camera"
@@ -34,7 +34,7 @@ export default function OurServices() {
             />
             <p className="mt-2 text-base font-bold font-[Poppins]">High Resolution Camera</p>
           </div>
-          <div className="text-center">
+          <div className="text-center mt-[20px]">
             <Image
               src="/Rectangle 9.png"
               alt="AI Integrated"
@@ -44,7 +44,7 @@ export default function OurServices() {
             />
             <p className="mt-2 text-base font-bold font-[Poppins]">AI Integrated</p>
           </div>
-          <div className="text-center">
+          <div className="text-center mt-[20px]">
             <Image
               src="/Rectangle 10.png"
               alt="Multispectral Sensor"
@@ -69,9 +69,9 @@ export default function OurServices() {
           </p>
         </div>
 
-        {/* Second Row of Images (moved 20px down) */}
-        <div className="grid md:grid-cols-3 gap-6 mt-[20px]">
-          <div className="text-center">
+        {/* Second Row of Images (each block moved 20px down) */}
+        <div className="grid md:grid-cols-3 gap-6">
+          <div className="text-center mt-[20px]">
             <Image
               src="/Rectangle 88.png"
               alt="Precision input delivery"
@@ -81,7 +81,7 @@ export default function OurServices() {
             />
             <p className="mt-2 text-base font-bold font-[Poppins]">Precision input delivery</p>
           </div>
-          <div className="text-center">
+          <div className="text-center mt-[20px]">
             <Image
               src="/Rectangle 99.png"
               alt="Labor cost reduction"
@@ -91,7 +91,7 @@ export default function OurServices() {
             />
             <p className="mt-2 text-base font-bold font-[Poppins]">Labor cost reduction</p>
           </div>
-          <div className="text-center">
+          <div className="text-center mt-[20px]">
             <Image
               src="/Rectangle 100.png"
               alt="Remote operation capability"
