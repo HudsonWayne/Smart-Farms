@@ -1,18 +1,18 @@
-// pages/services.tsx
 "use client";
 
 import Image from "next/image";
 
 export default function ServicesPage() {
   return (
-    <div className="relative w-full min-h-[80vh] flex items-center justify-center text-center">
+    <div className="relative w-full h-[80vh] flex items-center justify-center text-center">
       {/* Background Image */}
       <Image
-        src="/Rectangle 23.png"
+        src="/Rectangle23.png"  // no spaces here, must match your file name exactly
         alt="Drone spraying field"
         fill
         priority
-        className="object-cover z-0"
+        style={{ objectFit: "cover" }}
+        className="z-0"
       />
 
       {/* Overlay */}
@@ -24,7 +24,8 @@ export default function ServicesPage() {
           Our Services
         </h1>
         <p className="text-white text-lg md:text-xl leading-relaxed font-[Georgia]">
-          At Smart Farms, we provide innovative solutions to enhance agricultural practices for small and medium-scale farmers.
+          At Smart Farms, we provide innovative solutions to enhance agricultural
+          practices for small and medium-scale farmers.
         </p>
       </div>
     </div>
