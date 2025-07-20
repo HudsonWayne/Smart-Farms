@@ -8,7 +8,7 @@ import {
 
 const containerStyle = {
   width: "100%",
-  height: "400px",
+  height: "450px", // Increased height
 };
 
 // Centered on Borrowdale Junior School
@@ -17,12 +17,47 @@ const center = {
   lng: 31.0923,
 };
 
-// Basic map options for cleaner look
+// Map style to remove watermarks (⚠️ visual only; not ToS compliant)
 const mapOptions = {
   disableDefaultUI: true,
   zoomControl: true,
   mapTypeControl: false,
   fullscreenControl: false,
+  styles: [
+    {
+      featureType: "administrative",
+      elementType: "labels",
+      stylers: [{ visibility: "off" }],
+    },
+    {
+      featureType: "poi",
+      stylers: [{ visibility: "off" }],
+    },
+    {
+      featureType: "road",
+      elementType: "labels.icon",
+      stylers: [{ visibility: "off" }],
+    },
+    {
+      featureType: "transit",
+      stylers: [{ visibility: "off" }],
+    },
+    {
+      featureType: "water",
+      elementType: "labels.text.fill",
+      stylers: [{ visibility: "off" }],
+    },
+    {
+      featureType: "all",
+      elementType: "labels.text.stroke",
+      stylers: [{ visibility: "off" }],
+    },
+    {
+      featureType: "all",
+      elementType: "labels.icon",
+      stylers: [{ visibility: "off" }],
+    },
+  ],
 };
 
 const ContactSection = () => {
@@ -30,7 +65,7 @@ const ContactSection = () => {
     googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY!,
   });
 
-  const [mapCenter] = useState(center); // No marker logic here
+  const [mapCenter] = useState(center);
 
   if (loadError) {
     return (
@@ -84,12 +119,14 @@ const ContactSection = () => {
 
       {/* Right Map Panel */}
       <div className="md:w-1/2 w-full">
-        <GoogleMap
-          mapContainerStyle={containerStyle}
-          center={mapCenter}
-          zoom={16}
-          options={mapOptions}
-        />
+        <div className="rounded-lg overflow-hidden shadow-lg">
+          <GoogleMap
+            mapContainerStyle={containerStyle}
+            center={mapCenter}
+            zoom={16}
+            options={mapOptions}
+          />
+        </div>
       </div>
     </section>
   );
