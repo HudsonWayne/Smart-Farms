@@ -1,0 +1,83 @@
+// components/ContactSection.tsx
+import { GoogleMap, useLoadScript, Marker } from "@react-google-maps/api";
+import { useState, useCallback } from "react";
+
+const containerStyle = {
+  width: "100%",
+  height: "400px",
+};
+
+const center = {
+  lat: -17.7722,
+  lng: 31.0928,
+};
+
+const ContactSection = () => {
+  const { isLoaded } = useLoadScript({
+    googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY!,
+  });
+
+  const [marker, setMarker] = useState<{ lat: number; lng: number } | null>(center);
+
+  const onMapClick = useCallback((e: google.maps.MapMouseEvent) => {
+    if (e.latLng) {
+      setMarker({
+        lat: e.latLng.lat(),
+        lng: e.latLng.lng(),
+      });
+    }
+  }, []);
+
+  if (!isLoaded) return <p className="text-center">Loading map...</p>;
+
+  return (
+    <section className="px-6 md:px-20 py-16 bg-white flex flex-col md:flex-row gap-10 items-start justify-between">
+      {/* Left Info Panel */}
+      <div className="md:w-1/2">
+        <p className="text-green-600 font-bold text-sm tracking-widest mb-2 uppercase">Contact</p>
+        <h2 className="text-3xl font-bold text-gray-800 mb-8">Talk to Us</h2>
+
+        <div className="space-y-6 text-gray-800 text-base">
+          <div className="flex items-start gap-4">
+            <span className="text-green-600 text-xl">📧</span>
+            <div>
+              <p className="font-semibold">Email</p>
+              <p>info@smartfarms-tech.com</p>
+            </div>
+          </div>
+
+          <div className="flex items-start gap-4">
+            <span className="text-green-600 text-xl">📞</span>
+            <div>
+              <p className="font-semibold">Phone</p>
+              <p>+263 777 963 398</p>
+            </div>
+          </div>
+
+          <div className="flex items-start gap-4">
+            <span className="text-green-600 text-xl">📍</span>
+            <div>
+              <p className="font-semibold">Address</p>
+              <p>443 Grasmere Lane, Borrowdale<br />Harare</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Right Map Panel */}
+      <div className="md:w-1/2 w-full">
+        <GoogleMap
+          mapContainerStyle={containerStyle}
+          center={marker || center}
+          zoom={15}
+          onClick={onMapClick}
+        >
+          {marker && <Marker position={marker} />}
+        </GoogleMap>
+        <p className="mt-2 text-sm text-gray-500 italic">Click on the map to pin the company’s exact location.</p>
+      </div>
+    </section>
+  );
+};
+
+export default ContactSection;
