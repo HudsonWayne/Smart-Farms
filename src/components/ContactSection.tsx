@@ -1,20 +1,28 @@
-// components/ContactSection.tsx
-import { GoogleMap, useLoadScript, Marker } from "@react-google-maps/api";
-import { useState, useCallback } from "react";
+import { GoogleMap, useLoadScript } from "@react-google-maps/api";
+import { useState } from "react";
 import {
   EnvelopeIcon,
   PhoneIcon,
   MapPinIcon,
-} from "@heroicons/react/24/outline"; // ✅ Correct import path
+} from "@heroicons/react/24/outline";
 
 const containerStyle = {
   width: "100%",
   height: "400px",
 };
 
+// Centered on Borrowdale Junior School
 const center = {
-  lat: -17.7722,
-  lng: 31.0928,
+  lat: -17.7596,
+  lng: 31.0923,
+};
+
+// Basic map options for cleaner look
+const mapOptions = {
+  disableDefaultUI: true,
+  zoomControl: true,
+  mapTypeControl: false,
+  fullscreenControl: false,
 };
 
 const ContactSection = () => {
@@ -22,16 +30,7 @@ const ContactSection = () => {
     googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY!,
   });
 
-  const [marker, setMarker] = useState<{ lat: number; lng: number } | null>(center);
-
-  const onMapClick = useCallback((e: google.maps.MapMouseEvent) => {
-    if (e.latLng) {
-      setMarker({
-        lat: e.latLng.lat(),
-        lng: e.latLng.lng(),
-      });
-    }
-  }, []);
+  const [mapCenter] = useState(center); // No marker logic here
 
   if (loadError) {
     return (
@@ -47,7 +46,9 @@ const ContactSection = () => {
     <section className="px-6 md:px-20 py-16 bg-white flex flex-col md:flex-row gap-10 items-start justify-between">
       {/* Left Info Panel */}
       <div className="md:w-1/2">
-        <p className="text-green-600 font-bold text-sm tracking-widest mb-2 uppercase">Contact</p>
+        <p className="text-green-600 font-bold text-sm tracking-widest mb-2 uppercase">
+          Contact
+        </p>
         <h2 className="text-3xl font-bold text-gray-800 mb-8">Talk to Us</h2>
 
         <div className="space-y-6 text-gray-800 text-base">
@@ -71,7 +72,11 @@ const ContactSection = () => {
             <MapPinIcon className="text-green-600 w-6 h-6 mt-1" />
             <div>
               <p className="font-semibold text-lg">Address</p>
-              <p>443 Grasmere Lane, Borrowdale<br />Harare</p>
+              <p>
+                Borrowdale Junior School<br />
+                63GQ+VWR, Ridgeway N<br />
+                Harare, Zimbabwe
+              </p>
             </div>
           </div>
         </div>
@@ -81,15 +86,10 @@ const ContactSection = () => {
       <div className="md:w-1/2 w-full">
         <GoogleMap
           mapContainerStyle={containerStyle}
-          center={marker || center}
-          zoom={15}
-          onClick={onMapClick}
-        >
-          {marker && <Marker position={marker} />}
-        </GoogleMap>
-        <p className="mt-2 text-sm text-gray-500 italic">
-          {/* Click on the map to pin the company’s exact location. */}
-        </p>
+          center={mapCenter}
+          zoom={16}
+          options={mapOptions}
+        />
       </div>
     </section>
   );
