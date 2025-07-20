@@ -1,3 +1,4 @@
+// pages/_app.tsx
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 
@@ -6,7 +7,8 @@ import Navbar from "@/components/Navbar";
 import Carousel from "@/components/Carousel";
 import AboutSection from "@/components/AboutSection";
 import OurMission from "@/components/OurMission";
-import OurServices from "@/components/OurServices"; // ✅ Make sure this exists
+import OurServices from "@/components/OurServices";
+import SmartFarming from "@/components/SmartFarming"; // ✅ Import the new component
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -17,7 +19,8 @@ export default function App({ Component, pageProps }: AppProps) {
         <AboutSection />
       </div>
       <OurMission />
-      <OurServices /> {/* ✅ Now added here */}
+      <OurServices />
+      <SmartFarming /> {/* ✅ Now added below OurServices */}
       <main className="pt-8">
         <Component {...pageProps} />
       </main>
