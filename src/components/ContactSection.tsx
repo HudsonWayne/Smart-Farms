@@ -1,5 +1,5 @@
 // src/components/ContactSection.tsx
-import { GoogleMap, useLoadScript } from "@react-google-maps/api";
+import { GoogleMap, useLoadScript, Marker } from "@react-google-maps/api";
 import { useState } from "react";
 import {
   EnvelopeIcon,
@@ -9,16 +9,15 @@ import {
 
 const containerStyle = {
   width: "100%",
-  height: "450px", // Increased height
+  height: "450px", // Map height
 };
 
-// Centered on Borrowdale Junior School
+// Company location: Borrowdale Junior School coordinates
 const center = {
   lat: -17.7596,
   lng: 31.0923,
 };
 
-// Map style to remove watermarks (⚠️ visual only; not ToS compliant)
 const mapOptions = {
   disableDefaultUI: true,
   zoomControl: true,
@@ -126,7 +125,10 @@ const ContactSection = () => {
             center={mapCenter}
             zoom={16}
             options={mapOptions}
-          />
+          >
+            {/* Marker for the company location */}
+            <Marker position={center} />
+          </GoogleMap>
         </div>
       </div>
     </section>
