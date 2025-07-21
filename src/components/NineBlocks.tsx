@@ -1,8 +1,9 @@
+// src/pages/operations.tsx
 "use client";
 
 import Image from "next/image";
 
-export default function NineBlocks() {
+export default function OperationsPage() { // Renamed from NineBlocks to better reflect a page
   return (
     <section className="w-full bg-white font-[Georgia] px-4 md:px-12 lg:px-20 py-12">
       <div className="max-w-7xl mx-auto">
@@ -113,7 +114,7 @@ export default function NineBlocks() {
 
         {/* Sixth Block: Image on the Right and Text on the Left */}
         <div className="grid md:grid-cols-2 gap-12 items-center mb-12 md:flex-row-reverse">
-          
+
           <div className="max-w-prose">
             <h2 className="text-green-700 text-2xl font-bold mb-4">
               Environmentally Responsible Farming
@@ -156,7 +157,7 @@ export default function NineBlocks() {
 
         {/* Eighth Block: Image on the Right and Text on the Left */}
         <div className="grid md:grid-cols-2 gap-12 items-center mb-12 md:flex-row-reverse">
-          
+
           <div className="max-w-prose">
             <h2 className="text-green-700 text-2xl font-bold mb-4">
               Precision Application for Maximum Impact

@@ -1,3 +1,4 @@
+// src/components/AboutSection.tsx
 "use client";
 
 const AboutSection = () => {

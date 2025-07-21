@@ -1,3 +1,4 @@
+// src/components/ContactSection.tsx
 import { GoogleMap, useLoadScript } from "@react-google-maps/api";
 import { useState } from "react";
 import {
@@ -62,7 +63,7 @@ const mapOptions = {
 
 const ContactSection = () => {
   const { isLoaded, loadError } = useLoadScript({
-    googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY!,
+    googleMapsApiKey: process.env.NEXT_PUBLIC_Maps_API_KEY!,
   });
 
   const [mapCenter] = useState(center);

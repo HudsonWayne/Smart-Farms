@@ -1,3 +1,4 @@
+// src/components/OurMission.tsx
 "use client";
 
 import Image from "next/image";

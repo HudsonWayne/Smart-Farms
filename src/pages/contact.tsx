@@ -1,11 +1,8 @@
+// src/pages/contact.tsx
 "use client";
 
 import Image from "next/image";
-import {
-  EnvelopeIcon,
-  PhoneIcon,
-  MapPinIcon,
-} from "@heroicons/react/24/outline";
+import { FaEnvelope, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
 
 export default function ContactPage() {
   return (
@@ -23,147 +20,74 @@ export default function ContactPage() {
         />
         <div className="absolute inset-0 bg-black opacity-60" />
         <div className="relative z-10 px-4 md:px-8 text-center max-w-4xl mx-auto">
-          <h1
-            className="text-4xl md:text-6xl font-bold text-green-500 mb-4"
-            style={{ fontFamily: "Georgia, serif" }}
-          >
+          <h1 className="text-4xl md:text-6xl font-bold text-green-500 mb-4" style={{ fontFamily: "Georgia, serif" }}>
             Contact Us
           </h1>
-          <p
-            className="text-white text-lg md:text-xl leading-relaxed"
-            style={{ fontFamily: "Georgia, serif" }}
-          >
-            Empowering Zimbabwe’s small and medium-scale farmers with drone
-            technology to increase crop yields, create jobs, and secure a
-            sustainable agricultural future.
+          <p className="text-white text-lg md:text-xl leading-relaxed" style={{ fontFamily: "Georgia, serif" }}>
+            Empowering Zimbabwe’s small and medium-scale farmers with drone technology to increase crop yields, create jobs, and secure a sustainable agricultural future.
           </p>
         </div>
       </div>
 
-      {/* Contact Info + Form Section */}
-      <section className="px-6 md:px-20 py-16 bg-white flex flex-col md:flex-row gap-10 items-start justify-between">
-        {/* Left Info Panel */}
-        <div className="md:w-1/2 space-y-6 text-gray-800 text-base">
-          <p className="text-green-600 font-bold text-sm tracking-widest uppercase">
-            Contact
-          </p>
-          <h2 className="text-3xl font-bold text-gray-800 mb-6">Talk to Us</h2>
-
-          <div className="flex items-start gap-4">
-            <EnvelopeIcon className="text-green-600 w-6 h-6 mt-1" />
-            <div>
-              <p className="font-semibold text-lg">Email</p>
-              <p>info@smartfarms-tech.com</p>
-            </div>
+      {/* Contact Form Section */}
+      <div className="max-w-7xl mx-auto py-20 px-4 md:px-16 grid grid-cols-1 md:grid-cols-3 gap-12 text-[#3B3B3B]" style={{ fontFamily: "Georgia, serif" }}>
+        {/* Left Contact Info */}
+        <div className="space-y-8">
+          <div>
+            <h3 className="text-green-600 tracking-widest font-semibold text-sm uppercase">Contact</h3>
+            <h2 className="text-2xl font-bold mt-2">Talk to Us</h2>
           </div>
 
-          <div className="flex items-start gap-4">
-            <PhoneIcon className="text-green-600 w-6 h-6 mt-1" />
+          <div className="space-y-6 text-sm">
+            {/* Email */}
             <div>
-              <p className="font-semibold text-lg">Phone</p>
-              <p>+263 777 963 398</p>
+              <div className="flex items-center gap-2 text-green-600 mb-1">
+                <FaEnvelope />
+                <span className="text-base font-bold text-[#2E2E2E]">Email</span>
+              </div>
+              <p className="text-sm text-gray-700">info@smartfarms-tech.com</p>
             </div>
-          </div>
 
-          <div className="flex items-start gap-4">
-            <MapPinIcon className="text-green-600 w-6 h-6 mt-1" />
+            {/* Phone */}
             <div>
-              <p className="font-semibold text-lg">Address</p>
-              <p>
-                Borrowdale Junior School <br />
-                63GQ+VWR, Ridgeway N <br />
-                Harare, Zimbabwe
-              </p>
+              <div className="flex items-center gap-2 text-green-600 mb-1">
+                <FaPhone />
+                <span className="text-base font-bold text-[#2E2E2E]">Phone</span>
+              </div>
+              <p className="text-sm text-gray-700">+55 51 99999-9999</p>
+            </div>
+
+            {/* Address */}
+            <div>
+              <div className="flex items-center gap-2 text-green-600 mb-1">
+                <FaMapMarkerAlt />
+                <span className="text-base font-bold text-[#2E2E2E]">Address</span>
+              </div>
+              <p className="text-sm text-gray-700">451-487 Quincy St, Maywood, IL 60153, USA</p>
             </div>
           </div>
         </div>
 
-        {/* Right Form Panel */}
-        <form className="md:w-1/2 grid gap-6">
+        {/* Right Contact Form */}
+        <form className="md:col-span-2 grid grid-cols-1 gap-6 text-sm">
           <div className="grid md:grid-cols-2 gap-6">
-            <div>
-              <label htmlFor="firstName" className="sr-only">
-                First Name
-              </label>
-              <input
-                type="text"
-                id="firstName"
-                placeholder="First Name"
-                className="w-full border-b border-gray-400 focus:outline-none focus:border-green-600 py-2 placeholder-gray-500"
-              />
-            </div>
-            <div>
-              <label htmlFor="lastName" className="sr-only">
-                Last Name
-              </label>
-              <input
-                type="text"
-                id="lastName"
-                placeholder="Last Name"
-                className="w-full border-b border-gray-400 focus:outline-none focus:border-green-600 py-2 placeholder-gray-500"
-              />
-            </div>
+            <input type="text" placeholder="First Name" className="border-b border-[#3B3B3B] p-2 focus:outline-none" />
+            <input type="text" placeholder="Last Name" className="border-b border-[#3B3B3B] p-2 focus:outline-none" />
           </div>
-
           <div className="grid md:grid-cols-2 gap-6">
-            <div>
-              <label htmlFor="email" className="sr-only">
-                Email
-              </label>
-              <input
-                type="email"
-                id="email"
-                placeholder="Email"
-                className="w-full border-b border-gray-400 focus:outline-none focus:border-green-600 py-2 placeholder-gray-500"
-              />
-            </div>
-            <div>
-              <label htmlFor="phone" className="sr-only">
-                Phone Number
-              </label>
-              <input
-                type="text"
-                id="phone"
-                placeholder="Phone number"
-                className="w-full border-b border-gray-400 focus:outline-none focus:border-green-600 py-2 placeholder-gray-500"
-              />
-            </div>
+            <input type="email" placeholder="Email" className="border-b border-[#3B3B3B] p-2 focus:outline-none" />
+            <input type="tel" placeholder="Phone number" className="border-b border-[#3B3B3B] p-2 focus:outline-none" />
           </div>
+          <input type="text" placeholder="Subject" className="border-b border-[#3B3B3B] p-2 focus:outline-none" />
+          <textarea rows={4} placeholder="Message" className="border-b border-[#3B3B3B] p-2 focus:outline-none resize-none" />
 
-          <div>
-            <label htmlFor="subject" className="sr-only">
-              Subject
-            </label>
-            <input
-              type="text"
-              id="subject"
-              placeholder="Subject"
-              className="w-full border-b border-gray-400 focus:outline-none focus:border-green-600 py-2 placeholder-gray-500"
-            />
-          </div>
-
-          <div>
-            <label htmlFor="message" className="sr-only">
-              Message
-            </label>
-            <textarea
-              id="message"
-              placeholder="Message"
-              rows={5}
-              className="w-full border-b border-gray-400 focus:outline-none focus:border-green-600 py-2 placeholder-gray-500"
-            />
-          </div>
-
-          <div>
-            <button
-              type="submit"
-              className="bg-[#0A0028] text-white font-semibold px-6 py-2 rounded-md transition hover:bg-[#13033f]"
-            >
+          <div className="pt-4">
+            <button type="submit" className="bg-[#0D0B28] text-white font-bold px-6 py-2 rounded-md hover:bg-[#1d1a3d] transition">
               Send
             </button>
           </div>
         </form>
-      </section>
+      </div>
     </>
   );
 }
