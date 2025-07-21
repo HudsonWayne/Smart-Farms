@@ -29,58 +29,44 @@ export default function OperationsPage() {
       {/* Spacer */}
       <div className="h-[30px]" />
 
-      {/* DJI Mavic 3 Multispectral Section */}
+      {/* Section 1 */}
       <div
         className="max-w-7xl mx-auto px-4 md:px-8 py-8 grid md:grid-cols-2 gap-8 items-center"
         style={{ fontFamily: "Georgia, serif" }}
       >
-        {/* Left Text Section */}
         <div>
           <h2 className="text-2xl md:text-3xl font-bold text-green-700 mb-4">
             Ready-to-Deploy Precision: DJI Mavic 3 Multispectral
           </h2>
           <p className="text-gray-800 text-base mb-6">
-            At Smart Farms, we are investing in the DJI Mavic 3 Multispectral,
-            a fully integrated and ready-to-use drone system designed for
-            high-precision agricultural monitoring. With no need for assembling
-            or modifications, this state-of-the-art drone allows us to deliver
-            immediate value to farmers straight out of the box.
+            At Smart Farms, we are investing in the DJI Mavic 3 Multispectral, a fully integrated and ready-to-use drone system designed for high-precision agricultural monitoring. With no need for assembling or modifications, this state-of-the-art drone allows us to deliver immediate value to farmers straight out of the box.
           </p>
         </div>
-
-        {/* Right Image */}
-        <div className="w-full">
+        <div className="w-full ml-auto">
           <Image
             src="/Rectangle 63 (11).png"
             alt="DJI Mavic 3 Closeup"
-            width={600}
-            height={400}
-            className="rounded-lg w-full h-auto"
+            width={400}
+            height={270}
+            className="rounded-lg"
           />
         </div>
       </div>
 
-      {/* Second Section - Full Width */}
+      {/* Section 2 */}
       <div
         className="max-w-7xl mx-auto px-4 md:px-8 pb-16 grid md:grid-cols-2 gap-8 items-center"
         style={{ fontFamily: "Georgia, serif" }}
       >
-        {/* Left Text Section */}
         <div>
           <h3 className="text-lg font-bold text-gray-900 mb-2">
             1. <span className="text-black">Fully Integrated, Farm-Ready</span>
           </h3>
           <p className="text-gray-800 text-base">
-            The Mavic 3 Multispectral comes equipped with both RGB and
-            multispectral sensors, making it ideal for professional agricultural
-            use. Since it&apos;s a complete, factory-assembled solution, we can
-            deploy it instantly, saving time and ensuring reliability from the
-            first flight.
+            The Mavic 3 Multispectral comes equipped with both RGB and multispectral sensors, making it ideal for professional agricultural use. Since it&apos;s a complete, factory-assembled solution, we can deploy it instantly, saving time and ensuring reliability from the first flight.
           </p>
         </div>
-
-        {/* Right Image (aligned left to match the top image) */}
-        <div className="w-full mr-auto">
+        <div className="ml-auto">
           <Image
             src="/Rectangle 56 (11).png"
             alt="DJI Drone Flying"
@@ -89,6 +75,64 @@ export default function OperationsPage() {
             className="rounded-lg"
           />
         </div>
+      </div>
+
+      {/* Section 3 */}
+      <div
+        className="max-w-7xl mx-auto px-4 md:px-8 pb-16 grid md:grid-cols-2 gap-8 items-center"
+        style={{ fontFamily: "Georgia, serif" }}
+      >
+        <div className="mr-auto">
+          <Image
+            src="/Rectangle 64.png"
+            alt="Drone spraying NDVI"
+            width={400}
+            height={270}
+            className="rounded-lg"
+          />
+        </div>
+        <div>
+          <h3 className="text-lg font-bold text-gray-900 mb-2">
+            2. <span className="text-black">Powerful Crop Insight Without the Wait</span>
+          </h3>
+          <p className="text-gray-800 text-base">
+            This drone captures rich data in real time, enabling us to generate detailed vegetation indices like NDVI and NDRE. By analyzing these images using built-in AI and Smart Farms’ digital tools, we provide farmers with fast, accurate insights on crop health, nutrient levels, and water stress.
+          </p>
+        </div>
+      </div>
+
+      {/* Section 4 */}
+      <div
+        className="max-w-7xl mx-auto px-4 md:px-8 pb-16 grid md:grid-cols-2 gap-8 items-center"
+        style={{ fontFamily: "Georgia, serif" }}
+      >
+        <div>
+          <h3 className="text-lg font-bold text-gray-900 mb-2">
+            3. <span className="text-black">Efficiency from Day One</span>
+          </h3>
+          <p className="text-gray-800 text-base">
+            Thanks to its plug-and-fly design, the Mavic 3 Multispectral helps us reduce setup time and focus entirely on delivering quality service. Whether it&apos;s mapping, surveying, or monitoring, this drone helps us deliver precision agriculture solutions without delay.
+          </p>
+        </div>
+        <div className="ml-auto">
+          <Image
+            src="/Rectangle 65.png"
+            alt="DJI Drone in air"
+            width={400}
+            height={270}
+            className="rounded-lg"
+          />
+        </div>
+      </div>
+
+      {/* Final Note */}
+      <div
+        className="max-w-7xl mx-auto px-4 md:px-8 pb-20"
+        style={{ fontFamily: "Georgia, serif" }}
+      >
+        <p className="text-gray-800 text-base">
+          Smart Farms is committed to using professional, ready-to-deploy tools that put powerful data directly in the hands of the farmer, quickly, reliably, and effectively.
+        </p>
       </div>
     </div>
   );
