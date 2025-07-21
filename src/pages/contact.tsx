@@ -155,7 +155,7 @@ export default function ContactPage() {
           </div>
 
           {/* Map below button */}
-          <div className="w-full h-[980vh] rounded-md overflow-hidden shadow-md mt-8">
+          <div className="w-screen h-[80vh] rounded-md overflow-hidden shadow-md mt-8">
             <iframe
               title="Smart Farms Location"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13288.669224769878!2d31.078137800000005!3d-17.7994735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1931bf78b9b4ceab%3A0x9df66a403d5751e1!2sBorrowdale%2C%20Harare%2C%20Zimbabwe!5e0!3m2!1sen!2sus!4v1690028000000!5m2!1sen!2sus"
