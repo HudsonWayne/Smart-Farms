@@ -1,86 +1,16 @@
 // src/components/ContactSection.tsx
-import { GoogleMap, useLoadScript, Marker } from "@react-google-maps/api";
-import { useState } from "react";
+import React from "react";
 import {
   EnvelopeIcon,
   PhoneIcon,
   MapPinIcon,
 } from "@heroicons/react/24/outline";
 
-const containerStyle = {
-  width: "100%",
-  height: "450px", // Map height
-};
-
-// Company location: Borrowdale Junior School coordinates
-const center = {
-  lat: -17.7596,
-  lng: 31.0923,
-};
-
-const mapOptions = {
-  disableDefaultUI: true,
-  zoomControl: true,
-  mapTypeControl: false,
-  fullscreenControl: false,
-  styles: [
-    {
-      featureType: "administrative",
-      elementType: "labels",
-      stylers: [{ visibility: "off" }],
-    },
-    {
-      featureType: "poi",
-      stylers: [{ visibility: "off" }],
-    },
-    {
-      featureType: "road",
-      elementType: "labels.icon",
-      stylers: [{ visibility: "off" }],
-    },
-    {
-      featureType: "transit",
-      stylers: [{ visibility: "off" }],
-    },
-    {
-      featureType: "water",
-      elementType: "labels.text.fill",
-      stylers: [{ visibility: "off" }],
-    },
-    {
-      featureType: "all",
-      elementType: "labels.text.stroke",
-      stylers: [{ visibility: "off" }],
-    },
-    {
-      featureType: "all",
-      elementType: "labels.icon",
-      stylers: [{ visibility: "off" }],
-    },
-  ],
-};
-
 const ContactSection = () => {
-  const { isLoaded, loadError } = useLoadScript({
-    googleMapsApiKey: process.env.NEXT_PUBLIC_Maps_API_KEY!,
-  });
-
-  const [mapCenter] = useState(center);
-
-  if (loadError) {
-    return (
-      <p className="text-center text-red-500">
-        Map failed to load. Check your API key and billing setup.
-      </p>
-    );
-  }
-
-  if (!isLoaded) return <p className="text-center">Loading map...</p>;
-
   return (
-    <section className="px-6 md:px-20 py-16 bg-white flex flex-col md:flex-row gap-10 items-start justify-between">
+    <section className="px-6 md:px-20 py-5 bg-white flex flex-col md:flex-row gap-10 items-start justify-between">
       {/* Left Info Panel */}
-      <div className="md:w-1/2">
+      <div className="md:w-1/2 max-w-md">
         <p className="text-green-600 font-bold text-sm tracking-widest mb-2 uppercase">
           Contact
         </p>
@@ -117,19 +47,24 @@ const ContactSection = () => {
         </div>
       </div>
 
-      {/* Right Map Panel */}
-      <div className="md:w-1/2 w-full">
-        <div className="rounded-lg overflow-hidden shadow-lg">
-          <GoogleMap
-            mapContainerStyle={containerStyle}
-            center={mapCenter}
-            zoom={16}
-            options={mapOptions}
-          >
-            {/* Marker for the company location */}
-            <Marker position={center} />
-          </GoogleMap>
-        </div>
+      {/* Right Map iframe Panel */}
+      <div
+        className="
+          md:w-1/2 w-full 
+          max-w-3xl 
+          rounded-lg overflow-hidden shadow-lg
+        "
+      >
+        <iframe
+          title="Smart Farms Location"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13288.669224769878!2d31.078137800000005!3d-17.7994735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1931bf78b9b4ceab%3A0x9df66a403d5751e1!2sBorrowdale%2C%20Harare%2C%20Zimbabwe!5e0!3m2!1sen!2sus!4v1690028000000!5m2!1sen!2sus"
+          width="100%"
+          height="450"
+          style={{ border: 0 }}
+          allowFullScreen
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        />
       </div>
     </section>
   );
