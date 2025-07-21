@@ -79,8 +79,8 @@ export default function OperationsPage() {
           </p>
         </div>
 
-        {/* Right Image (Smaller, aligned with one above) */}
-        <div className="w-full ml-auto">
+        {/* Right Image (aligned left to match the top image) */}
+        <div className="w-full mr-auto">
           <Image
             src="/Rectangle 56 (11).png"
             alt="DJI Drone Flying"
