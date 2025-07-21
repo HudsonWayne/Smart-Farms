@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import NineBlocks from "@/components/NineBlocks"; // Import NineBlocks component
 
 export default function AboutPage() {
   return (
@@ -23,7 +22,7 @@ export default function AboutPage() {
         <div className="absolute inset-0 bg-black opacity-60" />
 
         {/* Text Content */}
-        <div className="relative z-10 px-4 md:px-8 text-center max-w-4xl">
+        <div className="relative z-10 px-4 md:px-8 text-center max-w-7xl mx-auto">
           <h1
             className="text-4xl md:text-6xl font-bold text-green-500 mb-4"
             style={{
@@ -39,8 +38,26 @@ export default function AboutPage() {
         </div>
       </div>
 
-      {/* NineBlocks Component Section */}
-      <NineBlocks />
+      {/* Who We Are Section with Image on Left and Text on Right */}
+      <div className="grid md:grid-cols-2 gap-12 items-center mt-10 mb-10 md:flex-row max-w-7xl mx-auto px-4">
+        <div>
+          <Image
+            src="/Rectangle 55 (1).png"
+            alt="Smart Fertilizer Application with AI and Drone Technology"
+            width={500}
+            height={300} // Reduced height by 100px
+            className="w-full object-cover"
+          />
+        </div>
+        <div className="max-w-prose">
+          <h2 className="text-green-700 text-2xl font-bold mb-4">
+            Who We Are
+          </h2>
+          <p className="text-gray-800 text-lg leading-relaxed">
+            “Smart Farms is an enterprise committed to using innovation to ensure food security, improve livelihoods, and transform rural communities through precision agriculture solutions in Zimbabwe. We take advantage of advanced high-resolution camera drones embedded with smart sensors for land mapping, surveying, crop health monitoring, and pesticide and fertilizer applications. Our actions contribute to positive climate change, and we are on a goal to end poverty and hunger. We want to help smallholders and medium-scale farmers realize their value to the economy of the country through their agricultural harvests.”
+          </p>
+        </div>
+      </div>
     </>
   );
 }
