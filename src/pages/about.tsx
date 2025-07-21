@@ -9,7 +9,7 @@ export default function AboutPage() {
       <div className="relative w-full min-h-[60vh] md:min-h-[70vh] flex items-center justify-center">
         {/* Background Image */}
         <Image
-          src="/Rectangle 23.png" // Background image for the About Us section
+          src="/Rectangle 23.png"
           alt="Drone spraying field"
           fill
           priority
@@ -26,14 +26,14 @@ export default function AboutPage() {
           <h1
             className="text-4xl md:text-6xl font-bold text-green-500 mb-4"
             style={{
-              fontFamily: "Georgia, serif", // Ensures the Georgia font is applied
-              fontWeight: "bold", // Ensures the font is bold
+              fontFamily: "Georgia, serif",
+              fontWeight: "bold",
             }}
           >
             About Us
           </h1>
           <p className="text-white text-lg md:text-xl leading-relaxed font-[Georgia]">
-            Empowering Zimbabwe’s small and medium-scale farmers with drone technology to increase crop yields, create jobs, and secure a sustainable agricultural future.
+            Empowering Zimbabwe&apos;s small and medium-scale farmers with drone technology to increase crop yields, create jobs, and secure a sustainable agricultural future.
           </p>
         </div>
       </div>
@@ -45,7 +45,7 @@ export default function AboutPage() {
             src="/Rectangle 55 (1).png"
             alt="Smart Fertilizer Application with AI and Drone Technology"
             width={500}
-            height={300} // Reduced height by 100px
+            height={300}
             className="w-full object-cover"
           />
         </div>
@@ -54,14 +54,13 @@ export default function AboutPage() {
             Who We Are
           </h2>
           <p className="text-gray-800 text-lg leading-relaxed" style={{ fontFamily: "Georgia, serif" }}>
-            “Smart Farms is an enterprise committed to using innovation to ensure food security, improve livelihoods, and transform rural communities through precision agriculture solutions in Zimbabwe. We take advantage of advanced high-resolution camera drones embedded with smart sensors for land mapping, surveying, crop health monitoring, and pesticide and fertilizer applications. Our actions contribute to positive climate change, and we are on a goal to end poverty and hunger. We want to help smallholders and medium-scale farmers realize their value to the economy of the country through their agricultural harvests.”
+            &ldquo;Smart Farms is an enterprise committed to using innovation to ensure food security, improve livelihoods, and transform rural communities through precision agriculture solutions in Zimbabwe. We take advantage of advanced high-resolution camera drones embedded with smart sensors for land mapping, surveying, crop health monitoring, and pesticide and fertilizer applications. Our actions contribute to positive climate change, and we are on a goal to end poverty and hunger. We want to help smallholders and medium-scale farmers realize their value to the economy of the country through their agricultural harvests.&rdquo;
           </p>
         </div>
       </div>
 
       {/* Message from the Founder Section */}
-      <div className="relative flex justify-center items-center my-12"> {/* Added margin top and bottom of 50px */}
-        {/* Centered Heading */}
+      <div className="relative flex justify-center items-center my-12">
         <h2 className="text-green-700 text-3xl font-bold mb-4 text-center" style={{ fontFamily: "Georgia, serif" }}>
           Message from the Founder
         </h2>
@@ -71,18 +70,18 @@ export default function AboutPage() {
         {/* Founder Message */}
         <div className="max-w-prose">
           <p className="text-gray-800 text-lg leading-relaxed" style={{ fontFamily: "Georgia, serif" }}>
-            “The agricultural sector in Zimbabwe contributes about 21% towards the country’s GDP. Out of this, more than 50% comes from smallholder and medium-scale farmers yet they are still relying on traditional methods of farming that are so outdated, imprecise, and labor-intensive. Clearly, smallholder and medium-scale farmers are under-represented as they have the potential to contribute so much to the country’s economy. As someone who grew up in a farming community, I have witnessed firsthand the struggles of my family and neighbors, losing crops to unpredictable weather, pest attacks, and the sheer exhaustion of manual labor. I’ve watched hard-working farmers struggle to make a living, not because they lack knowledge or effort, but because they lack access to modern tools and technologies that could revolutionize their productivity. Smart Farms was born out of my desire to change this narrative. By integrating drone technology into agriculture, we are creating a future where farmers can monitor crops, apply inputs with precision, and make data-driven decisions—all with minimal effort and maximum impact. Our mission is to empower these farmers, increase food security, and promote sustainable farming practices. I believe that with the right support and innovation, smallholder farmers will no longer be left behind. They will become the backbone of a technologically empowered and thriving agricultural economy.”
+            &ldquo;The agricultural sector in Zimbabwe contributes about 21% towards the country&apos;s GDP. Out of this, more than 50% comes from smallholder and medium-scale farmers yet they are still relying on traditional methods of farming that are so outdated, imprecise, and labor-intensive. Clearly, smallholder and medium-scale farmers are under-represented as they have the potential to contribute so much to the country&apos;s economy. As someone who grew up in a farming community, I have witnessed firsthand the struggles of my family and neighbors, losing crops to unpredictable weather, pest attacks, and the sheer exhaustion of manual labor. I&apos;ve watched hard-working farmers struggle to make a living, not because they lack knowledge or effort, but because they lack access to modern tools and technologies that could revolutionize their productivity. Smart Farms was born out of my desire to change this narrative. By integrating drone technology into agriculture, we are creating a future where farmers can monitor crops, apply inputs with precision, and make data-driven decisions&mdash;all with minimal effort and maximum impact. Our mission is to empower these farmers, increase food security, and promote sustainable farming practices. I believe that with the right support and innovation, smallholder farmers will no longer be left behind. They will become the backbone of a technologically empowered and thriving agricultural economy.&rdquo;
           </p>
         </div>
 
         {/* Founder Image */}
         <div>
           <Image
-            src="/founder.png" // Founder image
+            src="/founder.png"
             alt="Message from the Founder"
             width={400}
-            height={200} // Reduced the height a bit
-            className="w-full object-cover rounded-lg" // Add some border radius for styling
+            height={200}
+            className="w-full object-cover rounded-lg"
           />
         </div>
       </div>
@@ -100,7 +99,7 @@ export default function AboutPage() {
           <div className="bg-[#000033] text-green-700 p-6 rounded-lg shadow-lg text-center">
             <h3 className="text-xl font-bold mb-4 text-green-700" style={{ fontFamily: "Georgia, serif" }}>Innovation</h3>
             <p className="text-white" style={{ fontFamily: "Georgia, serif", fontSize: "1rem" }}>
-              Innovation is at the forefront of everything we do. Smart Farms constantly explores cutting-edge technologies, from aerial imaging and automated spraying to data analytics, to develop new tools and approaches that solve real challenges in agriculture. We believe in thinking ahead and adapting quickly to meet farmers' evolving needs.
+              Innovation is at the forefront of everything we do. Smart Farms constantly explores cutting-edge technologies, from aerial imaging and automated spraying to data analytics, to develop new tools and approaches that solve real challenges in agriculture. We believe in thinking ahead and adapting quickly to meet farmers&apos; evolving needs.
             </p>
           </div>
 
@@ -127,14 +126,6 @@ export default function AboutPage() {
               We are committed to promoting environmentally and economically sustainable farming practices. Through smart resource management and minimal chemical exposure, our technologies help protect the soil, water, and biodiversity. We aim to create systems that not only support farmers today but also preserve the environment for future generations.
             </p>
           </div>
-
-          {/* Climate Conscious (Centered) */}
-          {/* <div className="bg-[#000033] text-green-700 p-6 rounded-lg shadow-lg text-center col-span-2 lg:col-span-1 mx-auto">
-            <h3 className="text-xl font-bold mb-4 text-green-700" style={{ fontFamily: "Georgia, serif" }}>Climate Conscious</h3>
-            <p className="text-white" style={{ fontFamily: "Georgia, serif", fontSize: "1rem" }}>
-              Smart Farms is deeply aware of the impact of climate change on agriculture. Our solutions are designed to help farmers adapt, by offering real-time data, early warning systems, and tools to optimize water and input use. We stand for climate-resilient agriculture that supports both people and the planet.
-            </p>
-          </div> */}
         </div>
       </div>
     </>
