@@ -24,9 +24,6 @@ export default function OperationsPage() {
         <h1 className="text-4xl md:text-6xl font-bold text-green-500 mb-4" style={{ fontFamily: "Georgia, serif" }}>
           Our Operations
         </h1>
-        <p className="text-white text-lg md:text-xl leading-relaxed font-[Georgia]">
-          Empowering Zimbabwe’s small and medium-scale farmers with drone technology to increase crop yields, create jobs, and secure a sustainable agricultural future.
-        </p>
       </div>
     </div>
   );
