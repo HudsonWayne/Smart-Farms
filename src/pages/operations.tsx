@@ -29,7 +29,7 @@ export default function OperationsPage() {
       {/* Spacer */}
       <div className="h-[30px]" />
 
-      {/* Section 1 */}
+      {/* Section 1 (Large image restored) */}
       <div
         className="max-w-7xl mx-auto px-4 md:px-8 py-8 grid md:grid-cols-2 gap-8 items-center"
         style={{ fontFamily: "Georgia, serif" }}
@@ -42,13 +42,13 @@ export default function OperationsPage() {
             At Smart Farms, we are investing in the DJI Mavic 3 Multispectral, a fully integrated and ready-to-use drone system designed for high-precision agricultural monitoring. With no need for assembling or modifications, this state-of-the-art drone allows us to deliver immediate value to farmers straight out of the box.
           </p>
         </div>
-        <div className="w-full ml-auto">
+        <div className="w-full">
           <Image
             src="/Rectangle 63 (11).png"
             alt="DJI Mavic 3 Closeup"
-            width={400}
-            height={270}
-            className="rounded-lg"
+            width={600}
+            height={400}
+            className="rounded-lg w-full h-auto"
           />
         </div>
       </div>
