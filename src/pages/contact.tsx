@@ -54,7 +54,7 @@ export default function ContactPage() {
                 <FaPhone />
                 <span className="font-bold text-[#2E2E2E]">Phone</span>
               </div>
-              <p className="text-gray-700">+55 51 99999-9999</p>
+              <p className="text-gray-700">+263 777963398</p>
             </div>
 
             {/* Address */}
@@ -63,7 +63,7 @@ export default function ContactPage() {
                 <FaMapMarkerAlt />
                 <span className="font-bold text-[#2E2E2E]">Address</span>
               </div>
-              <p className="text-gray-700 leading-snug">451-487 Quincy St, Maywood, IL 60153, USA</p>
+              <p className="text-gray-700 leading-snug">443 Grasmere Lne, Borrowdale, Harare, Zimbabwe</p>
             </div>
           </div>
         </div>
