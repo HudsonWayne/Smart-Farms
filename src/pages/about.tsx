@@ -26,7 +26,7 @@ export default function AboutPage() {
           <h1
             className="text-4xl md:text-6xl font-bold text-green-500 mb-4"
             style={{
-              fontFamily: "Georgia, serif", // Applying the Georgia font
+              fontFamily: "Georgia, serif", // Ensures the Georgia font is applied
               fontWeight: "bold", // Ensures the font is bold
             }}
           >
@@ -45,15 +45,15 @@ export default function AboutPage() {
             src="/Rectangle 55 (1).png"
             alt="Smart Fertilizer Application with AI and Drone Technology"
             width={500}
-            height={300} // Reduced height by 100px
-            className="w-full object-cover"
+            height={250} // Reduced height by 100px
+            // className="w-full object-cover"
           />
         </div>
         <div className="max-w-prose">
-          <h2 className="text-green-700 text-2xl font-bold mb-4">
+          <h2 className="text-green-700 text-2xl font-bold mb-4" style={{ fontFamily: "Georgia, serif" }}>
             Who We Are
           </h2>
-          <p className="text-gray-800 text-lg leading-relaxed">
+          <p className="text-gray-800 text-lg leading-relaxed" style={{ fontFamily: "Georgia, serif" }}>
             “Smart Farms is an enterprise committed to using innovation to ensure food security, improve livelihoods, and transform rural communities through precision agriculture solutions in Zimbabwe. We take advantage of advanced high-resolution camera drones embedded with smart sensors for land mapping, surveying, crop health monitoring, and pesticide and fertilizer applications. Our actions contribute to positive climate change, and we are on a goal to end poverty and hunger. We want to help smallholders and medium-scale farmers realize their value to the economy of the country through their agricultural harvests.”
           </p>
         </div>
