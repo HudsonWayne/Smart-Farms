@@ -16,12 +16,14 @@ export default function OperationsPage() {
         draggable={false}
       />
 
-      {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black opacity-60" />
+      {/* Removed Dark Overlay */}
 
       {/* Text Content */}
       <div className="relative z-10 px-4 md:px-8 text-center max-w-7xl mx-auto">
-        <h1 className="text-4xl md:text-6xl font-bold text-green-500 mb-4" style={{ fontFamily: "Georgia, serif" }}>
+        <h1
+          className="text-4xl md:text-6xl font-bold text-green-500 mb-4"
+          style={{ fontFamily: "Georgia, serif" }}
+        >
           Our Operations
         </h1>
       </div>
