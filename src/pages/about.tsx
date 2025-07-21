@@ -60,7 +60,7 @@ export default function AboutPage() {
       </div>
 
       {/* Message from the Founder Section */}
-      <div className="relative flex justify-center items-center my-8">
+      <div className="relative flex justify-center items-center my-12"> {/* Added margin top and bottom of 50px */}
         {/* Centered Heading */}
         <h2 className="text-green-700 text-3xl font-bold mb-4 text-center" style={{ fontFamily: "Georgia, serif" }}>
           Message from the Founder
@@ -81,9 +81,60 @@ export default function AboutPage() {
             src="/founder.png" // Founder image
             alt="Message from the Founder"
             width={400}
-            height={450} // Reduced the height a bit
+            height={200} // Reduced the height a bit
             className="w-full object-cover rounded-lg" // Add some border radius for styling
           />
+        </div>
+      </div>
+
+      {/* Our Values Section */}
+      <div className="py-12 bg-gray-100">
+        <div className="text-center mb-8">
+          <h2 className="text-4xl font-bold text-green-700" style={{ fontFamily: "Georgia, serif" }}>
+            Our Values
+          </h2>
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto px-4">
+          {/* Innovation */}
+          <div className="bg-navy-900 text-white p-6 rounded-lg shadow-lg text-center">
+            <h3 className="text-xl font-bold mb-4" style={{ fontFamily: "Georgia, serif" }}>Innovation</h3>
+            <p style={{ fontFamily: "Georgia, serif" }}>
+              Innovation is at the forefront of everything we do. Smart Farms constantly explores cutting-edge technologies, from aerial imaging and automated spraying to data analytics, to develop new tools and approaches that solve real challenges in agriculture. We believe in thinking ahead and adapting quickly to meet farmers' evolving needs.
+            </p>
+          </div>
+
+          {/* Technology */}
+          <div className="bg-navy-900 text-white p-6 rounded-lg shadow-lg text-center">
+            <h3 className="text-xl font-bold mb-4" style={{ fontFamily: "Georgia, serif" }}>Technology</h3>
+            <p style={{ fontFamily: "Georgia, serif" }}>
+              We harness the power of advanced technologies, especially drones and digital platforms to make farming smarter, simpler, and more scalable. Our goal is to democratize access to modern tools so even the smallest farms can benefit from precision agriculture.
+            </p>
+          </div>
+
+          {/* Productivity */}
+          <div className="bg-navy-900 text-white p-6 rounded-lg shadow-lg text-center">
+            <h3 className="text-xl font-bold mb-4" style={{ fontFamily: "Georgia, serif" }}>Productivity</h3>
+            <p style={{ fontFamily: "Georgia, serif" }}>
+              At Smart Farms, we prioritize increasing the output and efficiency of smallholder farmers. By integrating drone technology into their daily farming operations, we help farmers save time, reduce labor intensity, and achieve higher yields with fewer resources.
+            </p>
+          </div>
+
+          {/* Sustainability */}
+          <div className="bg-navy-900 text-white p-6 rounded-lg shadow-lg text-center">
+            <h3 className="text-xl font-bold mb-4" style={{ fontFamily: "Georgia, serif" }}>Sustainability</h3>
+            <p style={{ fontFamily: "Georgia, serif" }}>
+              We are committed to promoting environmentally and economically sustainable farming practices. Through smart resource management and minimal chemical overuse, our technologies help protect the soil, water, and biodiversity. We aim to create systems that not only support farmers today but also preserve the environment for future generations.
+            </p>
+          </div>
+
+          {/* Climate Conscious */}
+          <div className="bg-navy-900 text-white p-6 rounded-lg shadow-lg text-center">
+            <h3 className="text-xl font-bold mb-4" style={{ fontFamily: "Georgia, serif" }}>Climate Conscious</h3>
+            <p style={{ fontFamily: "Georgia, serif" }}>
+              Smart Farms is deeply aware of the impact of climate change on agriculture. Our solutions are designed to help farmers adapt, by offering real-time data, early warning systems, and tools to optimize water and input use. We stand for climate-resilient agriculture that supports both people and the planet.
+            </p>
+          </div>
         </div>
       </div>
     </>
