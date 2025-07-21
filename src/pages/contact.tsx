@@ -1,4 +1,3 @@
-// src/pages/contact.tsx
 "use client";
 
 import Image from "next/image";
@@ -29,46 +28,47 @@ export default function ContactPage() {
         </div>
       </div>
 
-      {/* Contact Form Section */}
-      <div className="max-w-7xl mx-auto py-20 px-4 md:px-16 grid grid-cols-1 md:grid-cols-3 gap-12 text-[#3B3B3B]" style={{ fontFamily: "Georgia, serif" }}>
-        {/* Left Contact Info */}
-        <div className="space-y-8">
+      {/* Contact Section */}
+      <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 grid grid-cols-1 md:grid-cols-3 gap-12 text-[#3B3B3B]" style={{ fontFamily: "Georgia, serif" }}>
+        
+        {/* Left Column - Contact Info */}
+        <div className="space-y-10">
           <div>
-            <h3 className="text-green-600 tracking-widest font-semibold text-sm uppercase">Contact</h3>
-            <h2 className="text-2xl font-bold mt-2">Talk to Us</h2>
+            <h3 className="text-green-600 font-semibold tracking-widest uppercase text-sm mb-1">Contact</h3>
+            <h2 className="text-2xl font-bold">Talk to Us</h2>
           </div>
 
-          <div className="space-y-6 text-sm">
+          <div className="space-y-8 text-sm">
             {/* Email */}
             <div>
-              <div className="flex items-center gap-2 text-green-600 mb-1">
+              <div className="flex items-center gap-2 mb-1 text-green-600">
                 <FaEnvelope />
-                <span className="text-base font-bold text-[#2E2E2E]">Email</span>
+                <span className="font-bold text-[#2E2E2E]">Email</span>
               </div>
-              <p className="text-sm text-gray-700">info@smartfarms-tech.com</p>
+              <p className="text-gray-700">info@smartfarms-tech.com</p>
             </div>
 
             {/* Phone */}
             <div>
-              <div className="flex items-center gap-2 text-green-600 mb-1">
+              <div className="flex items-center gap-2 mb-1 text-green-600">
                 <FaPhone />
-                <span className="text-base font-bold text-[#2E2E2E]">Phone</span>
+                <span className="font-bold text-[#2E2E2E]">Phone</span>
               </div>
-              <p className="text-sm text-gray-700">+55 51 99999-9999</p>
+              <p className="text-gray-700">+55 51 99999-9999</p>
             </div>
 
             {/* Address */}
             <div>
-              <div className="flex items-center gap-2 text-green-600 mb-1">
+              <div className="flex items-center gap-2 mb-1 text-green-600">
                 <FaMapMarkerAlt />
-                <span className="text-base font-bold text-[#2E2E2E]">Address</span>
+                <span className="font-bold text-[#2E2E2E]">Address</span>
               </div>
-              <p className="text-sm text-gray-700">451-487 Quincy St, Maywood, IL 60153, USA</p>
+              <p className="text-gray-700 leading-snug">451-487 Quincy St, Maywood, IL 60153, USA</p>
             </div>
           </div>
         </div>
 
-        {/* Right Contact Form */}
+        {/* Right Column - Form */}
         <form className="md:col-span-2 grid grid-cols-1 gap-6 text-sm">
           <div className="grid md:grid-cols-2 gap-6">
             <input type="text" placeholder="First Name" className="border-b border-[#3B3B3B] p-2 focus:outline-none" />
@@ -81,7 +81,7 @@ export default function ContactPage() {
           <input type="text" placeholder="Subject" className="border-b border-[#3B3B3B] p-2 focus:outline-none" />
           <textarea rows={4} placeholder="Message" className="border-b border-[#3B3B3B] p-2 focus:outline-none resize-none" />
 
-          <div className="pt-4">
+          <div>
             <button type="submit" className="bg-[#0D0B28] text-white font-bold px-6 py-2 rounded-md hover:bg-[#1d1a3d] transition">
               Send
             </button>
