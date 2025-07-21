@@ -108,7 +108,7 @@ export default function ContactPage() {
           </div>
         </div>
 
-        {/* Right Column - Form */}
+        {/* Right Column - Form with Map below button */}
         <form className="md:col-span-2 grid grid-cols-1 gap-6 text-sm">
           <div className="grid md:grid-cols-2 gap-6">
             <input
@@ -153,6 +153,20 @@ export default function ContactPage() {
               Send
             </button>
           </div>
+
+          {/* Map below button */}
+          <div className="w-full h-[980vh] rounded-md overflow-hidden shadow-md mt-8">
+            <iframe
+              title="Smart Farms Location"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13288.669224769878!2d31.078137800000005!3d-17.7994735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1931bf78b9b4ceab%3A0x9df66a403d5751e1!2sBorrowdale%2C%20Harare%2C%20Zimbabwe!5e0!3m2!1sen!2sus!4v1690028000000!5m2!1sen!2sus"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
+          </div>
         </form>
       </div>
 
@@ -163,7 +177,10 @@ export default function ContactPage() {
       >
         {/* Left side text */}
         <div className="flex flex-col justify-center">
-          <h3 className="text-3xl font-extrabold mb-3">
+          <h3
+            className="text-3xl mb-3"
+            style={{ fontWeight: 600, lineHeight: 1.4 }}
+          >
             Any questions? <br /> We got you.
           </h3>
           <p className="text-base max-w-sm">
