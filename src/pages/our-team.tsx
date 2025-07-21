@@ -17,7 +17,7 @@ export default function OurTeamPage() {
           <img
             src="/founder2.png" // Updated image path for Trymore
             alt="Trymore Kunjenjema"
-            className="w-full h-auto mx-auto mb-4 object-cover" // Full-width, no circle
+            className="w-full h-72 mx-auto mb-4 object-cover" // Fixed height for image alignment
           />
           <h3 className="text-xl font-bold text-green-700">Trymore Kunjenjema</h3>
           <p className="text-gray-700 font-medium">Founder and CEO</p>
@@ -31,7 +31,7 @@ export default function OurTeamPage() {
           <img
             src="/girl1.png" // Updated image path for Praise
             alt="Praise K. Machengere"
-            className="w-full h-auto mx-auto mb-4 object-cover" // Full-width, no circle
+            className="w-full h-72 mx-auto mb-4 object-cover" // Fixed height for image alignment
           />
           <h3 className="text-xl font-bold text-green-700">Praise K. Machengere</h3>
           <p className="text-gray-700 font-medium">Human Resources (HR) Manager</p>
@@ -45,7 +45,7 @@ export default function OurTeamPage() {
           <img
             src="/girl 2.png" // Updated image path for Amanda
             alt="Amanda N. Maphosa"
-            className="w-full h-auto mx-auto mb-4 object-cover" // Full-width, no circle
+            className="w-full h-72 mx-auto mb-4 object-cover" // Fixed height for image alignment
           />
           <h3 className="text-xl font-bold text-green-700">Amanda N. Maphosa</h3>
           <p className="text-gray-700 font-medium">Chief Operating Officer (COO)</p>
