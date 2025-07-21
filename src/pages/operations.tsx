@@ -79,13 +79,13 @@ export default function OperationsPage() {
           </p>
         </div>
 
-        {/* Right Image (Smaller) */}
-        <div className="w-full flex justify-center">
+        {/* Right Image (Smaller, aligned with one above) */}
+        <div className="w-full ml-auto">
           <Image
             src="/Rectangle 56 (11).png"
             alt="DJI Drone Flying"
-            width={300}
-            height={200}
+            width={400}
+            height={270}
             className="rounded-lg"
           />
         </div>
