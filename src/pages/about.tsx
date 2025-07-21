@@ -60,12 +60,16 @@ export default function AboutPage() {
       </div>
 
       {/* Message from the Founder Section */}
+      <div className="relative flex justify-center items-center my-8">
+        {/* Centered Heading */}
+        <h2 className="text-green-700 text-3xl font-bold mb-4 text-center" style={{ fontFamily: "Georgia, serif" }}>
+          Message from the Founder
+        </h2>
+      </div>
+
       <div className="grid md:grid-cols-2 gap-12 items-center mt-8 mb-8 md:flex-row-reverse max-w-7xl mx-auto px-4">
         {/* Founder Message */}
         <div className="max-w-prose">
-          <h2 className="text-green-700 text-3xl font-bold mb-4 text-center" style={{ fontFamily: "Georgia, serif" }}>
-            Message from the Founder
-          </h2>
           <p className="text-gray-800 text-lg leading-relaxed" style={{ fontFamily: "Georgia, serif" }}>
             “The agricultural sector in Zimbabwe contributes about 21% towards the country’s GDP. Out of this, more than 50% comes from smallholder and medium-scale farmers yet they are still relying on traditional methods of farming that are so outdated, imprecise, and labor-intensive. Clearly, smallholder and medium-scale farmers are under-represented as they have the potential to contribute so much to the country’s economy. As someone who grew up in a farming community, I have witnessed firsthand the struggles of my family and neighbors, losing crops to unpredictable weather, pest attacks, and the sheer exhaustion of manual labor. I’ve watched hard-working farmers struggle to make a living, not because they lack knowledge or effort, but because they lack access to modern tools and technologies that could revolutionize their productivity. Smart Farms was born out of my desire to change this narrative. By integrating drone technology into agriculture, we are creating a future where farmers can monitor crops, apply inputs with precision, and make data-driven decisions—all with minimal effort and maximum impact. Our mission is to empower these farmers, increase food security, and promote sustainable farming practices. I believe that with the right support and innovation, smallholder farmers will no longer be left behind. They will become the backbone of a technologically empowered and thriving agricultural economy.”
           </p>
@@ -77,7 +81,7 @@ export default function AboutPage() {
             src="/founder.png" // Founder image
             alt="Message from the Founder"
             width={400}
-            height={500}
+            height={450} // Reduced the height a bit
             className="w-full object-cover rounded-lg" // Add some border radius for styling
           />
         </div>
