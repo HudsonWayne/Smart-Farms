@@ -38,8 +38,10 @@ const ContactSection = () => {
             <div>
               <p className="font-semibold text-lg">Address</p>
               <p>
-                Borrowdale Junior School<br />
-                63GQ+VWR, Ridgeway N<br />
+                Borrowdale Junior School
+                <br />
+                63GQ+VWR, Ridgeway N
+                <br />
                 Harare, Zimbabwe
               </p>
             </div>
@@ -57,14 +59,15 @@ const ContactSection = () => {
       >
         <iframe
           title="Smart Farms Location"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13288.669224769878!2d31.078137800000005!3d-17.7994735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1931bf78b9b4ceab%3A0x9df66a403d5751e1!2sBorrowdale%2C%20Harare%2C%20Zimbabwe!5e0!3m2!1sen!2sus!4v1690028000000!5m2!1sen!2sus"
           width="100%"
           height="450"
+          frameBorder="0"
+          scrolling="no"
+          marginHeight={0}
+          marginWidth={0}
+          src="https://www.openstreetmap.org/export/embed.html?bbox=31.0700%2C-17.8050%2C31.0860%2C-17.7950&amp;layer=mapnik&amp;marker=-17.7994735%2C31.0781378"
           style={{ border: 0 }}
-          allowFullScreen
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-        />
+        ></iframe>
       </div>
     </section>
   );
