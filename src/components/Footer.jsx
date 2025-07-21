@@ -24,8 +24,11 @@ export default function Footer() {
             <a href="/about" className="hover:text-[#72AE1C]">
               About Us
             </a>
-            <a href="/blog" className="hover:text-[#72AE1C]">
-              Blog
+            <a href="/our-team" className="hover:text-[#72AE1C]">
+              Our Team
+            </a>
+            <a href="/operations" className="hover:text-[#72AE1C]">
+              Operations
             </a>
           </nav>
           <img
@@ -79,10 +82,15 @@ export default function Footer() {
               <FaInstagram />
               <span>Instagram</span>
             </a>
-            <div className="flex items-center space-x-2 text-blue-300">
+            <a
+              href="https://twitter.com/SmartFarmsTech"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center space-x-2 hover:text-blue-400"
+            >
               <FaTwitter />
               <span>Twitter</span>
-            </div>
+            </a>
           </div>
         </div>
       </div>
