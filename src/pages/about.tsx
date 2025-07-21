@@ -129,12 +129,12 @@ export default function AboutPage() {
           </div>
 
           {/* Climate Conscious (Centered) */}
-          <div className="bg-[#000033] text-green-700 p-6 rounded-lg shadow-lg text-center col-span-2 lg:col-span-1 mx-auto">
+          {/* <div className="bg-[#000033] text-green-700 p-6 rounded-lg shadow-lg text-center col-span-2 lg:col-span-1 mx-auto">
             <h3 className="text-xl font-bold mb-4 text-green-700" style={{ fontFamily: "Georgia, serif" }}>Climate Conscious</h3>
             <p className="text-white" style={{ fontFamily: "Georgia, serif", fontSize: "1rem" }}>
               Smart Farms is deeply aware of the impact of climate change on agriculture. Our solutions are designed to help farmers adapt, by offering real-time data, early warning systems, and tools to optimize water and input use. We stand for climate-resilient agriculture that supports both people and the planet.
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
     </>
