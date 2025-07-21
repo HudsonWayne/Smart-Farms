@@ -7,7 +7,7 @@ export default function ServicesPage() {
     <div className="relative w-full h-[80vh] flex items-center justify-center text-center">
       {/* Background Image */}
       <Image
-        src="/Rectangle23.png"  // no spaces here, must match your file name exactly
+        src="/Rectangle23.png"
         alt="Drone spraying field"
         fill
         priority
@@ -15,8 +15,8 @@ export default function ServicesPage() {
         className="z-0"
       />
 
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-black bg-opacity-60 z-10" />
+      {/* Darker Overlay (with reduced opacity) */}
+      <div className="absolute inset-0 bg-black bg-opacity-20 z-10" /> {/* Reduced opacity further */}
 
       {/* Text Content */}
       <div className="relative z-20 max-w-3xl px-4">
