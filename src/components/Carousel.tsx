@@ -1,4 +1,3 @@
-// src/components/Carousel.tsx
 "use client";
 
 import { useEffect, useState } from "react";
@@ -20,31 +19,32 @@ const Carousel = () => {
       setIndex((prevIndex) => (prevIndex + 1) % images.length);
     }, 3000);
 
-    // Prevent horizontal scroll while carousel is mounted
-    document.body.style.overflow = "hidden";
+    // Prevent horizontal scroll and white spaces
+    document.body.style.overflowX = "hidden";
 
     return () => {
       clearInterval(interval);
-      document.body.style.overflow = "";
+      document.body.style.overflowX = "";
     };
   }, []);
 
   return (
-    // Remove px-5 here to avoid white lines on left/right
-    <div className="relative w-full h-[90vh] overflow-hidden">
-      {/* Background image covers entire container */}
+    <div className="relative w-full h-[90vh] overflow-hidden m-0 p-0">
+      {/* Fullscreen high-quality image */}
       <img
         src={images[index]}
         alt={`Slide ${index}`}
         className="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out"
         draggable={false}
+        loading="eager"
+        decoding="async"
       />
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-black opacity-60" />
-      {/* Content container with padding only here */}
-      <div className="relative z-20 flex items-center justify-center h-full px-5 md:px-8">
+      {/* Content container without horizontal padding */}
+      <div className="relative z-20 flex items-center justify-center h-full w-full">
         <h2
-          className="text-white text-3xl md:text-5xl font-bold text-center leading-relaxed max-w-6xl"
+          className="text-white text-3xl md:text-5xl font-bold text-center leading-relaxed max-w-6xl px-4"
           style={{
             fontFamily: "Georgia, serif",
             letterSpacing: "0.05em",
