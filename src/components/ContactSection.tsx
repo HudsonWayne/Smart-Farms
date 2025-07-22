@@ -1,4 +1,3 @@
-// src/components/ContactSection.tsx
 import React from "react";
 import {
   EnvelopeIcon,
@@ -21,7 +20,7 @@ const ContactSection = () => {
             <EnvelopeIcon className="text-green-600 w-6 h-6 mt-1" />
             <div>
               <p className="font-semibold text-lg">Email</p>
-              <p>infor@smartfarms-tech.com</p>
+              <p>info@smartfarms-tech.com</p>
             </div>
           </div>
 
@@ -56,7 +55,7 @@ const ContactSection = () => {
         <iframe
           title="Smart Farms Location"
           width="100%"
-          height="450"
+          height="500"  // Increased height for better map visibility
           frameBorder="0"
           scrolling="no"
           marginHeight={0}
