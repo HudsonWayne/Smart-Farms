@@ -69,7 +69,7 @@ const SmartFarming = () => {
           alt="Drone Farming"
           width={600}
           height={400}
-          className="rounded-lg object-cover w-full max-h-[400px]"
+          className="rounded-lg object-cover w-full max-h-[500px]"
         />
       </div>
     </section>
