@@ -19,7 +19,7 @@ export default function OurMission() {
 
         {/* Mission Text */}
         <div className="max-w-prose max-w-md">
-          <h2 className="text-green-700 text-2xl font-bold mb-4">Our Mission</h2>
+          <h2 className="text-[#72AE1C] text-2xl font-bold mb-4">Our Mission</h2>
           <p
             className="text-gray-800 text-lg leading-relaxed italic"
             style={{ fontFamily: "Georgia, serif" }}
@@ -32,7 +32,7 @@ export default function OurMission() {
 
         {/* Vision Text */}
         <div className="order-2 md:order-1 max-w-prose max-w-md">
-          <h2 className="text-green-700 text-2xl font-bold mb-4">Our Vision</h2>
+          <h2 className="text-[#72AE1C] text-2xl font-bold mb-4">Our Vision</h2>
           <p className="text-gray-800 text-lg leading-relaxed italic" style={{ fontFamily: "Georgia, serif" }}>
             <em>
               We envision to become a leading force in transforming African agriculture

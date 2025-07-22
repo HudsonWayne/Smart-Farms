@@ -89,15 +89,16 @@ export default function AboutPage() {
       {/* Our Values Section */}
       <div className="py-12">
         {/* Center the "Our Values" title */}
-        <div className="text-left mb-8 mt-25">
-          <h2 className="text-4xl font-bold" style={{ fontFamily: "Georgia, serif", color: "#72AE1C" }}>
-            Our Values
-          </h2>
-        </div>
+        
 
         {/* Adjusted Grid Layout for Values */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto px-4">
           {/* Productive (Services 1) */}
+          <div className="text-left mb-8 mt-25">
+          <h2 className="text-4xl font-bold" style={{ fontFamily: "Georgia, serif", color: "#72AE1C" }}>
+            Our Values
+          </h2>
+        </div>
           <div className="bg-[#190040] text-white p-8 rounded-xl shadow-xl hover:scale-105 transition-transform ease-in-out duration-300 text-center">
             <h3 className="text-2xl font-bold mb-4" style={{ color: "#72AE1C" }}>Productivity</h3>
             <p className="text-sm">
