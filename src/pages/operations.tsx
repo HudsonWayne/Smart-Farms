@@ -18,8 +18,8 @@ export default function OperationsPage() {
         />
         <div className="relative z-10 px-4 sm:px-6 md:px-8 text-center max-w-7xl mx-auto">
           <h1
-            className="text-3xl sm:text-4xl md:text-6xl font-bold text-green-500 mb-4"
-            style={{ fontFamily: "Georgia, serif" }}
+            className="text-3xl sm:text-4xl md:text-6xl font-bold"
+            style={{ color: "#72AE1C", fontFamily: "Georgia, serif" }}
           >
             Our Operations
           </h1>
@@ -35,7 +35,7 @@ export default function OperationsPage() {
         style={{ fontFamily: "Georgia, serif" }}
       >
         <div>
-          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-green-700 mb-4">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold" style={{ color: "#72AE1C" }} mb-4>
             Ready-to-Deploy Precision: DJI Mavic 3 Multispectral
           </h2>
           <p className="text-gray-800 text-base sm:text-lg mb-6 leading-relaxed">
@@ -153,19 +153,19 @@ export default function OperationsPage() {
 
         {/* Text */}
         <div>
-          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-lime-700 leading-snug mb-4">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold" style={{ color: "#72AE1C" }} leading-snug mb-4>
             Locally Assembled Spraying <br />
             & Fertilizer Drones for <br />
             Scalable Precision Farming
           </h2>
           <p className="text-gray-800 text-base sm:text-lg mb-4 leading-relaxed">
             We assemble our{" "}
-            <span className="text-lime-600 font-semibold">
+            <span className="text-[#72AE1C] font-semibold">
               large-capacity spraying and fertilizer drones
             </span>{" "}
             locally using high quality, industry-standard parts. These drones are
             assembled at our innovation hub by our dedicated in-house{" "}
-            <span className="text-green-600 font-semibold">
+            <span className="text-[#72AE1C] font-semibold">
               Engineer and Drone Technician
             </span>
             , ensuring they are tailored to meet the specific needs of our
@@ -173,7 +173,7 @@ export default function OperationsPage() {
           </p>
 
           {/* Point 1 */}
-          <p className="text-lime-700 font-bold text-base sm:text-lg mb-1">
+          <p className="text-[#72AE1C] font-bold text-base sm:text-lg mb-1">
             1. Custom Assembly for Greater Flexibility
           </p>
           <p className="text-gray-800 text-base sm:text-lg mb-4 leading-relaxed">
@@ -187,7 +187,7 @@ export default function OperationsPage() {
           </p>
 
           {/* Point 2 */}
-          <p className="text-lime-700 font-bold text-base sm:text-lg mb-1">
+          <p className="text-[#72AE1C] font-bold text-base sm:text-lg mb-1">
             2. Built by Experts, Backed by Innovation
           </p>
           <p className="text-gray-800 text-base sm:text-lg mb-4 leading-relaxed">
@@ -197,7 +197,7 @@ export default function OperationsPage() {
           </p>
 
           {/* Point 3 */}
-          <p className="text-lime-700 font-bold text-base sm:text-lg mb-1">
+          <p className="text-[#72AE1C] font-bold text-base sm:text-lg mb-1">
             3. Designed for Local Impact
           </p>
           <p className="text-gray-800 text-base sm:text-lg leading-relaxed">
