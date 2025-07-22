@@ -8,7 +8,7 @@ export default function OurServices() {
     <section className="w-full bg-white px-4 md:px-12 lg:px-20 py-12 font-[Poppins]">
       <div className="max-w-7xl mx-auto text-center">
         {/* Section Header */}
-        <h2 className="text-green-700 text-4xl font-bold mb-4">Our Services</h2>
+        <h2 className="text-[#72AE1C] text-4xl font-bold mb-4">Our Services</h2>
         <p
           className="text-gray-700 mb-10 mx-auto"
           style={{
@@ -22,54 +22,53 @@ export default function OurServices() {
         </p>
 
         {/* Section 1 Title */}
-        <h3 className="text-green-700 text-2xl font-bold text-left mb-2">
+        <h3 className="text-[#72AE1C] text-2xl font-bold text-left mb-2">
           DJI Mavic 3 Multispectral
         </h3>
 
         {/* First Row of Images */}
-<div className="grid md:grid-cols-3 gap-6 mb-10">
-  <div className="mt-[20px] text-left">
-    <Image
-      src="/Rectangle 8.png"
-      alt="High Resolution Camera"
-      width={400}
-      height={250}
-      className="w-full object-cover"
-    />
-    <p className="mt-2 ml-[5px] font-bold text-[21px] font-[Poppins]">
-      High Resolution Camera
-    </p>
-  </div>
-  <div className="mt-[20px] text-left">
-    <Image
-      src="/Rectangle 9.png"
-      alt="AI Integrated"
-      width={400}
-      height={250}
-      className="w-full object-cover"
-    />
-    <p className="mt-2 ml-[5px] font-bold text-[21px] font-[Poppins]">
-      AI Integrated
-    </p>
-  </div>
-  <div className="mt-[20px] text-left">
-    <Image
-      src="/Rectangle 10.png"
-      alt="Multispectral Sensor"
-      width={400}
-      height={250}
-      className="w-full object-cover"
-    />
-    <p className="mt-2 ml-[5px] font-bold text-[21px] font-[Poppins]">
-      Multispectral Sensor
-    </p>
-  </div>
-</div>
-
+        <div className="grid md:grid-cols-3 gap-6 mb-10">
+          <div className="mt-[20px] text-left">
+            <Image
+              src="/Rectangle 8.png"
+              alt="High Resolution Camera"
+              width={400}
+              height={250}
+              className="w-full object-cover"
+            />
+            <p className="mt-2 ml-[5px] font-bold text-[21px] font-[Poppins]">
+              High Resolution Camera
+            </p>
+          </div>
+          <div className="mt-[20px] text-left">
+            <Image
+              src="/Rectangle 9.png"
+              alt="AI Integrated"
+              width={400}
+              height={250}
+              className="w-full object-cover"
+            />
+            <p className="mt-2 ml-[5px] font-bold text-[21px] font-[Poppins]">
+              AI Integrated
+            </p>
+          </div>
+          <div className="mt-[20px] text-left">
+            <Image
+              src="/Rectangle 10.png"
+              alt="Multispectral Sensor"
+              width={400}
+              height={250}
+              className="w-full object-cover"
+            />
+            <p className="mt-2 ml-[5px] font-bold text-[21px] font-[Poppins]">
+              Multispectral Sensor
+            </p>
+          </div>
+        </div>
 
         {/* Section 2 Title */}
         <div className="text-left mb-2">
-          <h3 className="text-green-700 text-2xl font-bold">
+          <h3 className="text-[#72AE1C] text-2xl font-bold">
             2. Pesticides and Fertilizer Application
           </h3>
           <p className="text-gray-700" style={{ fontSize: "22px" }}>
