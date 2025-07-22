@@ -104,7 +104,7 @@ export default function ContactPage() {
                 <span className="font-bold text-[#2E2E2E]">Address</span>
               </div>
               <p className="text-gray-700 leading-snug">
-                443 Grasmere Lne, Borrowdale, Harare, Zimbabwe
+                443 Grasmere Lane, Borrowdale, Harare, Zimbabwe
               </p>
             </div>
           </div>
