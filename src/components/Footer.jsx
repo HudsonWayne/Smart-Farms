@@ -82,7 +82,7 @@ export default function Footer() {
               <FaInstagram />
               <span>Instagram</span>
             </a>
-            <a
+            {/* <a
               href="https://twitter.com/SmartFarmsTech"
               target="_blank"
               rel="noopener noreferrer"
@@ -90,7 +90,7 @@ export default function Footer() {
             >
               <FaTwitter />
               <span>Twitter</span>
-            </a>
+            </a> */}
           </div>
         </div>
       </div>
