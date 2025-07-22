@@ -19,7 +19,7 @@ export default function OperationsPage() { // Renamed from NineBlocks to better 
             />
           </div>
           <div className="max-w-prose">
-            <h2 className="text-green-700 text-2xl font-bold mb-4">
+            <h2 className="text-[#72AE1C] text-2xl font-bold mb-4">
               1. Land mapping, surveying and crop health monitoring
             </h2>
             <p className="text-gray-800 text-lg leading-relaxed">
@@ -31,7 +31,7 @@ export default function OperationsPage() { // Renamed from NineBlocks to better 
         {/* Second Block: Image on the Right and Text on the Left */}
         <div className="grid md:grid-cols-2 gap-12 items-center mb-12 md:flex-row-reverse">
           <div className="max-w-prose">
-            <h2 className="text-green-700 text-2xl font-bold mb-4">
+            <h2 className="text-[#72AE1C] text-2xl font-bold mb-4">
               AI-Powered Land Mapping & Surveying
             </h2>
             <p className="text-gray-800 text-lg leading-relaxed">
@@ -61,7 +61,7 @@ export default function OperationsPage() { // Renamed from NineBlocks to better 
             />
           </div>
           <div className="max-w-prose">
-            <h2 className="text-green-700 text-2xl font-bold mb-4">
+            <h2 className="text-[#72AE1C] text-2xl font-bold mb-4">
               Intelligent Crop Health Monitoring
             </h2>
             <p className="text-gray-800 text-lg leading-relaxed">
@@ -73,7 +73,7 @@ export default function OperationsPage() { // Renamed from NineBlocks to better 
         {/* Fourth Block: Image on the Right and Text on the Left */}
         <div className="grid md:grid-cols-2 gap-12 items-center mb-12 md:flex-row-reverse">
           <div className="max-w-prose">
-            <h2 className="text-green-700 text-2xl font-bold mb-4">
+            <h2 className="text-[#72AE1C] text-2xl font-bold mb-4">
               2. Precision Crop Spraying
             </h2>
             <p className="text-gray-800 text-lg leading-relaxed">
@@ -103,7 +103,7 @@ export default function OperationsPage() { // Renamed from NineBlocks to better 
             />
           </div>
           <div className="max-w-prose">
-            <h2 className="text-green-700 text-2xl font-bold mb-4">
+            <h2 className="text-[#72AE1C] text-2xl font-bold mb-4">
               Targeted Spraying with Drone Accuracy
             </h2>
             <p className="text-gray-800 text-lg leading-relaxed">
@@ -116,7 +116,7 @@ export default function OperationsPage() { // Renamed from NineBlocks to better 
         <div className="grid md:grid-cols-2 gap-12 items-center mb-12 md:flex-row-reverse">
 
           <div className="max-w-prose">
-            <h2 className="text-green-700 text-2xl font-bold mb-4">
+            <h2 className="text-[#72AE1C] text-2xl font-bold mb-4">
               Environmentally Responsible Farming
             </h2>
             <p className="text-gray-800 text-lg leading-relaxed">
@@ -146,7 +146,7 @@ export default function OperationsPage() { // Renamed from NineBlocks to better 
             />
           </div>
           <div className="max-w-prose">
-            <h2 className="text-green-700 text-2xl font-bold mb-4">
+            <h2 className="text-[#72AE1C] text-2xl font-bold mb-4">
               Smart Fertilizer Application with AI and Drone Technology
             </h2>
             <p className="text-gray-800 text-lg leading-relaxed">
@@ -159,7 +159,7 @@ export default function OperationsPage() { // Renamed from NineBlocks to better 
         <div className="grid md:grid-cols-2 gap-12 items-center mb-12 md:flex-row-reverse">
 
           <div className="max-w-prose">
-            <h2 className="text-green-700 text-2xl font-bold mb-4">
+            <h2 className="text-[#72AE1C] text-2xl font-bold mb-4">
               Precision Application for Maximum Impact
             </h2>
             <p className="text-gray-800 text-lg leading-relaxed">
@@ -189,7 +189,7 @@ export default function OperationsPage() { // Renamed from NineBlocks to better 
             />
           </div>
           <div className="max-w-prose">
-            <h2 className="text-green-700 text-2xl font-bold mb-4">
+            <h2 className="text-[#72AE1C] text-2xl font-bold mb-4">
               AI-Driven Decision Making
             </h2>
             <p className="text-gray-800 text-lg leading-relaxed">
