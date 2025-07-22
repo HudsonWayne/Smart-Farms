@@ -17,7 +17,7 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-[#0C0332] text-white w-full z-50 top-0 shadow-md font-['Avenir']">
+    <nav className="bg-[#0C0332] text-white w-full z-50 top-0 shadow-md font-[Avenir]">
       <div className="px-5 py-4 flex justify-between items-center max-w-7xl mx-auto">
         {/* Logo */}
         <Link href="/">
