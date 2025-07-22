@@ -72,7 +72,7 @@ export default function OperationsPage() {
             alt="DJI Drone Flying"
             width={400}
             height={270}
-            className="rounded-lg w-full h-auto max-w-full"
+            
           />
         </div>
       </section>
@@ -88,7 +88,7 @@ export default function OperationsPage() {
             alt="Drone spraying NDVI"
             width={400}
             height={270}
-            className="rounded-lg w-full h-auto max-w-full"
+            
           />
         </div>
         <div>
@@ -120,7 +120,7 @@ export default function OperationsPage() {
             alt="DJI Drone in air"
             width={400}
             height={270}
-            className="rounded-lg w-full h-auto max-w-full"
+            // className="rounded-lg w-full h-auto max-w-full"
           />
         </div>
       </section>

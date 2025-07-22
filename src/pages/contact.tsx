@@ -4,8 +4,10 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { FaEnvelope, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
 
+// Make sure to import Poppins font in your global CSS or _app.tsx/_app.js:
+// @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 export default function ContactPage() {
-  // FAQ state for toggling answers
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const faqs = [
@@ -31,7 +33,7 @@ export default function ContactPage() {
   }
 
   return (
-    <>
+    <div style={{ fontFamily: "'Poppins', sans-serif" }}>
       {/* Hero Section */}
       <div className="relative w-full min-h-[60vh] md:min-h-[70vh] flex items-center justify-center">
         <Image
@@ -47,14 +49,11 @@ export default function ContactPage() {
         <div className="relative z-10 px-4 md:px-8 text-center max-w-4xl mx-auto">
           <h1
             className="text-4xl md:text-6xl font-bold"
-            style={{ color: "#72AE1C", fontFamily: "Georgia, serif" }}
+            style={{ color: "#72AE1C" }}
           >
             Contact Us
           </h1>
-          <p
-            className="text-white text-lg md:text-xl leading-relaxed"
-            style={{ fontFamily: "Georgia, serif" }}
-          >
+          <p className="text-white text-lg md:text-xl leading-relaxed">
             Empowering Zimbabwe’s small and medium-scale farmers with drone
             technology to increase crop yields, create jobs, and secure a
             sustainable agricultural future.
@@ -65,7 +64,6 @@ export default function ContactPage() {
       {/* Contact Section */}
       <div
         className="max-w-7xl mx-auto py-20 px-4 md:px-8 grid grid-cols-1 md:grid-cols-3 gap-12 text-[#3B3B3B]"
-        style={{ fontFamily: "Georgia, serif" }}
       >
         {/* Left Column - Contact Info */}
         <div className="space-y-10">
@@ -176,14 +174,10 @@ export default function ContactPage() {
       {/* FAQ Section */}
       <div
         className="max-w-7xl mx-auto px-4 md:px-8 py-16 grid md:grid-cols-2 gap-12 text-[#3B3B3B]"
-        style={{ fontFamily: "'Poppins', sans-serif" }}
       >
         {/* Left side text */}
         <div className="flex flex-col justify-center">
-          <h3
-            className="text-3xl mb-3"
-            style={{ fontWeight: 600, lineHeight: 1.4 }}
-          >
+          <h3 className="text-3xl mb-3" style={{ fontWeight: 600, lineHeight: 1.4 }}>
             Any questions? <br /> We got you.
           </h3>
           <p className="text-base max-w-sm">
@@ -228,6 +222,6 @@ export default function ContactPage() {
           ))}
         </div>
       </div>
-    </>
+    </div>
   );
 }

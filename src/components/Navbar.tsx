@@ -3,13 +3,21 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import { Poppins } from "next/font/google";
+
+// Load Poppins font with weights 400 and 600
+const poppins = Poppins({
+  weight: ["400", "600"],
+  subsets: ["latin"],
+  variable: "--font-poppins",
+});
 
 const links = [
   { name: "Home", href: "/" },
   { name: "Services", href: "/services" },
   { name: "About", href: "/about" },
   { name: "Our Team", href: "/our-team" },
-  { name: "Operations", href: "/operations" },  // New Operations link
+  { name: "Operations", href: "/operations" }, // New Operations link
 ];
 
 const Navbar = () => {
@@ -17,7 +25,10 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-[#0C0332] text-white w-full z-50 top-0 shadow-md font-[Avenir]">
+    <nav
+      className={`${poppins.className} bg-[#0C0332] text-white w-full z-50 top-0 shadow-md`}
+      style={{ fontFamily: "var(--font-poppins), sans-serif" }}
+    >
       <div className="px-5 py-4 flex justify-between items-center max-w-7xl mx-auto">
         {/* Logo */}
         <Link href="/">
@@ -60,12 +71,32 @@ const Navbar = () => {
             className="focus:outline-none"
           >
             {menuOpen ? (
-              <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              <svg
+                className="h-8 w-8"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
               </svg>
             ) : (
-              <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              <svg
+                className="h-8 w-8"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
               </svg>
             )}
           </button>
