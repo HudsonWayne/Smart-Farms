@@ -21,7 +21,7 @@ const ContactSection = () => {
             <EnvelopeIcon className="text-green-600 w-6 h-6 mt-1" />
             <div>
               <p className="font-semibold text-lg">Email</p>
-              <p>info@smartfarms-tech.com</p>
+              <p>infor@smartfarms-tech.com</p>
             </div>
           </div>
 
@@ -38,11 +38,7 @@ const ContactSection = () => {
             <div>
               <p className="font-semibold text-lg">Address</p>
               <p>
-                Borrowdale Junior School
-                <br />
-                63GQ+VWR, Ridgeway N
-                <br />
-                Harare, Zimbabwe
+                443 Grasmere Lane, Borrowdale, Harare, Zimbabwe
               </p>
             </div>
           </div>
