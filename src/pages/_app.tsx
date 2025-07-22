@@ -37,7 +37,7 @@ export default function App({ Component, pageProps }: AppProps) {
       )}
 
       {/* Removed pt-8 here to remove top padding */}
-      <main className="min-h-[10vh]">
+      <main className="min-h-[7vh]">
         <Component {...pageProps} />
       </main>
 
