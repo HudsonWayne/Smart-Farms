@@ -27,10 +27,11 @@ export default function ServicesPage() {
         {/* Text Content */}
         <div className="relative z-10 px-4 md:px-8 text-center max-w-4xl">
           <h1
-            className="text-4xl md:text-6xl font-bold text-green-500 mb-4"
+            className="text-4xl md:text-6xl font-bold"
             style={{
               fontFamily: "Georgia, serif", // Applying the Georgia font
               fontWeight: "bold", // Ensures the font is bold
+              color: "#72AE1C", // Changed green color to #72AE1C
             }}
           >
             Our Services

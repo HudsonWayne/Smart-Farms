@@ -10,14 +10,14 @@ const ContactSection = () => {
     <section className="px-6 md:px-20 py-5 bg-white flex flex-col md:flex-row gap-10 items-start justify-between">
       {/* Left Info Panel */}
       <div className="md:w-1/2 max-w-md mt-[30px]">
-        <p className="text-green-600 font-bold text-sm tracking-widest mb-2 uppercase">
+        <p className="text-[#72AE1C] font-bold text-sm tracking-widest mb-2 uppercase">
           Contact
         </p>
         <h2 className="text-3xl font-bold text-gray-800 mb-8">Talk to Us</h2>
 
         <div className="space-y-6 text-gray-800 text-base">
           <div className="flex items-start gap-4">
-            <EnvelopeIcon className="text-green-600 w-6 h-6 mt-1" />
+            <EnvelopeIcon className="text-[#72AE1C] w-6 h-6 mt-1" />
             <div>
               <p className="font-semibold text-lg">Email</p>
               <p>info@smartfarms-tech.com</p>
@@ -25,7 +25,7 @@ const ContactSection = () => {
           </div>
 
           <div className="flex items-start gap-4">
-            <PhoneIcon className="text-green-600 w-6 h-6 mt-1" />
+            <PhoneIcon className="text-[#72AE1C] w-6 h-6 mt-1" />
             <div>
               <p className="font-semibold text-lg">Phone</p>
               <p>+263 777 963 398</p>
@@ -33,7 +33,7 @@ const ContactSection = () => {
           </div>
 
           <div className="flex items-start gap-4">
-            <MapPinIcon className="text-green-600 w-6 h-6 mt-1" />
+            <MapPinIcon className="text-[#72AE1C] w-6 h-6 mt-1" />
             <div>
               <p className="font-semibold text-lg">Address</p>
               <p>
