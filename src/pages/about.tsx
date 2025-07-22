@@ -6,7 +6,7 @@ export default function AboutPage() {
   return (
     <>
       {/* About Us Section with background image */}
-      <div className="relative w-full min-h-[60vh] md:min-h-[70vh] flex items-center justify-center">
+      <div className="relative w-full min-h-[80vh] md:min-h-[90vh] flex items-center justify-center">
         {/* Background Image */}
         <Image
           src="/Rectangle 23.png"
@@ -50,7 +50,7 @@ export default function AboutPage() {
           />
         </div>
         <div className="max-w-prose">
-          <h2 className="text-green-700 text-2xl font-bold mb-4" style={{ fontFamily: "Georgia, serif" }}>
+          <h2 className="text-green-700 text-3xl font-bold mb-4" style={{ fontFamily: "Georgia, serif" }}>
             Who We Are
           </h2>
           <p className="text-gray-800 text-lg leading-relaxed" style={{ fontFamily: "Georgia, serif" }}>
