@@ -1,4 +1,4 @@
-"use client"; // Place this at the very top
+"use client";
 
 import Image from "next/image";
 import React, { useState } from "react";
@@ -15,6 +15,9 @@ export default function AboutPage() {
   };
 
   const cardData = [
+    {
+      title: "Our Values",
+    },
     {
       title: "Productivity",
       content:
@@ -44,7 +47,7 @@ export default function AboutPage() {
 
   return (
     <>
-      {/* About Us Section with background image */}
+      {/* Background Hero Section */}
       <div className="relative w-full min-h-[80vh] md:min-h-[90vh] flex items-center justify-center">
         <Image
           src="/Rectangle 23.png"
@@ -58,10 +61,9 @@ export default function AboutPage() {
         <div className="absolute inset-0 bg-black opacity-60" />
         <div className="relative z-10 px-4 md:px-8 text-center max-w-7xl mx-auto">
           <h1
-            className="text-4xl md:text-6xl font-bold text-green-500 mb-4"
+            className="text-4xl md:text-6xl font-bold mb-4"
             style={{
               fontFamily: "Georgia, serif",
-              fontWeight: "bold",
               color: "#72AE1C",
             }}
           >
@@ -76,7 +78,7 @@ export default function AboutPage() {
       </div>
 
       {/* Who We Are Section */}
-      <div className="grid md:grid-cols-2 gap-12 items-center mt-10 mb-10 md:flex-row max-w-7xl mx-auto px-4">
+      <div className="grid md:grid-cols-2 gap-12 items-center mt-10 mb-10 max-w-7xl mx-auto px-4">
         <div>
           <Image
             src="/Rectangle 55 (1).png"
@@ -87,16 +89,16 @@ export default function AboutPage() {
         </div>
         <div className="max-w-prose">
           <h2
-            className="text-700 text-3xl font-bold mb-6"
+            className="text-3xl font-bold mb-6"
             style={{ fontFamily: "Georgia, serif", color: "#72AE1C" }}
           >
             Who We Are
           </h2>
           <p
-            className="text-gray-800 text-lg leading-relaxed"
+            className="text-gray-800 text-lg leading-relaxed text-justify"
             style={{ fontFamily: "Georgia, serif" }}
           >
-            &ldquo;Smart Farms is an enterprise committed to using innovation to
+            “Smart Farms is an enterprise committed to using innovation to
             ensure food security, improve livelihoods, and transform rural
             communities through precision agriculture solutions in Zimbabwe. We
             take advantage of advanced high-resolution camera drones embedded
@@ -105,49 +107,49 @@ export default function AboutPage() {
             contribute to positive climate change, and we are on a goal to end
             poverty and hunger. We want to help smallholders and medium-scale
             farmers realize their value to the economy of the country through
-            their agricultural harvests.&rdquo;
+            their agricultural harvests.”
           </p>
         </div>
       </div>
 
-      {/* Message from the Founder Section */}
-      <div className="relative flex justify-center items-center my-12">
+      {/* Message from the Founder */}
+      <div className="text-center my-12">
         <h2
-          className="text-700 text-3xl font-bold mb-4 text-center"
+          className="text-3xl font-bold"
           style={{ fontFamily: "Georgia, serif", color: "#72AE1C" }}
         >
           Message from the Founder
         </h2>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-12 items-center mt-8 mb-8 md:flex-row-reverse max-w-7xl mx-auto px-4">
+      <div className="grid md:grid-cols-2 gap-12 items-center max-w-7xl mx-auto px-4 mb-16">
         <div className="max-w-prose">
           <p
-            className="text-gray-800 text-lg leading-relaxed"
+            className="text-gray-800 text-lg leading-relaxed text-justify"
             style={{ fontFamily: "Georgia, serif" }}
           >
-            &ldquo;The agricultural sector in Zimbabwe contributes about 21%
-            towards the country&apos;s GDP. Out of this, more than 50% comes
-            from smallholder and medium-scale farmers yet they are still relying
-            on traditional methods of farming that are so outdated, imprecise,
-            and labor-intensive. Clearly, smallholder and medium-scale farmers
-            are under-represented as they have the potential to contribute so
-            much to the country&apos;s economy. As someone who grew up in a
-            farming community, I have witnessed firsthand the struggles of my
-            family and neighbors, losing crops to unpredictable weather, pest
-            attacks, and the sheer exhaustion of manual labor. I&apos;ve watched
-            hard-working farmers struggle to make a living, not because they
-            lack knowledge or effort, but because they lack access to modern
-            tools and technologies that could revolutionize their productivity.
-            Smart Farms was born out of my desire to change this narrative. By
+            “The agricultural sector in Zimbabwe contributes about 21% towards
+            the country’s GDP. Out of this, more than 50% comes from smallholder
+            and medium-scale farmers yet they are still relying on traditional
+            methods of farming that are so outdated, imprecise, and
+            labor-intensive. Clearly, smallholder and medium-scale farmers are
+            under-represented as they have the potential to contribute so much
+            to the country’s economy. As someone who grew up in a farming
+            community, I have witnessed firsthand the struggles of my family and
+            neighbors, losing crops to unpredictable weather, pest attacks, and
+            the sheer exhaustion of manual labor. I've watched hard-working
+            farmers struggle to make a living, not because they lack knowledge
+            or effort, but because they lack access to modern tools and
+            technologies that could revolutionize their productivity. Smart
+            Farms was born out of my desire to change this narrative. By
             integrating drone technology into agriculture, we are creating a
             future where farmers can monitor crops, apply inputs with precision,
-            and make data-driven decisions&mdash;all with minimal effort and
-            maximum impact. Our mission is to empower these farmers, increase
-            food security, and promote sustainable farming practices. I believe
-            that with the right support and innovation, smallholder farmers will
-            no longer be left behind. They will become the backbone of a
-            technologically empowered and thriving agricultural economy.&rdquo;
+            and make data-driven decisions—all with minimal effort and maximum
+            impact. Our mission is to empower these farmers, increase food
+            security, and promote sustainable farming practices. I believe that
+            with the right support and innovation, smallholder farmers will no
+            longer be left behind. They will become the backbone of a
+            technologically empowered and thriving agricultural economy.”
           </p>
         </div>
         <div>
@@ -162,38 +164,55 @@ export default function AboutPage() {
       </div>
 
       {/* Our Values Section */}
-      <div className="py-12">
-
+      <div className="py-12 bg-white">
+        <div className="max-w-7xl mx-auto px-4 mb-12">
+          {/* <h2
+            className="text-4xl font-bold"
+            style={{ fontFamily: "Georgia, serif", color: "#72AE1C" }}
+          >
+            Our Values
+          </h2> */}
+        </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto px-4">
-          {cardData.map((card, index) => (
-
-            
-            <div
-              key={index}
-              className="bg-[#190040] text-white p-8 rounded-xl shadow-xl hover:scale-105 transition-transform ease-in-out duration-300 text-center"
-            >
-              <h3
-                className="text-2xl font-bold mb-4"
-                style={{ color: "#72AE1C" }}
-              >
-                {card.title}
-              </h3>
-              <p
-                className={`text-sm transition-all duration-300 ${
-                  expandedCards.includes(index) ? "" : "line-clamp-4"
-                }`}
+          {cardData.map((card, index) =>
+            index === 0 ? (
+              <div
+                key={index}
+                className="text-center flex items-center justify-center"
                 style={{ fontFamily: "Georgia, serif" }}
               >
-                {card.content}
-              </p>
-              <button
-                onClick={() => toggleReadMore(index)}
-                className="mt-4 bg-[#72AE1C] hover:bg-green-700 text-white font-semibold py-2 px-4 rounded focus:outline-none focus:ring-2 focus:ring-green-400"
+                <h3 className="text-4xl font-bold" style={{ color: "#72AE1C" }}>
+                  {card.title}
+                </h3>
+              </div>
+            ) : (
+              <div
+                key={index}
+                className="bg-[#190040] text-white p-6 rounded-2xl shadow-lg transition-transform hover:scale-[1.02]"
+                style={{ fontFamily: "Georgia, serif", textAlign: "justify" }}
               >
-                {expandedCards.includes(index) ? "Show Less" : "Read More"}
-              </button>
-            </div>
-          ))}
+                <h3
+                  className="text-xl font-bold mb-3"
+                  style={{ color: "#72AE1C" }}
+                >
+                  {card.title}
+                </h3>
+                <p
+                  className={`text-sm ${
+                    expandedCards.includes(index) ? "" : "line-clamp-4"
+                  }`}
+                >
+                  {card.content}
+                </p>
+                <button
+                  onClick={() => toggleReadMore(index)}
+                  className="mt-4 bg-[#72AE1C] hover:bg-green-700 text-white font-semibold py-2 px-4 rounded focus:outline-none focus:ring-2 focus:ring-green-400"
+                >
+                  {expandedCards.includes(index) ? "Show Less" : "Read More"}
+                </button>
+              </div>
+            )
+          )}
         </div>
       </div>
     </>
