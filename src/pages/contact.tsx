@@ -46,8 +46,8 @@ export default function ContactPage() {
         <div className="absolute inset-0 bg-black opacity-60" />
         <div className="relative z-10 px-4 md:px-8 text-center max-w-4xl mx-auto">
           <h1
-            className="text-4xl md:text-6xl font-bold text-green-500 mb-4"
-            style={{ fontFamily: "Georgia, serif" }}
+            className="text-4xl md:text-6xl font-bold"
+            style={{ color: "#72AE1C", fontFamily: "Georgia, serif" }}
           >
             Contact Us
           </h1>
@@ -70,7 +70,9 @@ export default function ContactPage() {
         {/* Left Column - Contact Info */}
         <div className="space-y-10">
           <div>
-            <h3 className="text-green-600 font-semibold tracking-widest uppercase text-sm mb-1">
+            <h3
+              className="text-[#72AE1C] font-semibold tracking-widest uppercase text-sm mb-1"
+            >
               Contact
             </h3>
             <h2 className="text-2xl font-bold">Talk to Us</h2>
@@ -79,7 +81,7 @@ export default function ContactPage() {
           <div className="space-y-8 text-sm">
             {/* Email */}
             <div>
-              <div className="flex items-center gap-2 mb-1 text-green-600">
+              <div className="flex items-center gap-2 mb-1" style={{ color: "#72AE1C" }}>
                 <FaEnvelope />
                 <span className="font-bold text-[#2E2E2E]">Email</span>
               </div>
@@ -88,7 +90,7 @@ export default function ContactPage() {
 
             {/* Phone */}
             <div>
-              <div className="flex items-center gap-2 mb-1 text-green-600">
+              <div className="flex items-center gap-2 mb-1" style={{ color: "#72AE1C" }}>
                 <FaPhone />
                 <span className="font-bold text-[#2E2E2E]">Phone</span>
               </div>
@@ -97,7 +99,7 @@ export default function ContactPage() {
 
             {/* Address */}
             <div>
-              <div className="flex items-center gap-2 mb-1 text-green-600">
+              <div className="flex items-center gap-2 mb-1" style={{ color: "#72AE1C" }}>
                 <FaMapMarkerAlt />
                 <span className="font-bold text-[#2E2E2E]">Address</span>
               </div>
