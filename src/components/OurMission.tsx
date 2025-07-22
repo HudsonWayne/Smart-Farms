@@ -1,4 +1,3 @@
-// src/components/OurMission.tsx
 "use client";
 
 import Image from "next/image";
@@ -10,7 +9,7 @@ export default function OurMission() {
         {/* Mission Image */}
         <div>
           <Image
-            src="/Rectangle 55.png"
+            src="/ourmission.png"
             alt="Drone spraying crops"
             width={500}
             height={400}
@@ -19,19 +18,22 @@ export default function OurMission() {
         </div>
 
         {/* Mission Text */}
-        <div className="max-w-prose">
+        <div className="max-w-prose max-w-md">
           <h2 className="text-green-700 text-2xl font-bold mb-4">Our Mission</h2>
-          <p className="text-gray-800 text-lg leading-relaxed">
-            Our mission is to empower small-scale farmers in Zimbabwe by leveraging
-            drone technology to enhance agricultural productivity, reduce labor inefficiencies,
+          <p
+            className="text-gray-800 text-lg leading-relaxed italic"
+            style={{ fontFamily: "Georgia, serif" }}
+          >
+            Our mission is to empower small-scale farmers in Zimbabwe by leveraging drone
+            technology to enhance agricultural productivity, reduce labor inefficiencies,
             and promote sustainable farming practices.
           </p>
         </div>
 
         {/* Vision Text */}
-        <div className="order-2 md:order-1 max-w-prose">
+        <div className="order-2 md:order-1 max-w-prose max-w-md">
           <h2 className="text-green-700 text-2xl font-bold mb-4">Our Vision</h2>
-          <p className="text-gray-800 text-lg leading-relaxed">
+          <p className="text-gray-800 text-lg leading-relaxed italic" style={{ fontFamily: "Georgia, serif" }}>
             <em>
               We envision to become a leading force in transforming African agriculture
               through technology, creating a future where every small-scale farmer
