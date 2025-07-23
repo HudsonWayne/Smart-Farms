@@ -13,7 +13,7 @@ export default function OurServices() {
           className="text-gray-700 mb-10 mx-auto"
           style={{
             fontSize: "22px",
-            width: "90%", // wider for mobile
+            width: "90%",
             maxWidth: "700px",
           }}
         >
@@ -22,13 +22,13 @@ export default function OurServices() {
         </p>
 
         {/* Section 1 Title */}
-        <h3 className="text-[#72AE1C] text-2xl font-bold text-left mb-2">
+        <h3 className="text-[#72AE1C] text-2xl font-bold text-left mb-[40px]">
           DJI Mavic 3 Multispectral
         </h3>
 
         {/* First Row of Images */}
         <div className="grid md:grid-cols-3 gap-6 mb-10">
-          <div className="mt-[20px] text-left">
+          <div className="mt-[40px] text-left">
             <Image
               src="/Rectangle 8.png"
               alt="High Resolution Camera"
