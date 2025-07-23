@@ -17,7 +17,7 @@ const links = [
   { name: "Services", href: "/services" },
   { name: "About", href: "/about" },
   { name: "Our Team", href: "/our-team" },
-  { name: "Operations", href: "/operations" }, // New Operations link
+  { name: "Operations", href: "/operations" },
 ];
 
 const Navbar = () => {
@@ -35,7 +35,7 @@ const Navbar = () => {
           <img
             src="/logo.png"
             alt="Smart Farms Logo"
-            className="h-10 w-auto cursor-pointer"
+            className="h-10 w-auto cursor-pointer border-none bg-transparent"
             draggable={false}
           />
         </Link>
