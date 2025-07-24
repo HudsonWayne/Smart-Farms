@@ -10,12 +10,23 @@ const ContactSection = () => {
     <section className="px-6 md:px-20 py-5 bg-white flex flex-col md:flex-row gap-10 items-start justify-between">
       {/* Left Info Panel */}
       <div className="md:w-1/2 max-w-md mt-[30px]">
-        <p className="text-[#72AE1C] font-bold text-sm tracking-widest mb-2 uppercase">
+        <p
+          className="text-[#72AE1C] font-bold text-sm tracking-widest mb-2 uppercase"
+          style={{ fontFamily: "Georgia, serif" }}
+        >
           Contact
         </p>
-        <h2 className="text-3xl font-bold text-gray-800 mb-8">Talk to Us</h2>
+        <h2
+          className="text-3xl font-bold text-gray-800 mb-8"
+          style={{ fontFamily: "Georgia, serif" }}
+        >
+          Talk to Us
+        </h2>
 
-        <div className="space-y-6 text-gray-800 text-base">
+        <div
+          className="space-y-6 text-gray-800 text-base"
+          style={{ fontFamily: "Georgia, serif" }}
+        >
           <div className="flex items-start gap-4">
             <EnvelopeIcon className="text-[#72AE1C] w-6 h-6 mt-1" />
             <div>
@@ -55,7 +66,7 @@ const ContactSection = () => {
         <iframe
           title="Smart Farms Location"
           width="100%"
-          height="500"  // Increased height for better map visibility
+          height="500"
           frameBorder="0"
           scrolling="no"
           marginHeight={0}
