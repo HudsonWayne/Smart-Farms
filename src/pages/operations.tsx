@@ -29,19 +29,22 @@ export default function OperationsPage() {
       {/* Spacer */}
       <div className="h-8 md:h-12" />
 
-      {/* Section 1 (Large Image) */}
+      {/* Section 1 */}
       <section
-        className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 py-8 grid grid-cols-1 md:grid-cols-2 gap-8 items-center"
+        className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 py-8 grid grid-cols-1 md:grid-cols-2 gap-16 items-center"
         style={{ fontFamily: "Georgia, serif" }}
       >
+        {/* Text */}
         <div>
-          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold" style={{ color: "#72AE1C" }} mb-4>
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-6" style={{ color: "#72AE1C" }}>
             Ready-to-Deploy Precision: DJI Mavic 3 Multispectral
           </h2>
           <p className="text-gray-800 text-base sm:text-lg mb-6 leading-relaxed">
             At Smart Farms, we are investing in the DJI Mavic 3 Multispectral, a fully integrated and ready-to-use drone system designed for high-precision agricultural monitoring. With no need for assembling or modifications, this state-of-the-art drone allows us to deliver immediate value to farmers straight out of the box.
           </p>
         </div>
+
+        {/* Image */}
         <div className="w-full">
           <Image
             src="/Rectangle 63 (11).png"
@@ -72,7 +75,6 @@ export default function OperationsPage() {
             alt="DJI Drone Flying"
             width={400}
             height={270}
-            
           />
         </div>
       </section>
@@ -88,7 +90,6 @@ export default function OperationsPage() {
             alt="Drone spraying NDVI"
             width={400}
             height={270}
-            
           />
         </div>
         <div>
@@ -120,7 +121,6 @@ export default function OperationsPage() {
             alt="DJI Drone in air"
             width={400}
             height={270}
-            // className="rounded-lg w-full h-auto max-w-full"
           />
         </div>
       </section>
@@ -137,7 +137,7 @@ export default function OperationsPage() {
 
       {/* Section: Locally Assembled Drones */}
       <section
-        className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 py-12 grid grid-cols-1 md:grid-cols-2 gap-8 items-center"
+        className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 py-12 grid grid-cols-1 md:grid-cols-2 gap-16 items-center"
         style={{ fontFamily: "Georgia, serif" }}
       >
         {/* Image */}
@@ -146,14 +146,14 @@ export default function OperationsPage() {
             src="/Group 22 (1).png"
             alt="Locally assembled drone"
             width={400}
-            height={400}
+            height={340}
             className="w-full h-auto max-w-full rounded-lg"
           />
         </div>
 
         {/* Text */}
         <div>
-          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold" style={{ color: "#72AE1C" }} leading-snug mb-4>
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-6" style={{ color: "#72AE1C" }}>
             Locally Assembled Spraying <br />
             & Fertilizer Drones for <br />
             Scalable Precision Farming
@@ -172,7 +172,6 @@ export default function OperationsPage() {
             farmers.
           </p>
 
-          {/* Point 1 */}
           <p className="text-[#72AE1C] font-bold text-base sm:text-lg mb-1">
             1. Custom Assembly for Greater Flexibility
           </p>
@@ -186,7 +185,6 @@ export default function OperationsPage() {
             conditions.
           </p>
 
-          {/* Point 2 */}
           <p className="text-[#72AE1C] font-bold text-base sm:text-lg mb-1">
             2. Built by Experts, Backed by Innovation
           </p>
@@ -196,7 +194,6 @@ export default function OperationsPage() {
             each drone is fully functional, reliable, and safe to operate.
           </p>
 
-          {/* Point 3 */}
           <p className="text-[#72AE1C] font-bold text-base sm:text-lg mb-1">
             3. Designed for Local Impact
           </p>
