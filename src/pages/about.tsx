@@ -63,13 +63,14 @@ export default function AboutPage() {
           <h1
             className="text-4xl md:text-6xl font-bold mb-4"
             style={{
+              fontSize:"80px",
               fontFamily: "Georgia, serif",
               color: "#72AE1C",
             }}
           >
             About Us
-          </h1>
-          <p className="text-white text-lg md:text-xl leading-relaxed font-[Georgia]">
+          </h1 >
+          <p style={{fontSize:"30px"}} className="text-white text-lg md:text-xl leading-relaxed font-[Georgia]">
             Empowering Zimbabwe&apos;s small and medium-scale farmers with drone
             technology to increase crop yields, create jobs, and secure a
             sustainable agricultural future.
@@ -90,13 +91,14 @@ export default function AboutPage() {
         <div className="max-w-prose">
           <h2
             className="text-3xl font-bold mb-6"
-            style={{ fontFamily: "Georgia, serif", color: "#72AE1C" }}
+            style={{ fontFamily: "Georgia, serif", color: "#72AE1C", fontSize:"60px"}}
+            
           >
             Who We Are
           </h2>
           <p
             className="text-gray-800 text-lg leading-relaxed text-justify"
-            style={{ fontFamily: "Georgia, serif" }}
+            style={{ fontFamily: "Georgia, serif", fontSize:"23px" }}
           >
             “Smart Farms is an enterprise committed to using innovation to
             ensure food security, improve livelihoods, and transform rural
@@ -116,7 +118,7 @@ export default function AboutPage() {
       <div className="text-center my-12 mt-[100px]">
         <h2
           className="text-3xl font-bold"
-          style={{ fontFamily: "Georgia, serif", color: "#72AE1C" }}
+          style={{ fontFamily: "Georgia, serif", color: "#72AE1C", fontSize:"60px" }}
         >
           Message from the Founder
         </h2>
