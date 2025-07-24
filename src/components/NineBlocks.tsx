@@ -40,7 +40,7 @@ export default function OperationsPage() { // Renamed from NineBlocks to better 
           </div>
           <div>
             <Image
-              src="/Rectangle 58.png"
+              src="/Rectangle 56.png"
               alt="AI-Powered Land Mapping & Surveying"
               width={500}
               height={400}
@@ -53,7 +53,7 @@ export default function OperationsPage() { // Renamed from NineBlocks to better 
         <div className="grid md:grid-cols-2 gap-12 items-center mb-12 md:flex-row">
           <div>
             <Image
-              src="/Rectangle 59.png"
+              src="/Rectangle 57.png"
               alt="Intelligent Crop Health Monitoring"
               width={500}
               height={400}
@@ -82,7 +82,7 @@ export default function OperationsPage() { // Renamed from NineBlocks to better 
           </div>
           <div>
             <Image
-              src="/Rectangle 60.png"
+              src="/Rectangle 58.png"
               alt="Precision Crop Spraying"
               width={500}
               height={400}
@@ -95,7 +95,7 @@ export default function OperationsPage() { // Renamed from NineBlocks to better 
         <div className="grid md:grid-cols-2 gap-12 items-center mb-12 md:flex-row">
           <div>
             <Image
-              src="/Rectangle 61.png"
+              src="/Rectangle 59.png"
               alt="Targeted Spraying with Drone Accuracy"
               width={500}
               height={400}
@@ -125,7 +125,7 @@ export default function OperationsPage() { // Renamed from NineBlocks to better 
           </div>
           <div>
             <Image
-              src="/Rectangle 63 (1).png"
+              src="/Rectangle 60.png"
               alt="Environmentally Responsible Farming"
               width={500}
               height={400}
@@ -138,7 +138,7 @@ export default function OperationsPage() { // Renamed from NineBlocks to better 
         <div className="grid md:grid-cols-2 gap-12 items-center mb-12 md:flex-row">
           <div>
             <Image
-              src="/Rectangle 62.png"
+              src="/Rectangle 61.png"
               alt="Smart Fertilizer Application with AI and Drone Technology"
               width={500}
               height={400}
@@ -168,7 +168,7 @@ export default function OperationsPage() { // Renamed from NineBlocks to better 
           </div>
           <div>
             <Image
-              src="/Rectangle 61.png"
+              src="/Rectangle 63 (1).png"
               alt="Precision Application for Maximum Impact"
               width={500}
               height={400}
