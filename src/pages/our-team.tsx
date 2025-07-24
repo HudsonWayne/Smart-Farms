@@ -57,10 +57,10 @@ export default function OurTeamPage() {
 
       {/* The Driving Force Section */}
       <div className="mt-16 text-center">
-        <h2 className="text-4xl font-bold" style={{ color: "#72AE1C" }} mb-4>
+        <h2 className="text-4xl font-bold mb-[70px]" style={{ color: "#72AE1C" }} mb-4>
           The driving force for Smart Farms.
         </h2>
-        <p className="text-lg text-gray-700 max-w-7xl mx-auto mt-4">
+        <p className="text-lg text-gray-700 max-w-7xl mx-auto mt-4 mb-[70px]">
           “At Smart Farms, we are more than just a team, we are a movement of passionate, young innovators committed to transforming agriculture through technology. Our team is proudly youth-led, driven by a deep understanding of the challenges faced by small-scale farmers and a bold vision to create smarter, more sustainable solutions for the future. We believe that youth are not just the leaders of tomorrow, they are the changemakers of today. Our dynamic team brings together fresh ideas, technical expertise, and a strong sense of purpose to bridge the gap between traditional farming and the digital age. We are also proud of our gender-diverse team, made up of one male and two females, working side by side to challenge norms and ensure inclusive innovation in agriculture. Our diversity is our strength, helps us see problems differently, build empathy with the communities we serve, and co-create solutions that are practical and impactful”.
         </p>
       </div>
