@@ -164,7 +164,7 @@ export default function AboutPage() {
       </div>
 
       {/* Our Values Section */}
-      <div className="py-12 bg-white">
+      <div className="py-12 bg-white  mb-[100px]">
         <div className="max-w-7xl mx-auto px-4 mb-12">
           {/* <h2
             className="text-4xl font-bold"
