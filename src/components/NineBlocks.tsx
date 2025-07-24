@@ -35,7 +35,7 @@ export default function OperationsPage() {
               AI-Powered Land Mapping & Surveying
             </h2>
             <p className="text-gray-800 text-[26px] leading-relaxed italic">
-              Using the Mavic 3’s high-resolution camera, we capture detailed aerial images of farmland. These images are then processed through AI algorithms to generate precise maps, identify terrain variations, and calculate field boundaries with pinpoint accuracy.
+              Using the Mavic 3’s high-resolution camera, we capture detailed aerial images of farmland. These images are then processed through AI algorithms to generate precise maps, identify terrain variations, and calculate field boundaries with pinpoint accuracy. Our AI tools analyze data in real time, helping farmers plan land use more efficiently and detect topographical challenges before planting begins.
             </p>
           </div>
           <div className="order-1 md:order-2">
@@ -65,7 +65,7 @@ export default function OperationsPage() {
               Intelligent Crop Health Monitoring
             </h2>
             <p className="text-gray-800 text-[26px] leading-relaxed italic">
-              We deploy AI models trained to detect crop stress, pest infestations, and disease patterns from drone-captured imagery. This allows farmers to act early, apply targeted treatments, and reduce input costs.
+              We deploy AI models trained to detect crop stress, pest infestations, and disease patterns from drone-captured imagery. The Mavic 3 provides high-quality visual data, while our AI systems analyze it to flag problem areas instantly. This allows farmers to act early, apply targeted treatments, and reduce input costs, boosting productivity while minimizing environmental impact.
             </p>
           </div>
         </div>
@@ -107,7 +107,7 @@ export default function OperationsPage() {
               Targeted Spraying with Drone Accuracy
             </h2>
             <p className="text-gray-800 text-[26px] leading-relaxed italic">
-              Using specialized spraying drones equipped with GPS and obstacle avoidance systems, we ensure accurate and efficient aerial applications, reducing manual labor and human exposure.
+              Using specialized spraying drones equipped with GPS and obstacle avoidance systems, we conduct highly accurate aerial applications of fertilizers, pesticides, and herbicides. These drones can cover large areas quickly, access difficult terrains, and significantly reduce human exposure to chemicals.
             </p>
           </div>
         </div>
@@ -119,7 +119,7 @@ export default function OperationsPage() {
               Environmentally Responsible Farming
             </h2>
             <p className="text-gray-800 text-[26px] leading-relaxed italic">
-              By avoiding blanket spraying, we minimize chemical runoff and protect surrounding ecosystems. Our AI-enhanced precision supports sustainable agriculture while maximizing yield.
+              By avoiding blanket spraying, we minimize chemical runoff and protect surrounding ecosystems. This AI-enhanced precision spraying supports sustainable agriculture while maximizing crop yields. With Smart Farms, crop spraying becomes safer, smarter, and more sustainable, empowering farmers with cutting-edge tools to thrive in a changing agricultural landscape.
             </p>
           </div>
           <div className="order-1 md:order-2">
