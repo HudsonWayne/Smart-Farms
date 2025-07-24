@@ -92,7 +92,7 @@ export default function OurServices() {
         </div>
 
         {/* Second Row of Images */}
-        <div className="grid md:grid-cols-3 gap-6 text-left">
+        <div className="grid md:grid-cols-3 gap-6 text-left mt-[80px]">
           <div>
             <Image
               src="/Rectangle 88.png"

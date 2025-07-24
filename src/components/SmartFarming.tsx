@@ -17,34 +17,46 @@ const SmartFarming = () => {
         {/* Features Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
           <div>
-            <p className="flex items-center gap-2 font-semibold mb-2 font-poppins">
+            <p
+              className="flex items-center gap-2 font-semibold mb-2"
+              style={{ fontFamily: "Georgia, serif" }}
+            >
               <span className="text-[#72AE1C] text-lg">●</span> Pesticides Application
             </p>
-            <p className="text-sm text-gray-700 font-poppins">
+            <p className="text-sm text-gray-700" style={{ fontFamily: "Georgia, serif" }}>
               We provide all the data you need to know about your crops in just a few clicks.
             </p>
           </div>
           <div>
-            <p className="flex items-center gap-2 font-semibold mb-2 font-poppins">
+            <p
+              className="flex items-center gap-2 font-semibold mb-2"
+              style={{ fontFamily: "Georgia, serif" }}
+            >
               <span className="text-[#72AE1C] text-lg">●●</span> Fertilizer Application
             </p>
-            <p className="text-sm text-gray-700 font-poppins">
+            <p className="text-sm text-gray-700" style={{ fontFamily: "Georgia, serif" }}>
               Skydrone uses AI, machine learning and computer vision for real-time crop scanning.
             </p>
           </div>
           <div>
-            <p className="flex items-center gap-2 font-semibold mb-2 font-poppins">
+            <p
+              className="flex items-center gap-2 font-semibold mb-2"
+              style={{ fontFamily: "Georgia, serif" }}
+            >
               <span className="text-[#72AE1C] text-lg">●</span> Land Mapping & Surveying
             </p>
-            <p className="text-sm text-gray-700 font-poppins">
+            <p className="text-sm text-gray-700" style={{ fontFamily: "Georgia, serif" }}>
               We provide all the data you need to know about your crops in just a few clicks.
             </p>
           </div>
           <div>
-            <p className="flex items-center gap-2 font-semibold mb-2 font-poppins">
+            <p
+              className="flex items-center gap-2 font-semibold mb-2"
+              style={{ fontFamily: "Georgia, serif" }}
+            >
               <span className="text-[#72AE1C] text-lg tracking-tighter">●●●</span> Crop Health Monitoring
             </p>
-            <p className="text-sm text-gray-700 font-poppins">
+            <p className="text-sm text-gray-700" style={{ fontFamily: "Georgia, serif" }}>
               Skydrone uses AI, machine learning and computer vision for real-time crop scanning.
             </p>
           </div>
