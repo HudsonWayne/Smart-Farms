@@ -36,10 +36,10 @@ export default function OperationsPage() {
       >
         {/* Text */}
         <div>
-          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-6" style={{ color: "#72AE1C" }}>
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-6" style={{ color: "#72AE1C", fontSize:"50px" }}>
             Ready-to-Deploy Precision: DJI Mavic 3 Multispectral
           </h2>
-          <p className="text-gray-800 text-base sm:text-lg mb-6 leading-relaxed">
+          <p className="text-gray-800 text-base sm:text-lg mb-6 leading-relaxed" style={{fontSize:"25px"}}>
             At Smart Farms, we are investing in the DJI Mavic 3 Multispectral, a fully integrated and ready-to-use drone system designed for high-precision agricultural monitoring. With no need for assembling or modifications, this state-of-the-art drone allows us to deliver immediate value to farmers straight out of the box.
           </p>
         </div>
@@ -63,9 +63,9 @@ export default function OperationsPage() {
       >
         <div>
           <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-2">
-            1. <span className="text-black">Fully Integrated, Farm-Ready</span>
+            1. <span className="text-black" style={{fontSize:"33px"}}>Fully Integrated, Farm-Ready</span>
           </h3>
-          <p className="text-gray-800 text-base sm:text-lg leading-relaxed">
+          <p className="text-gray-800 text-base sm:text-lg leading-relaxed" style={{fontSize:"25px"}}>
             The Mavic 3 Multispectral comes equipped with both RGB and multispectral sensors, making it ideal for professional agricultural use. Since it&apos;s a complete, factory-assembled solution, we can deploy it instantly, saving time and ensuring reliability from the first flight.
           </p>
         </div>
@@ -94,9 +94,9 @@ export default function OperationsPage() {
         </div>
         <div>
           <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-2">
-            2. <span className="text-black">Powerful Crop Insight Without the Wait</span>
+            2. <span className="text-black"style={{fontSize:"33px"}}>Powerful Crop Insight Without the Wait</span>
           </h3>
-          <p className="text-gray-800 text-base sm:text-lg leading-relaxed">
+          <p className="text-gray-800 text-base sm:text-lg leading-relaxed" style={{fontSize:"25px"}}>
             This drone captures rich data in real time, enabling us to generate detailed vegetation indices like NDVI and NDRE. By analyzing these images using built-in AI and Smart Farms’ digital tools, we provide farmers with fast, accurate insights on crop health, nutrient levels, and water stress.
           </p>
         </div>
