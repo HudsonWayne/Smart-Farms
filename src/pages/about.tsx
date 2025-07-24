@@ -48,7 +48,7 @@ export default function AboutPage() {
   return (
     <>
       {/* Background Hero Section */}
-      <div className="relative w-full min-h-[80vh] md:min-h-[90vh] flex items-center justify-center">
+      <div className="relative w-full min-h-[60vh] md:min-h-[70vh] flex items-center justify-center">
         <Image
           src="/Rectangle 23.png"
           alt="Drone spraying field"
