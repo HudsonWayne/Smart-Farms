@@ -137,7 +137,7 @@ export default function AboutPage() {
             to the country’s economy. As someone who grew up in a farming
             community, I have witnessed firsthand the struggles of my family and
             neighbors, losing crops to unpredictable weather, pest attacks, and
-            the sheer exhaustion of manual labor. I've watched hard-working
+            the sheer exhaustion of manual labor. I have watched hard-working
             farmers struggle to make a living, not because they lack knowledge
             or effort, but because they lack access to modern tools and
             technologies that could revolutionize their productivity. Smart
