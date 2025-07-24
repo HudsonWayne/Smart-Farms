@@ -78,7 +78,7 @@ export default function AboutPage() {
       </div>
 
       {/* Who We Are Section */}
-      <div className="grid md:grid-cols-2 gap-12 items-center mt-10 mb-10 max-w-7xl mx-auto px-4">
+      <div className="grid md:grid-cols-2 gap-12 items-center mt-10 mb-10 max-w-7xl mx-auto px-4 mt-[150px]">
         <div>
           <Image
             src="/Rectangle 55 (1).png"
