@@ -2,11 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
-import {
-  FaFacebookF,
-  FaInstagram,
-  FaLinkedinIn,
-} from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { Poppins } from "next/font/google";
 
 const poppins = Poppins({
@@ -21,7 +17,8 @@ export default function Footer() {
       className={`${poppins.className} bg-[#0C0332] text-white w-full`}
       style={{ fontFamily: "var(--font-poppins), sans-serif" }}
     >
-      <div className="max-w-7xl mx-auto px-5 md:px-6 lg:px-8 py-8">
+      {/* Full width container with padding like Navbar */}
+      <div className="w-full px-4 md:px-8 lg:px-16 py-8">
         {/* Top section with nav links and logo */}
         <div className="flex flex-col md:flex-row justify-between items-center mb-6">
           <nav className="flex flex-wrap justify-center md:justify-start space-x-4 md:space-x-8 text-base font-semibold mb-4 md:mb-0">
