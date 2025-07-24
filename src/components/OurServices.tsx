@@ -8,13 +8,19 @@ export default function OurServices() {
     <section className="w-full bg-white px-4 md:px-12 lg:px-20 py-12 font-[Poppins]">
       <div className="max-w-7xl mx-auto text-center">
         {/* Section Header */}
-        <h2 className="text-[#72AE1C] text-4xl font-bold mb-4">Our Services</h2>
+        <h2
+          className="text-[#72AE1C] text-4xl font-bold mb-4"
+          style={{ fontFamily: "Georgia, serif" }}
+        >
+          Our Services
+        </h2>
         <p
-          className="text-gray-700 mb-10 mx-auto"
+          className="text-gray-700 mx-auto mb-[60px]"
           style={{
             fontSize: "22px",
             width: "90%",
             maxWidth: "700px",
+            fontFamily: "Georgia, serif",
           }}
         >
           At Smart Farms, we provide innovative solutions to enhance agricultural practices
@@ -22,13 +28,16 @@ export default function OurServices() {
         </p>
 
         {/* Section 1 Title */}
-        <h3 className="text-[#72AE1C] text-2xl font-bold text-left mb-[40px]">
+        <h3
+          className="text-[#72AE1C] mt-[100px] text-2xl font-bold text-left mb-10"
+          style={{ fontFamily: "Georgia, serif" }}
+        >
           DJI Mavic 3 Multispectral
         </h3>
 
         {/* First Row of Images */}
-        <div className="grid md:grid-cols-3 gap-6 mb-10">
-          <div className="mt-[40px] text-left">
+        <div className="grid md:grid-cols-3 gap-6 mb-10 text-left mt-[100px]">
+          <div>
             <Image
               src="/Rectangle 8.png"
               alt="High Resolution Camera"
@@ -36,11 +45,11 @@ export default function OurServices() {
               height={250}
               className="w-full object-cover"
             />
-            <p className="mt-2 ml-[5px] font-bold text-[21px] font-[Poppins]">
+            <p className="mt-2 ml-[5px] font-bold text-[21px]">
               High Resolution Camera
             </p>
           </div>
-          <div className="mt-[20px] text-left">
+          <div>
             <Image
               src="/Rectangle 9.png"
               alt="AI Integrated"
@@ -48,11 +57,11 @@ export default function OurServices() {
               height={250}
               className="w-full object-cover"
             />
-            <p className="mt-2 ml-[5px] font-bold text-[21px] font-[Poppins]">
+            <p className="mt-2 ml-[5px] font-bold text-[21px]">
               AI Integrated
             </p>
           </div>
-          <div className="mt-[20px] text-left">
+          <div>
             <Image
               src="/Rectangle 10.png"
               alt="Multispectral Sensor"
@@ -60,25 +69,31 @@ export default function OurServices() {
               height={250}
               className="w-full object-cover"
             />
-            <p className="mt-2 ml-[5px] font-bold text-[21px] font-[Poppins]">
+            <p className="mt-2 ml-[5px] font-bold text-[21px]">
               Multispectral Sensor
             </p>
           </div>
         </div>
 
         {/* Section 2 Title */}
-        <div className="text-left mb-2">
-          <h3 className="text-[#72AE1C] text-2xl font-bold">
+        <div className="text-left mb-6">
+          <h3
+            className="text-[#72AE1C] text-2xl font-bold mb-1"
+            style={{ fontFamily: "Georgia, serif" }}
+          >
             2. Pesticides and Fertilizer Application
           </h3>
-          <p className="text-gray-700" style={{ fontSize: "22px" }}>
+          <p
+            className="text-gray-700"
+            style={{ fontSize: "22px", fontFamily: "Georgia, serif" }}
+          >
             Optimized resource use to improve yields while reducing waste.
           </p>
         </div>
 
         {/* Second Row of Images */}
-        <div className="grid md:grid-cols-3 gap-6">
-          <div className="mt-[20px] text-left">
+        <div className="grid md:grid-cols-3 gap-6 text-left">
+          <div>
             <Image
               src="/Rectangle 88.png"
               alt="Precision input delivery"
@@ -90,7 +105,7 @@ export default function OurServices() {
               Precision input delivery
             </p>
           </div>
-          <div className="mt-[20px] text-left">
+          <div>
             <Image
               src="/Rectangle 99.png"
               alt="Labor cost reduction"
@@ -102,7 +117,7 @@ export default function OurServices() {
               Labor cost reduction
             </p>
           </div>
-          <div className="mt-[20px] text-left">
+          <div>
             <Image
               src="/Rectangle 100.png"
               alt="Remote operation capability"
