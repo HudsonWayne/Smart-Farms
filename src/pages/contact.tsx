@@ -44,10 +44,13 @@ export default function ContactPage() {
         />
         <div className="absolute inset-0 bg-black opacity-60" />
         <div className="relative z-10 px-4 md:px-8 text-center max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-6xl font-bold" style={{ color: "#72AE1C" }}>
+          <h1
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4"
+            style={{ color: "#72AE1C" }}
+          >
             Contact Us
           </h1>
-          <p className="text-white text-lg md:text-xl leading-relaxed">
+          <p className="text-white text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed max-w-sm sm:max-w-md md:max-w-2xl lg:max-w-4xl mx-auto">
             Empowering Zimbabwe’s small and medium-scale farmers with drone
             technology to increase crop yields, create jobs, and secure a
             sustainable agricultural future.
