@@ -5,19 +5,18 @@ import Link from "next/link";
 
 export default function OurServices() {
   return (
-    <section className="w-full bg-white px-4 md:px-12 lg:px-20 py-12 font-[Poppins]">
+    <section className="w-full bg-white px-4 md:px-12 lg:px-20 py-12 font-[Georgia]">
       <div className="max-w-7xl mx-auto text-center">
         {/* Section Header */}
         <h2
-          className="text-[#72AE1C] text-4xl font-bold mb-4"
+          className="text-[#72AE1C] text-[33px] font-bold mb-4"
           style={{ fontFamily: "Georgia, serif" }}
         >
           Our Services
         </h2>
         <p
-          className="text-gray-700 mx-auto mb-[60px]"
+          className="text-gray-700 mx-auto mb-[60px] text-[26px]"
           style={{
-            fontSize: "22px",
             width: "90%",
             maxWidth: "700px",
             fontFamily: "Georgia, serif",
@@ -84,8 +83,8 @@ export default function OurServices() {
             2. Pesticides and Fertilizer Application
           </h3>
           <p
-            className="text-gray-700"
-            style={{ fontSize: "22px", fontFamily: "Georgia, serif" }}
+            className="text-gray-700 text-[26px]"
+            style={{ fontFamily: "Georgia, serif" }}
           >
             Optimized resource use to improve yields while reducing waste.
           </p>
