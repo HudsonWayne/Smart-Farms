@@ -113,7 +113,7 @@ export default function AboutPage() {
       </div>
 
       {/* Message from the Founder */}
-      <div className="text-center my-12">
+      <div className="text-center my-12 mt-[100px]">
         <h2
           className="text-3xl font-bold"
           style={{ fontFamily: "Georgia, serif", color: "#72AE1C" }}
