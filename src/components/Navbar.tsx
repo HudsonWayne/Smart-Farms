@@ -28,7 +28,7 @@ const Navbar = () => {
       className={`${poppins.className} bg-[#0C0332] text-white w-full z-50 top-0 shadow-md`}
       style={{
         fontFamily: "var(--font-poppins), sans-serif",
-        fontSize: "14px", // set font size to 14px
+        fontSize: "18px",
         letterSpacing: "0.5px",
       }}
     >
@@ -55,7 +55,7 @@ const Navbar = () => {
                 className={`font-semibold px-3 py-2 rounded-md transition-colors ${
                   isActive ? "text-[#72AE1C]" : "text-white hover:text-[#72AE1C]"
                 }`}
-                style={{ fontSize: "14px", letterSpacing: "0.5px" }}
+                style={{ fontSize: "18px", letterSpacing: "0.5px" }}
               >
                 {name}
               </Link>
@@ -64,7 +64,7 @@ const Navbar = () => {
           <Link href="/contact">
             <button
               className="ml-4 rounded-md bg-white px-4 py-2 font-semibold text-[#0C0332] hover:bg-gray-200 transition"
-              style={{ fontSize: "14px", letterSpacing: "0.5px" }}
+              style={{ fontSize: "18px", letterSpacing: "0.5px" }}
             >
               Contact Us
             </button>
@@ -104,7 +104,7 @@ const Navbar = () => {
                   isActive ? "text-[#72AE1C]" : "text-white hover:text-[#72AE1C]"
                 }`}
                 onClick={() => setMenuOpen(false)}
-                style={{ fontSize: "14px", letterSpacing: "0.5px" }}
+                style={{ fontSize: "18px", letterSpacing: "0.5px" }}
               >
                 {name}
               </Link>
@@ -113,7 +113,7 @@ const Navbar = () => {
           <Link href="/contact" onClick={() => setMenuOpen(false)}>
             <button
               className="mt-2 w-full rounded-md bg-white px-4 py-2 font-semibold text-[#0C0332] hover:bg-gray-200 transition"
-              style={{ fontSize: "14px", letterSpacing: "0.5px" }}
+              style={{ fontSize: "18px", letterSpacing: "0.5px" }}
             >
               Contact Us
             </button>
