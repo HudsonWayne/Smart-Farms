@@ -16,6 +16,8 @@ export default function OperationsPage() {
           className="absolute inset-0 w-full h-full"
           draggable={false}
         />
+        {/* Overlay added here */}
+        <div className="absolute inset-0 bg-black opacity-60" />
         <div
           className="relative z-10 text-center max-w-7xl mx-auto"
           style={{ marginLeft: "30px", marginRight: "30px" }}
