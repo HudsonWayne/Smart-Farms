@@ -43,8 +43,8 @@ export default function OperationsPage() {
       >
         <div>
           <h2
-            className="font-bold mb-6"
-            style={{ color: "#72AE1C", fontSize: "50px" }}
+            className="font-bold mb-6 text-3xl sm:text-4xl md:text-[50px]"
+            style={{ color: "#72AE1C" }}
           >
             Ready-to-Deploy Precision: DJI Mavic 3 Multispectral
           </h2>
@@ -228,8 +228,8 @@ export default function OperationsPage() {
 
         <div>
           <h2
-            className="font-bold mb-6"
-            style={{ color: "#72AE1C", fontSize: "36px" }}
+            className="font-bold mb-6 text-2xl sm:text-3xl md:text-[36px]"
+            style={{ color: "#72AE1C" }}
           >
             Locally Assembled Spraying <br />
             & Fertilizer Drones for <br />
