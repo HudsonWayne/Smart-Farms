@@ -17,7 +17,8 @@ const AboutSection = () => {
 
       {/* Text Content */}
       <div className="relative z-10 px-4 md:px-8 text-center max-w-4xl">
-        <p className="text-white text-base md:text-xl lg:text-2xl leading-relaxed"
+        <p
+          className="text-white text-lg md:text-2xl lg:text-3xl leading-relaxed"
           style={{
             fontFamily: "Georgia, serif",
             letterSpacing: "0.05em",

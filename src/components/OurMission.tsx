@@ -19,7 +19,7 @@ export default function OurMission() {
 
         {/* Mission Text */}
         <div>
-          <h2 className="text-[#72AE1C] text-[33px] font-bold mb-4">Our Mission</h2>
+          <h2 className="text-[#72AE1C] text-2xl font-bold mb-4">Our Mission</h2>
           <p
             className="text-gray-800 text-[26px] leading-relaxed italic"
             style={{ fontFamily: "Georgia, serif" }}
@@ -32,9 +32,9 @@ export default function OurMission() {
 
         {/* Vision Text */}
         <div className="order-2 md:order-1">
-          <h2 className="text-[#72AE1C] text-[33px] font-bold mb-4">Our Vision</h2>
+          <h2 className="text-[#72AE1C] text-2xl font-bold mb-4">Our Vision</h2>
           <p
-            className="text-gray-800 text-[26px] leading-relaxed italic"
+            className="text-gray-800 text-[24px] leading-relaxed italic"
             style={{ fontFamily: "Georgia, serif" }}
           >
             <em>
