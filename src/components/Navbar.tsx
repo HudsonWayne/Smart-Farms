@@ -26,9 +26,13 @@ const Navbar = () => {
   return (
     <nav
       className={`${poppins.className} bg-[#0C0332] text-white w-full z-50 top-0 shadow-md`}
-      style={{ fontFamily: "var(--font-poppins), sans-serif" }}
+      style={{
+        fontFamily: "var(--font-poppins), sans-serif",
+        fontSize: "calc(1rem + 10px)", // base font size + 10px
+        letterSpacing: "0.5px", // slight letter spacing
+      }}
     >
-      {/* Updated padding to match OurMission margins */}
+      {/* Navbar container */}
       <div className="py-4 flex justify-between items-center w-full px-4 md:px-8 lg:px-16">
         {/* Logo */}
         <Link href="/">
@@ -51,13 +55,17 @@ const Navbar = () => {
                 className={`font-semibold px-3 py-2 rounded-md transition-colors ${
                   isActive ? "text-[#72AE1C]" : "text-white hover:text-[#72AE1C]"
                 }`}
+                style={{ fontSize: "calc(1rem + 10px)", letterSpacing: "0.5px" }}
               >
                 {name}
               </Link>
             );
           })}
           <Link href="/contact">
-            <button className="ml-4 rounded-md bg-white px-4 py-2 font-semibold text-[#0C0332] hover:bg-gray-200 transition">
+            <button
+              className="ml-4 rounded-md bg-white px-4 py-2 font-semibold text-[#0C0332] hover:bg-gray-200 transition"
+              style={{ fontSize: "calc(1rem + 10px)", letterSpacing: "0.5px" }}
+            >
               Contact Us
             </button>
           </Link>
@@ -96,13 +104,17 @@ const Navbar = () => {
                   isActive ? "text-[#72AE1C]" : "text-white hover:text-[#72AE1C]"
                 }`}
                 onClick={() => setMenuOpen(false)}
+                style={{ fontSize: "calc(1rem + 10px)", letterSpacing: "0.5px" }}
               >
                 {name}
               </Link>
             );
           })}
           <Link href="/contact" onClick={() => setMenuOpen(false)}>
-            <button className="mt-2 w-full rounded-md bg-white px-4 py-2 font-semibold text-[#0C0332] hover:bg-gray-200 transition">
+            <button
+              className="mt-2 w-full rounded-md bg-white px-4 py-2 font-semibold text-[#0C0332] hover:bg-gray-200 transition"
+              style={{ fontSize: "calc(1rem + 10px)", letterSpacing: "0.5px" }}
+            >
               Contact Us
             </button>
           </Link>
