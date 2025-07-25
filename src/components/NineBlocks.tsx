@@ -5,7 +5,10 @@ import Image from "next/image";
 
 export default function OperationsPage() {
   return (
-    <section className="w-full bg-white font-[Georgia] px-4 md:px-8 lg:px-16 py-12">
+    <section
+      className="w-full bg-white font-[Georgia] py-12"
+      style={{ paddingLeft: "15px", paddingRight: "15px" }}
+    >
       <div className="w-full mx-auto space-y-16">
         {/* Block 1 */}
         <div className="grid md:grid-cols-2 gap-12 items-center">

@@ -103,7 +103,7 @@ export default function AboutPage() {
           </h2>
          <p
   className="text-gray-800 text-lg leading-relaxed text-justify"
-  style={{ fontFamily: "Georgia, serif", fontSize: "23px", maxWidth: "calc(100% + 110px)" }}
+  style={{ fontFamily: "Georgia, serif", fontSize: "23px", maxWidth: "calc(100% + 10px)" }}
 >
   “Smart Farms is an enterprise committed to using innovation to
   ensure food security, improve livelihoods, and transform rural

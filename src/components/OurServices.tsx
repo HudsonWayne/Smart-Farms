@@ -12,7 +12,7 @@ export default function OurServices() {
       >
         {/* Section Header */}
         <h2
-          className="text-[#72AE1C] text-3xl md:text-4xl font-bold mb-6"
+          className="text-[#72AE1C] text-4xl md:text-5xl font-bold mb-6"
           style={{ fontFamily: "Georgia, serif" }}
         >
           Our Services
