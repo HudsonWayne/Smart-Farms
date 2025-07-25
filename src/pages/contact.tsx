@@ -46,11 +46,11 @@ export default function ContactPage() {
         <div className="relative z-10 px-4 md:px-8 text-center max-w-4xl mx-auto">
           <h1
             className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4"
-            style={{ color: "#72AE1C" }}
+            style={{ color: "#72AE1C", fontSize:"70px" }}
           >
             Contact Us
           </h1>
-          <p className="text-white text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed max-w-sm sm:max-w-md md:max-w-2xl lg:max-w-4xl mx-auto">
+          <p className="text-white text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed max-w-sm sm:max-w-md md:max-w-2xl lg:max-w-4xl mx-auto"style={{fontSize:"24px"}}>
             Empowering Zimbabwe’s small and medium-scale farmers with drone
             technology to increase crop yields, create jobs, and secure a
             sustainable agricultural future.
@@ -63,15 +63,15 @@ export default function ContactPage() {
         {/* Left Column - Contact Info */}
         <div className="space-y-10">
           <div>
-            <h3 className="text-[#72AE1C] font-semibold tracking-widest uppercase text-sm mb-1">
+            <h3  className="text-[#72AE1C] font-semibold tracking-widest uppercase text-sm mb-1"style={{fontSize:"20px"}}>
               Contact
             </h3>
-            <h2 className="text-2xl font-bold">Talk to Us</h2>
+            <h2 className="text-2xl font-bold" style={{fontSize:"40px"}}>Talk to Us</h2>
           </div>
 
           <div className="space-y-8 text-sm">
             <div>
-              <div className="flex items-center gap-2 mb-1" style={{ color: "#72AE1C" }}>
+              <div className="flex items-center gap-2 mb-1" style={{ color: "#72AE1C",fontSize:"20px" }}>
                 <FaEnvelope />
                 <span className="font-bold text-[#2E2E2E]">Email</span>
               </div>
@@ -79,7 +79,7 @@ export default function ContactPage() {
             </div>
 
             <div>
-              <div className="flex items-center gap-2 mb-1" style={{ color: "#72AE1C" }}>
+              <div className="flex items-center gap-2 mb-1" style={{ color: "#72AE1C",fontSize:"20px"  }}>
                 <FaPhone />
                 <span className="font-bold text-[#2E2E2E]">Phone</span>
               </div>
@@ -87,7 +87,7 @@ export default function ContactPage() {
             </div>
 
             <div>
-              <div className="flex items-center gap-2 mb-1" style={{ color: "#72AE1C" }}>
+              <div className="flex items-center gap-2 mb-1" style={{ color: "#72AE1C",fontSize:"20px"  }}>
                 <FaMapMarkerAlt />
                 <span className="font-bold text-[#2E2E2E]">Address</span>
               </div>
