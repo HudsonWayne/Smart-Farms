@@ -99,7 +99,7 @@ export default function ContactPage() {
         </div>
 
         {/* Right Column - Form */}
-        <form className="md:col-span-2 grid grid-cols-1 gap-6 text-sm">
+        <form className="md:col-span-2 grid grid-cols-1 gap-6 text-sm" style={{fontSize:"24px"}}>
           <div className="grid md:grid-cols-2 gap-6">
             <input
               type="text"
@@ -166,16 +166,16 @@ export default function ContactPage() {
           <h3 className="text-5xl mb-3" style={{ fontWeight: 600, lineHeight: 1.4 }}>
             Any questions? <br /> We got you.
           </h3>
-          <p className="text-base max-w-sm">
+          <p className="text-base max-w-sm"style={{fontSize:"24px", marginTop:"20px"}}>
             Find answers to the most common questions about our drone technology
             and training programs.
           </p>
         </div>
 
         <div>
-          <h4 className="font-semibold mb-6">
+          <h4 className="font-semibold mb-6"style={{fontSize:"24px"}}>
             FAQs
-            <span className="block text-sm font-normal mt-1">
+            <span className="block text-sm font-normal mt-1"style={{fontSize:"24px"}}>
               This section provides clear answers to common questions about
               Smart Farms’ drone technology, training, and implementation
               process.
@@ -184,6 +184,7 @@ export default function ContactPage() {
 
           {faqs.map((faq, i) => (
             <div
+            style={{fontSize:"22px"}}
               key={i}
               className="border-b border-gray-300 py-4 cursor-pointer"
               onClick={() => toggleFAQ(i)}
