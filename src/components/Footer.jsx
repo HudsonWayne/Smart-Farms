@@ -17,18 +17,14 @@ export default function Footer() {
       className={`${poppins.className} bg-[#0C0332] text-white w-full`}
       style={{
         fontFamily: "var(--font-poppins), sans-serif",
-        fontSize: "calc(1rem + 10px)", // Increase base font size by 10px
-        letterSpacing: "0.5px", // Slight letter spacing
+        letterSpacing: "0.5px", // keep letter spacing here
       }}
     >
       {/* Full width container with padding like Navbar */}
       <div className="w-full px-4 md:px-8 lg:px-16 py-8">
         {/* Top section with nav links and logo */}
         <div className="flex flex-col md:flex-row justify-between items-center mb-6">
-          <nav
-            className="flex flex-wrap justify-center md:justify-start space-x-4 md:space-x-8 font-semibold mb-4 md:mb-0"
-            style={{ fontSize: "calc(1rem + 10px)", letterSpacing: "0.5px" }}
-          >
+          <nav className="flex flex-wrap justify-center md:justify-start space-x-2 sm:space-x-4 md:space-x-8 font-semibold mb-4 md:mb-0 text-sm sm:text-base md:text-lg">
             <Link href="/" className="text-[#72AE1C] hover:text-[#72AE1C]">
               Home
             </Link>
@@ -48,7 +44,7 @@ export default function Footer() {
           <img
             src="/logo.png"
             alt="Smart Farms Logo"
-            className="w-20 h-auto"
+            className="w-16 sm:w-20 h-auto"
             draggable={false}
           />
         </div>
@@ -64,14 +60,11 @@ export default function Footer() {
         </div>
 
         {/* Bottom section with copyright and social icons */}
-        <div
-          className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-300"
-          style={{ fontSize: "calc(0.875rem + 10px)", letterSpacing: "0.5px" }}
-        >
+        <div className="flex flex-col md:flex-row justify-between items-center text-gray-300 text-xs sm:text-sm md:text-base">
           <p className="mb-4 md:mb-0 text-center md:text-left w-full md:w-auto">
             Copyright © 2025 Smart Farms. All rights reserved.
           </p>
-          <div className="flex flex-wrap justify-center md:justify-start items-center space-x-6 w-full md:w-auto">
+          <div className="flex flex-wrap justify-center md:justify-start items-center space-x-4 sm:space-x-6 w-full md:w-auto text-sm sm:text-base">
             <a
               href="https://www.linkedin.com/company/smart-farms-tech/"
               target="_blank"
