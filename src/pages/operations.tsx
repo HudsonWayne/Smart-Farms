@@ -18,7 +18,7 @@ export default function OperationsPage() {
         />
         <div
           className="relative z-10 text-center max-w-7xl mx-auto"
-          style={{ marginLeft: "50px", marginRight: "50px" }}
+          style={{ marginLeft: "30px", marginRight: "30px" }}
         >
           <h1
             className="text-3xl sm:text-4xl md:text-6xl font-bold"
@@ -37,8 +37,8 @@ export default function OperationsPage() {
         className="py-8 grid grid-cols-1 md:grid-cols-2 gap-16 items-center"
         style={{
           fontFamily: "Georgia, serif",
-          marginLeft: "50px",
-          marginRight: "50px",
+          marginLeft: "30px",
+          marginRight: "30px",
         }}
       >
         <div>
@@ -75,8 +75,8 @@ export default function OperationsPage() {
         className="pb-16 grid grid-cols-1 md:grid-cols-2 gap-8 items-center"
         style={{
           fontFamily: "Georgia, serif",
-          marginLeft: "50px",
-          marginRight: "50px",
+          marginLeft: "30px",
+          marginRight: "30px",
           marginTop:"50px",
         }}
       >
@@ -113,8 +113,8 @@ export default function OperationsPage() {
         className="pb-16 grid grid-cols-1 md:grid-cols-2 gap-8 items-center"
         style={{
           fontFamily: "Georgia, serif",
-          marginLeft: "50px",
-          marginRight: "50px",
+          marginLeft: "30px",
+          marginRight: "30px",
         }}
       >
         <div className="max-w-full">
@@ -150,8 +150,8 @@ export default function OperationsPage() {
         className="pb-16 grid grid-cols-1 md:grid-cols-2 gap-8 items-center"
         style={{
           fontFamily: "Georgia, serif",
-          marginLeft: "50px",
-          marginRight: "50px",
+          marginLeft: "30px",
+          marginRight: "30px",
         }}
       >
         <div>
@@ -187,8 +187,8 @@ export default function OperationsPage() {
         className="pb-20"
         style={{
           fontFamily: "Georgia, serif",
-          marginLeft: "50px",
-          marginRight: "50px",
+          marginLeft: "30px",
+          marginRight: "30px",
         }}
       >
         <p
@@ -206,8 +206,8 @@ export default function OperationsPage() {
         className="py-12 grid grid-cols-1 md:grid-cols-2 gap-16 items-center"
         style={{
           fontFamily: "Georgia, serif",
-          marginLeft: "50px",
-          marginRight: "50px",
+          marginLeft: "30px",
+          marginRight: "30px",
         }}
       >
         <div className="w-full max-w-full">

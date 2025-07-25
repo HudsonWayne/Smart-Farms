@@ -15,13 +15,20 @@ export default function Footer() {
   return (
     <footer
       className={`${poppins.className} bg-[#0C0332] text-white w-full`}
-      style={{ fontFamily: "var(--font-poppins), sans-serif" }}
+      style={{
+        fontFamily: "var(--font-poppins), sans-serif",
+        fontSize: "calc(1rem + 10px)", // Increase base font size by 10px
+        letterSpacing: "0.5px", // Slight letter spacing
+      }}
     >
       {/* Full width container with padding like Navbar */}
       <div className="w-full px-4 md:px-8 lg:px-16 py-8">
         {/* Top section with nav links and logo */}
         <div className="flex flex-col md:flex-row justify-between items-center mb-6">
-          <nav className="flex flex-wrap justify-center md:justify-start space-x-4 md:space-x-8 text-base font-semibold mb-4 md:mb-0">
+          <nav
+            className="flex flex-wrap justify-center md:justify-start space-x-4 md:space-x-8 font-semibold mb-4 md:mb-0"
+            style={{ fontSize: "calc(1rem + 10px)", letterSpacing: "0.5px" }}
+          >
             <Link href="/" className="text-[#72AE1C] hover:text-[#72AE1C]">
               Home
             </Link>
@@ -57,7 +64,10 @@ export default function Footer() {
         </div>
 
         {/* Bottom section with copyright and social icons */}
-        <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-300">
+        <div
+          className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-300"
+          style={{ fontSize: "calc(0.875rem + 10px)", letterSpacing: "0.5px" }}
+        >
           <p className="mb-4 md:mb-0 text-center md:text-left w-full md:w-auto">
             Copyright © 2025 Smart Farms. All rights reserved.
           </p>
