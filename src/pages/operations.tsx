@@ -77,7 +77,7 @@ export default function OperationsPage() {
           fontFamily: "Georgia, serif",
           marginLeft: "30px",
           marginRight: "30px",
-          marginTop:"50px",
+          marginTop: "50px",
         }}
       >
         <div>
@@ -87,16 +87,18 @@ export default function OperationsPage() {
               Fully Integrated, Farm-Ready
             </span>
           </h3>
-          <p
-            className="text-gray-800 leading-relaxed"
-            style={{ fontSize: "25px" }}
-          >
-            The Mavic 3 Multispectral comes equipped with both RGB and
-            multispectral sensors, making it ideal for professional agricultural
-            use. Since it&apos;s a complete, factory-assembled solution, we can
-            deploy it instantly, saving time and ensuring reliability from the
-            first flight.
-          </p>
+          <div style={{ maxWidth: "850px" }}>
+            <p
+              className="text-gray-800 leading-relaxed"
+              style={{ fontSize: "25px" }}
+            >
+              The Mavic 3 Multispectral comes equipped with both RGB and
+              multispectral sensors, making it ideal for professional
+              agricultural use. Since it&apos;s a complete, factory-assembled
+              solution, we can deploy it instantly, saving time and ensuring
+              reliability from the first flight.
+            </p>
+          </div>
         </div>
         <div className="ml-auto max-w-full">
           <Image
@@ -132,16 +134,18 @@ export default function OperationsPage() {
               Powerful Crop Insight Without the Wait
             </span>
           </h3>
-          <p
-            className="text-gray-800 leading-relaxed"
-            style={{ fontSize: "25px" }}
-          >
-            This drone captures rich data in real time, enabling us to generate
-            detailed vegetation indices like NDVI and NDRE. By analyzing these
-            images using built-in AI and Smart Farms’ digital tools, we provide
-            farmers with fast, accurate insights on crop health, nutrient
-            levels, and water stress.
-          </p>
+          <div style={{ maxWidth: "850px" }}>
+            <p
+              className="text-gray-800 leading-relaxed"
+              style={{ fontSize: "25px" }}
+            >
+              This drone captures rich data in real time, enabling us to
+              generate detailed vegetation indices like NDVI and NDRE. By
+              analyzing these images using built-in AI and Smart Farms’ digital
+              tools, we provide farmers with fast, accurate insights on crop
+              health, nutrient levels, and water stress.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -161,16 +165,18 @@ export default function OperationsPage() {
               Efficiency from Day One
             </span>
           </h3>
-          <p
-            className="text-gray-800 leading-relaxed"
-            style={{ fontSize: "24px" }}
-          >
-            Thanks to its plug-and-fly design, the Mavic 3 Multispectral helps
-            us reduce setup time and focus entirely on delivering quality
-            service. Whether it&apos;s mapping, surveying, or monitoring, this
-            drone helps us deliver precision agriculture solutions without
-            delay.
-          </p>
+          <div style={{ maxWidth: "850px" }}>
+            <p
+              className="text-gray-800 leading-relaxed"
+              style={{ fontSize: "24px" }}
+            >
+              Thanks to its plug-and-fly design, the Mavic 3 Multispectral helps
+              us reduce setup time and focus entirely on delivering quality
+              service. Whether it&apos;s mapping, surveying, or monitoring, this
+              drone helps us deliver precision agriculture solutions without
+              delay.
+            </p>
+          </div>
         </div>
         <div className="ml-auto max-w-full">
           <Image
