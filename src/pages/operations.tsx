@@ -121,7 +121,7 @@ export default function OperationsPage() {
           <Image
             src="/Rectangle 64.png"
             alt="Drone spraying NDVI"
-            width={400}
+            width={530}
             height={270}
           />
         </div>
@@ -176,7 +176,7 @@ export default function OperationsPage() {
           <Image
             src="/Rectangle 65.png"
             alt="DJI Drone in air"
-            width={400}
+            width={530}
             height={270}
           />
         </div>
