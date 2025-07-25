@@ -44,13 +44,10 @@ export default function ContactPage() {
         />
         <div className="absolute inset-0 bg-black opacity-60" />
         <div className="relative z-10 px-4 md:px-8 text-center max-w-4xl mx-auto">
-          <h1
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4"
-            style={{ color: "#72AE1C", fontSize:"70px" }}
-          >
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 text-[#72AE1C]">
             Contact Us
           </h1>
-          <p className="text-white text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed max-w-sm sm:max-w-md md:max-w-2xl lg:max-w-4xl mx-auto"style={{fontSize:"24px"}}>
+          <p className="text-white text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed max-w-sm sm:max-w-md md:max-w-2xl lg:max-w-4xl mx-auto">
             Empowering Zimbabwe’s small and medium-scale farmers with drone
             technology to increase crop yields, create jobs, and secure a
             sustainable agricultural future.
@@ -63,15 +60,17 @@ export default function ContactPage() {
         {/* Left Column - Contact Info */}
         <div className="space-y-10">
           <div>
-            <h3  className="text-[#72AE1C] font-semibold tracking-widest uppercase text-sm mb-1"style={{fontSize:"20px"}}>
+            <h3 className="text-[#72AE1C] font-semibold tracking-widest uppercase text-base sm:text-lg mb-1">
               Contact
             </h3>
-            <h2 className="text-2xl font-bold" style={{fontSize:"40px"}}>Talk to Us</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold">
+              Talk to Us
+            </h2>
           </div>
 
-          <div className="space-y-8 text-sm">
+          <div className="space-y-8 text-sm sm:text-base md:text-lg">
             <div>
-              <div className="flex items-center gap-2 mb-1" style={{ color: "#72AE1C",fontSize:"20px" }}>
+              <div className="flex items-center gap-2 mb-1 text-[#72AE1C] text-base sm:text-lg">
                 <FaEnvelope />
                 <span className="font-bold text-[#2E2E2E]">Email</span>
               </div>
@@ -79,7 +78,7 @@ export default function ContactPage() {
             </div>
 
             <div>
-              <div className="flex items-center gap-2 mb-1" style={{ color: "#72AE1C",fontSize:"20px"  }}>
+              <div className="flex items-center gap-2 mb-1 text-[#72AE1C] text-base sm:text-lg">
                 <FaPhone />
                 <span className="font-bold text-[#2E2E2E]">Phone</span>
               </div>
@@ -87,7 +86,7 @@ export default function ContactPage() {
             </div>
 
             <div>
-              <div className="flex items-center gap-2 mb-1" style={{ color: "#72AE1C",fontSize:"20px"  }}>
+              <div className="flex items-center gap-2 mb-1 text-[#72AE1C] text-base sm:text-lg">
                 <FaMapMarkerAlt />
                 <span className="font-bold text-[#2E2E2E]">Address</span>
               </div>
@@ -99,7 +98,7 @@ export default function ContactPage() {
         </div>
 
         {/* Right Column - Form */}
-        <form className="md:col-span-2 grid grid-cols-1 gap-6 text-sm" style={{fontSize:"24px"}}>
+        <form className="md:col-span-2 grid grid-cols-1 gap-6 text-base sm:text-lg">
           <div className="grid md:grid-cols-2 gap-6">
             <input
               type="text"
@@ -163,19 +162,19 @@ export default function ContactPage() {
       {/* FAQ Section */}
       <div className="max-w-7xl mx-auto px-4 md:px-8 py-16 grid md:grid-cols-2 gap-12 text-[#3B3B3B]">
         <div className="flex flex-col justify-center">
-          <h3 className="text-5xl mb-3" style={{ fontWeight: 600, lineHeight: 1.4 }}>
+          <h3 className="text-3xl sm:text-4xl lg:text-5xl mb-3 font-semibold leading-snug">
             Any questions? <br /> We got you.
           </h3>
-          <p className="text-base max-w-sm"style={{fontSize:"24px", marginTop:"20px"}}>
+          <p className="text-base sm:text-lg md:text-xl mt-5">
             Find answers to the most common questions about our drone technology
             and training programs.
           </p>
         </div>
 
         <div>
-          <h4 className="font-semibold mb-6"style={{fontSize:"24px"}}>
+          <h4 className="font-semibold text-lg sm:text-xl mb-6">
             FAQs
-            <span className="block text-sm font-normal mt-1"style={{fontSize:"24px"}}>
+            <span className="block font-normal mt-1 text-base sm:text-lg">
               This section provides clear answers to common questions about
               Smart Farms’ drone technology, training, and implementation
               process.
@@ -184,13 +183,12 @@ export default function ContactPage() {
 
           {faqs.map((faq, i) => (
             <div
-            style={{fontSize:"22px"}}
               key={i}
-              className="border-b border-gray-300 py-4 cursor-pointer"
+              className="border-b border-gray-300 py-4 cursor-pointer text-base sm:text-lg"
               onClick={() => toggleFAQ(i)}
             >
               <div className="flex justify-between items-center">
-                <h5 className="text-lg font-semibold">{faq.question}</h5>
+                <h5 className="font-semibold">{faq.question}</h5>
                 <span className="text-2xl select-none">
                   {openIndex === i ? "−" : "+"}
                 </span>
