@@ -87,7 +87,7 @@ export default function OperationsPage() {
               Fully Integrated, Farm-Ready
             </span>
           </h3>
-          <div style={{ maxWidth: "850px" }}>
+          <div style={{ maxWidth: "950px" }}>
             <p
               className="text-gray-800 leading-relaxed"
               style={{ fontSize: "25px" }}
@@ -221,7 +221,7 @@ export default function OperationsPage() {
             src="/Group 22 (1).png"
             alt="Locally assembled drone"
             width={400}
-            height={940}
+            height={1140}
             className="w-full h-auto max-w-full rounded-lg"
           />
         </div>
