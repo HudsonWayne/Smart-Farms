@@ -15,9 +15,7 @@ export default function AboutPage() {
   };
 
   const cardData = [
-    {
-      title: "Our Values",
-    },
+    { title: "Our Values" },
     {
       title: "Productivity",
       content:
@@ -47,8 +45,8 @@ export default function AboutPage() {
 
   return (
     <>
-      {/* Background Hero Section */}
-      <div className="relative w-full min-h-[60vh] md:min-h-[70vh] flex items-center justify-center ">
+      {/* Hero Section */}
+      <div className="relative w-full min-h-[60vh] md:min-h-[70vh] flex items-center justify-center">
         <Image
           src="/Rectangle 23.png"
           alt="Drone spraying field"
@@ -59,23 +57,15 @@ export default function AboutPage() {
           draggable={false}
         />
         <div className="absolute inset-0 bg-black opacity-60" />
-        {/* Full width container with padding */}
         <div className="relative z-10 px-4 md:px-8 lg:px-16 text-center w-full">
           <div className="max-w-7xl mx-auto">
             <h1
-              className="text-4xl md:text-6xl font-bold mb-4"
-              style={{
-                fontSize: "80px",
-                fontFamily: "Georgia, serif",
-                color: "#72AE1C",
-              }}
+              className="text-[40px] sm:text-[60px] md:text-[70px] lg:text-[80px] font-bold mb-4"
+              style={{ fontFamily: "Georgia, serif", color: "#72AE1C" }}
             >
               About Us
             </h1>
-            <p
-              style={{ fontSize: "30px" }}
-              className="text-white text-lg md:text-xl leading-relaxed font-[Georgia]"
-            >
+            <p className="text-white text-base sm:text-lg md:text-xl leading-relaxed font-[Georgia]">
               Empowering Zimbabwe&apos;s small and medium-scale farmers with drone
               technology to increase crop yields, create jobs, and secure a
               sustainable agricultural future.
@@ -84,47 +74,46 @@ export default function AboutPage() {
         </div>
       </div>
 
-      {/* Who We Are Section */}
+      {/* Who We Are */}
       <div className="grid md:grid-cols-2 gap-12 items-center mt-10 mb-10 w-full px-4 md:px-8 lg:px-16 mt-[100px]">
         <div>
           <Image
             src="/Rectangle 55 (1).png"
-            alt="Smart Fertilizer Application with AI and Drone Technology"
+            alt="Smart Fertilizer Application"
             width={650}
             height={250}
           />
         </div>
         <div className="max-w-prose">
           <h2
-            className="text-3xl font-bold mb-6"
-            style={{ fontFamily: "Georgia, serif", color: "#72AE1C", fontSize:"60px"}}
+            className="text-[36px] sm:text-[45px] md:text-[50px] lg:text-[60px] font-bold mb-6"
+            style={{ fontFamily: "Georgia, serif", color: "#72AE1C" }}
           >
             Who We Are
           </h2>
-         <p
-  className="text-gray-800 text-lg leading-relaxed text-justify"
-  style={{ fontFamily: "Georgia, serif", fontSize: "23px", maxWidth: "calc(100% + 10px)" }}
->
-  “Smart Farms is an enterprise committed to using innovation to
-  ensure food security, improve livelihoods, and transform rural
-  communities through precision agriculture solutions in Zimbabwe. We
-  take advantage of advanced high-resolution camera drones embedded
-  with smart sensors for land mapping, surveying, crop health
-  monitoring, and pesticide and fertilizer applications. Our actions
-  contribute to positive climate change, and we are on a goal to end
-  poverty and hunger. We want to help smallholders and medium-scale
-  farmers realize their value to the economy of the country through
-  their agricultural harvests.”
-</p>
-
+          <p
+            className="text-gray-800 text-sm sm:text-base md:text-lg leading-relaxed text-justify"
+            style={{ fontFamily: "Georgia, serif" }}
+          >
+            “Smart Farms is an enterprise committed to using innovation to
+            ensure food security, improve livelihoods, and transform rural
+            communities through precision agriculture solutions in Zimbabwe. We
+            take advantage of advanced high-resolution camera drones embedded
+            with smart sensors for land mapping, surveying, crop health
+            monitoring, and pesticide and fertilizer applications. Our actions
+            contribute to positive climate change, and we are on a goal to end
+            poverty and hunger. We want to help smallholders and medium-scale
+            farmers realize their value to the economy of the country through
+            their agricultural harvests.”
+          </p>
         </div>
       </div>
 
       {/* Message from the Founder */}
       <div className="text-center my-12 mt-[100px] w-full px-4 md:px-8 lg:px-16">
         <h2
-          className="text-3xl font-bold"
-          style={{ fontFamily: "Georgia, serif", color: "#72AE1C", fontSize:"60px" }}
+          className="text-[36px] sm:text-[45px] md:text-[50px] lg:text-[60px] font-bold"
+          style={{ fontFamily: "Georgia, serif", color: "#72AE1C" }}
         >
           Message from the Founder
         </h2>
@@ -133,7 +122,7 @@ export default function AboutPage() {
       <div className="grid md:grid-cols-2 gap-12 items-center w-full px-4 md:px-8 lg:px-16 mb-16">
         <div className="max-w-prose">
           <p
-            className="text-gray-800 text-lg leading-relaxed text-justify"
+            className="text-gray-800 text-sm sm:text-base md:text-lg leading-relaxed text-justify"
             style={{ fontFamily: "Georgia, serif" }}
           >
             “The agricultural sector in Zimbabwe contributes about 21% towards
@@ -173,10 +162,7 @@ export default function AboutPage() {
 
       {/* Our Values Section */}
       <div className="py-12 bg-white mb-[100px] w-full px-4 md:px-8 lg:px-16">
-        <div className="mb-12">
-          {/* Optional heading removed as before */}
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full px-4 md:px-0">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
           {cardData.map((card, index) =>
             index === 0 ? (
               <div
@@ -184,7 +170,7 @@ export default function AboutPage() {
                 className="text-center flex items-center justify-center"
                 style={{ fontFamily: "Georgia, serif" }}
               >
-                <h3 className="text-4xl font-bold" style={{ color: "#72AE1C" }}>
+                <h3 className="text-3xl sm:text-4xl font-bold" style={{ color: "#72AE1C" }}>
                   {card.title}
                 </h3>
               </div>
@@ -195,13 +181,13 @@ export default function AboutPage() {
                 style={{ fontFamily: "Georgia, serif", textAlign: "justify" }}
               >
                 <h3
-                  className="text-xl font-bold mb-3"
+                  className="text-lg sm:text-xl font-bold mb-3"
                   style={{ color: "#72AE1C" }}
                 >
                   {card.title}
                 </h3>
                 <p
-                  className={`text-sm ${
+                  className={`text-sm sm:text-base ${
                     expandedCards.includes(index) ? "" : "line-clamp-4"
                   }`}
                 >
