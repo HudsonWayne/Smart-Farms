@@ -77,6 +77,7 @@ export default function OperationsPage() {
           fontFamily: "Georgia, serif",
           marginLeft: "50px",
           marginRight: "50px",
+          marginTop:"50px",
         }}
       >
         <div>
@@ -101,7 +102,7 @@ export default function OperationsPage() {
           <Image
             src="/Rectangle 56 (11).png"
             alt="DJI Drone Flying"
-            width={400}
+            width={530}
             height={270}
           />
         </div>
