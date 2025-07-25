@@ -2,6 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { Poppins } from "next/font/google";
 
@@ -12,6 +13,8 @@ const poppins = Poppins({
 });
 
 export default function Footer() {
+  const pathname = usePathname();
+
   return (
     <footer
       className={`${poppins.className} bg-[#0C0332] text-white w-full`}
@@ -25,19 +28,44 @@ export default function Footer() {
         {/* Top section with nav links and logo */}
         <div className="flex flex-col md:flex-row justify-between items-center mb-6">
           <nav className="flex flex-wrap justify-center md:justify-start space-x-2 sm:space-x-4 md:space-x-8 font-semibold mb-4 md:mb-0 text-sm sm:text-base md:text-lg">
-            <Link href="/" className="text-[#72AE1C] hover:text-[#72AE1C]">
+            <Link
+              href="/"
+              className={`${
+                pathname === "/" ? "text-[#72AE1C]" : "hover:text-[#72AE1C]"
+              }`}
+            >
               Home
             </Link>
-            <Link href="/services" className="hover:text-[#72AE1C]">
+            <Link
+              href="/services"
+              className={`${
+                pathname === "/services" ? "text-[#72AE1C]" : "hover:text-[#72AE1C]"
+              }`}
+            >
               Services
             </Link>
-            <Link href="/about" className="hover:text-[#72AE1C]">
+            <Link
+              href="/about"
+              className={`${
+                pathname === "/about" ? "text-[#72AE1C]" : "hover:text-[#72AE1C]"
+              }`}
+            >
               About Us
             </Link>
-            <Link href="/our-team" className="hover:text-[#72AE1C]">
+            <Link
+              href="/our-team"
+              className={`${
+                pathname === "/our-team" ? "text-[#72AE1C]" : "hover:text-[#72AE1C]"
+              }`}
+            >
               Our Team
             </Link>
-            <Link href="/operations" className="hover:text-[#72AE1C]">
+            <Link
+              href="/operations"
+              className={`${
+                pathname === "/operations" ? "text-[#72AE1C]" : "hover:text-[#72AE1C]"
+              }`}
+            >
               Operations
             </Link>
           </nav>
