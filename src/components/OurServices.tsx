@@ -22,7 +22,7 @@ export default function OurServices() {
           className="text-gray-700 text-[30px] md:text-[36px] leading-relaxed mx-auto mb-[62px]"
           style={{
             width: "95%",
-            maxWidth: "900px",
+            maxWidth: "1400px",
             fontFamily: "Georgia, serif",
           }}
         >
