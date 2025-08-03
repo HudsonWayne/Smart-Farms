@@ -9,11 +9,11 @@ export default function OurMission() {
         {/* Mission Image */}
         <div>
           <Image
-            src="/ourmission.png"
+            src="/Pic 6.jpg"
             alt="Drone spraying crops"
             width={500}
             height={400}
-            className="w-full object-cover"
+            className="w-full object-cover rounded-lg"
           />
         </div>
 
@@ -48,11 +48,11 @@ export default function OurMission() {
         {/* Vision Image */}
         <div className="order-1 md:order-2">
           <Image
-            src="/Rectangle 61.png"
+            src="/Pic 3.jpg"
             alt="Drone on grass"
             width={500}
             height={400}
-            className="w-full object-cover"
+            className="w-full object-cover rounded-lg"
           />
         </div>
       </div>
