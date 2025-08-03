@@ -1,4 +1,3 @@
-// src/pages/operations.tsx
 "use client";
 
 import Image from "next/image";
@@ -9,7 +8,7 @@ export default function OperationsPage() {
       <div className="w-full mx-auto space-y-16">
         {/* Block 1 */}
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="w-full h-[480px]">
+          <div className="w-full h-60 md:h-[480px]">
             <Image
               src="/Pic 29.jpg"
               alt="Land mapping, surveying and crop health monitoring"
@@ -38,7 +37,7 @@ export default function OperationsPage() {
               Using the Mavic 3’s high-resolution camera, we capture detailed aerial images of farmland. These images are then processed through AI algorithms to generate precise maps, identify terrain variations, and calculate field boundaries with pinpoint accuracy.
             </p>
           </div>
-          <div className="order-1 md:order-2 w-full h-[480px]">
+          <div className="order-1 md:order-2 w-full h-60 md:h-[480px]">
             <Image
               src="/Pic 14.jpg"
               alt="AI-Powered Land Mapping & Surveying"
@@ -51,7 +50,7 @@ export default function OperationsPage() {
 
         {/* Block 3 */}
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="w-full h-[480px]">
+          <div className="w-full h-60 md:h-[480px]">
             <Image
               src="/Pic 15.jpg"
               alt="Intelligent Crop Health Monitoring"
@@ -80,7 +79,7 @@ export default function OperationsPage() {
               We’re transforming crop spraying using AI and drones to ensure inputs are applied exactly where and when needed.
             </p>
           </div>
-          <div className="order-1 md:order-2 w-full h-[480px]">
+          <div className="order-1 md:order-2 w-full h-60 md:h-[480px]">
             <Image
               src="/Pic 16.png"
               alt="Precision Crop Spraying"
@@ -93,7 +92,7 @@ export default function OperationsPage() {
 
         {/* Block 5 */}
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="w-full h-[480px]">
+          <div className="w-full h-60 md:h-[480px]">
             <Image
               src="/Pic 23.jpg"
               alt="Targeted Spraying with Drone Accuracy"
@@ -122,7 +121,7 @@ export default function OperationsPage() {
               We reduce chemical use and runoff by spraying only where needed. This promotes sustainability and protects ecosystems.
             </p>
           </div>
-          <div className="order-1 md:order-2 w-full h-[480px]">
+          <div className="order-1 md:order-2 w-full h-60 md:h-[480px]">
             <Image
               src="/Pic 26.jpg"
               alt="Environmentally Responsible Farming"
@@ -135,7 +134,7 @@ export default function OperationsPage() {
 
         {/* Block 7 */}
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="w-full h-[480px]">
+          <div className="w-full h-60 md:h-[480px]">
             <Image
               src="/Pic 28.jpg"
               alt="Smart Fertilizer Application with AI and Drone Technology"
@@ -164,7 +163,7 @@ export default function OperationsPage() {
               Our GPS-guided drones ensure accurate fertilizer delivery, even in hard-to-reach areas.
             </p>
           </div>
-          <div className="order-1 md:order-2 w-full h-[480px]">
+          <div className="order-1 md:order-2 w-full h-60 md:h-[480px]">
             <Image
               src="/Pic 15.jpg"
               alt="Precision Application for Maximum Impact"
@@ -177,7 +176,7 @@ export default function OperationsPage() {
 
         {/* Block 9 */}
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="w-full h-[480px]">
+          <div className="w-full h-60 md:h-[480px]">
             <Image
               src="/Pic 29.jpg"
               alt="AI-Driven Decision Making"
