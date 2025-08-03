@@ -10,7 +10,7 @@ export default function OperationsPage() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="w-full h-60 md:h-[480px]">
             <Image
-              src="/Pic 29.jpg"
+              src="/Pic 1.jpg"
               alt="Land mapping, surveying and crop health monitoring"
               width={800}
               height={480}
@@ -39,7 +39,7 @@ export default function OperationsPage() {
           </div>
           <div className="order-1 md:order-2 w-full h-60 md:h-[480px]">
             <Image
-              src="/Pic 14.jpg"
+              src="/Pic 2.jpg"
               alt="AI-Powered Land Mapping & Surveying"
               width={800}
               height={480}
@@ -52,7 +52,7 @@ export default function OperationsPage() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="w-full h-60 md:h-[480px]">
             <Image
-              src="/Pic 15.jpg"
+              src="/Pic 10.jpg"
               alt="Intelligent Crop Health Monitoring"
               width={800}
               height={480}
@@ -81,8 +81,8 @@ export default function OperationsPage() {
           </div>
           <div className="order-1 md:order-2 w-full h-60 md:h-[480px]">
             <Image
-              src="/Pic 16.png"
-              alt="Precision Crop Spraying"
+              src="/Pic 7.jpg"
+              alt="Precision Application for Maximum Impact"
               width={800}
               height={480}
               className="w-full h-full object-cover rounded-xl"
@@ -94,7 +94,7 @@ export default function OperationsPage() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="w-full h-60 md:h-[480px]">
             <Image
-              src="/Pic 23.jpg"
+              src="/Pic 22.jpg"
               alt="Targeted Spraying with Drone Accuracy"
               width={800}
               height={480}
@@ -123,7 +123,7 @@ export default function OperationsPage() {
           </div>
           <div className="order-1 md:order-2 w-full h-60 md:h-[480px]">
             <Image
-              src="/Pic 26.jpg"
+              src="/Pic 25.jpeg"
               alt="Environmentally Responsible Farming"
               width={800}
               height={480}
@@ -136,7 +136,7 @@ export default function OperationsPage() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="w-full h-60 md:h-[480px]">
             <Image
-              src="/Pic 28.jpg"
+              src="/Pic 6.jpg"
               alt="Smart Fertilizer Application with AI and Drone Technology"
               width={800}
               height={480}
@@ -165,7 +165,7 @@ export default function OperationsPage() {
           </div>
           <div className="order-1 md:order-2 w-full h-60 md:h-[480px]">
             <Image
-              src="/Pic 15.jpg"
+              src="/Pic 6.jpg"
               alt="Precision Application for Maximum Impact"
               width={800}
               height={480}
