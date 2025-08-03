@@ -34,7 +34,7 @@ export default function ContactPage() {
       {/* Hero Section */}
       <div className="relative w-[calc(100%+200px)] left-[-100px] min-h-[60vh] md:min-h-[70vh] flex items-center justify-center">
         <Image
-          src="/Rectangle 566.png"
+          src="/Pic 15.jpg"
           alt="Smart Farms Contact Banner"
           fill
           priority
