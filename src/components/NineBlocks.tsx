@@ -5,19 +5,17 @@ import Image from "next/image";
 
 export default function OperationsPage() {
   return (
-    <section
-      className="w-full bg-white font-[Georgia] py-12 px-4 md:px-8"
-    >
+    <section className="w-full bg-white font-[Georgia] py-12 px-4 md:px-8">
       <div className="w-full mx-auto space-y-16">
         {/* Block 1 */}
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div>
+          <div className="w-full h-[480px]">
             <Image
-              src="/Rectangle 55.png"
+              src="/Pic 29.jpg"
               alt="Land mapping, surveying and crop health monitoring"
-              width={500}
-              height={400}
-              className="w-full object-cover"
+              width={800}
+              height={480}
+              className="w-full h-full object-cover rounded-xl"
             />
           </div>
           <div>
@@ -40,26 +38,26 @@ export default function OperationsPage() {
               Using the Mavic 3’s high-resolution camera, we capture detailed aerial images of farmland. These images are then processed through AI algorithms to generate precise maps, identify terrain variations, and calculate field boundaries with pinpoint accuracy.
             </p>
           </div>
-          <div className="order-1 md:order-2">
+          <div className="order-1 md:order-2 w-full h-[480px]">
             <Image
-              src="/Rectangle 56.png"
+              src="/Pic 14.jpg"
               alt="AI-Powered Land Mapping & Surveying"
-              width={500}
-              height={400}
-              className="w-full object-cover"
+              width={800}
+              height={480}
+              className="w-full h-full object-cover rounded-xl"
             />
           </div>
         </div>
 
         {/* Block 3 */}
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div>
+          <div className="w-full h-[480px]">
             <Image
-              src="/Rectangle 57.png"
+              src="/Pic 15.jpg"
               alt="Intelligent Crop Health Monitoring"
-              width={500}
-              height={400}
-              className="w-full object-cover"
+              width={800}
+              height={480}
+              className="w-full h-full object-cover rounded-xl"
             />
           </div>
           <div>
@@ -82,26 +80,26 @@ export default function OperationsPage() {
               We’re transforming crop spraying using AI and drones to ensure inputs are applied exactly where and when needed.
             </p>
           </div>
-          <div className="order-1 md:order-2">
+          <div className="order-1 md:order-2 w-full h-[480px]">
             <Image
-              src="/Rectangle 58.png"
+              src="/Pic 16.png"
               alt="Precision Crop Spraying"
-              width={500}
-              height={400}
-              className="w-full object-cover"
+              width={800}
+              height={480}
+              className="w-full h-full object-cover rounded-xl"
             />
           </div>
         </div>
 
         {/* Block 5 */}
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div>
+          <div className="w-full h-[480px]">
             <Image
-              src="/Rectangle 59.png"
+              src="/Pic 23.jpg"
               alt="Targeted Spraying with Drone Accuracy"
-              width={500}
-              height={400}
-              className="w-full object-cover"
+              width={800}
+              height={480}
+              className="w-full h-full object-cover rounded-xl"
             />
           </div>
           <div>
@@ -124,26 +122,26 @@ export default function OperationsPage() {
               We reduce chemical use and runoff by spraying only where needed. This promotes sustainability and protects ecosystems.
             </p>
           </div>
-          <div className="order-1 md:order-2">
+          <div className="order-1 md:order-2 w-full h-[480px]">
             <Image
-              src="/Rectangle 60.png"
+              src="/Pic 26.jpg"
               alt="Environmentally Responsible Farming"
-              width={500}
-              height={400}
-              className="w-full object-cover"
+              width={800}
+              height={480}
+              className="w-full h-full object-cover rounded-xl"
             />
           </div>
         </div>
 
         {/* Block 7 */}
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div>
+          <div className="w-full h-[480px]">
             <Image
-              src="/Rectangle 61.png"
+              src="/Pic 28.jpg"
               alt="Smart Fertilizer Application with AI and Drone Technology"
-              width={500}
-              height={400}
-              className="w-full object-cover"
+              width={800}
+              height={480}
+              className="w-full h-full object-cover rounded-xl"
             />
           </div>
           <div>
@@ -166,26 +164,26 @@ export default function OperationsPage() {
               Our GPS-guided drones ensure accurate fertilizer delivery, even in hard-to-reach areas.
             </p>
           </div>
-          <div className="order-1 md:order-2">
+          <div className="order-1 md:order-2 w-full h-[480px]">
             <Image
-              src="/Rectangle 63 (1).png"
+              src="/Pic 15.jpg"
               alt="Precision Application for Maximum Impact"
-              width={500}
-              height={400}
-              className="w-full object-cover"
+              width={800}
+              height={480}
+              className="w-full h-full object-cover rounded-xl"
             />
           </div>
         </div>
 
         {/* Block 9 */}
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div>
+          <div className="w-full h-[480px]">
             <Image
-              src="/Rectangle 55.png"
+              src="/Pic 29.jpg"
               alt="AI-Driven Decision Making"
-              width={500}
-              height={400}
-              className="w-full object-cover"
+              width={800}
+              height={480}
+              className="w-full h-full object-cover rounded-xl"
             />
           </div>
           <div>

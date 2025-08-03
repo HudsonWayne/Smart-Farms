@@ -3,12 +3,12 @@
 import { useEffect, useState } from "react";
 
 const images = [
-  "/Rectangle 55.png",
-  "/Rectangle 56.png",
-  "/Rectangle 58.png",
-  "/Rectangle 59.png",
-  "/Rectangle 60.png",
-  "/Rectangle 61.png",
+  "/Pic 2.jpg",
+  "/Pic 6.jpg",
+  "/Pic 9.jpg",
+  "/Pic 13.jpg",
+  "/Pic 18.JPG",
+  "/Pic 20.JPG",
 ];
 
 const Carousel = () => {

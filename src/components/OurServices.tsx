@@ -28,9 +28,9 @@ export default function OurServices() {
         {/* First Row of Images */}
         <div className="grid md:grid-cols-3 gap-6 mb-12 text-left -mx-4">
           {[
-            { src: "/Rectangle 8.png", alt: "High Resolution Camera", label: "High Resolution Camera" },
-            { src: "/Rectangle 9.png", alt: "AI Integrated", label: "AI Integrated" },
-            { src: "/Rectangle 10.png", alt: "Multispectral Sensor", label: "Multispectral Sensor" },
+            { src: "/Pic 8.jpg", alt: "High Resolution Camera", label: "High Resolution Camera" },
+            { src: "/Pic 9.jpg", alt: "AI Integrated", label: "AI Integrated" },
+            { src: "/Pic .jpg", alt: "Multispectral Sensor", label: "Multispectral Sensor" },
           ].map((item, i) => (
             <div className="px-4" key={i}>
               <Image

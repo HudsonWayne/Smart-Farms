@@ -31,7 +31,7 @@ const ContactSection = () => {
             <EnvelopeIcon className="text-[#72AE1C] w-6 h-6 mt-1" />
             <div>
               <p className="font-semibold text-lg">Email</p>
-              <p>info@smartfarms-tech.com</p>
+              <p>infor@smartfarms-tech.com</p>
             </div>
           </div>
 
