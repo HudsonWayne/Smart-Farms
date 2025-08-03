@@ -80,7 +80,7 @@ export default function AboutPage() {
           <Image
             src="/Rectangle 55 (1).png"
             alt="Smart Fertilizer Application"
-            width={650}
+            width={750}
             height={250}
           />
         </div>
@@ -123,7 +123,7 @@ export default function AboutPage() {
         <div className="max-w-prose">
           <p
             className="text-gray-800 text-sm sm:text-base md:text-lg leading-relaxed text-justify"
-            style={{ fontFamily: "Georgia, serif" }}
+            style={{ fontFamily: "Georgia, serif", fontSize:"21.7px" }}
           >
             “The agricultural sector in Zimbabwe contributes about 21% towards
             the country’s GDP. Out of this, more than 50% comes from smallholder
@@ -151,11 +151,10 @@ export default function AboutPage() {
         </div>
         <div>
           <Image
-            src="/founder.png"
+            src="/Message from the Founder.jpg"
             alt="Message from the Founder"
-            width={400}
+            width={600}
             height={200}
-            className="w-full object-cover rounded-lg"
           />
         </div>
       </div>
