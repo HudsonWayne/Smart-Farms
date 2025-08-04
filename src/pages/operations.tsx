@@ -12,9 +12,9 @@ export default function OperationsPage() {
           alt="Drone spraying field"
           fill
           priority
-          style={{ objectFit: "cover" }}
-          className="absolute inset-0 w-full h-full rounded-lg"
+          className="absolute inset-0 uniform-img"
           draggable={false}
+          style={{ objectFit: "cover" }}
         />
         <div className="absolute inset-0 bg-black opacity-60 rounded-lg" />
         <div className="relative z-10 text-center max-w-7xl mx-auto px-4">
@@ -50,47 +50,45 @@ export default function OperationsPage() {
           <Image
             src="/Rectangle 63 (11).png"
             alt="DJI Mavic 3 Closeup"
-            width={600}
-            height={400}
-            className="rounded-lg w-full h-auto object-cover"
+            className="uniform-img"
+            width={530}
+            height={390}
+            style={{ objectFit: "cover" }}
           />
         </div>
       </section>
 
       {/* Section 2 */}
-       <section
-      className="pb-16 grid grid-cols-1 md:grid-cols-2 gap-8 items-center px-6 md:px-10"
-      style={{ fontFamily: "Georgia, serif" }}
-    >
-      {/* Text Content */}
-      <div>
-        <h3 className="font-bold text-gray-900 mb-2 text-2xl">
-          1.{" "}
-          <span className="text-black text-xl sm:text-2xl">
-            Fully Integrated, Farm-Ready
-          </span>
-        </h3>
-        <p className="text-base sm:text-lg md:text-xl text-gray-800 leading-relaxed">
-          The Mavic 3 Multispectral comes equipped with both RGB and
-          multispectral sensors, making it ideal for professional agricultural
-          use. Since it is a complete, factory-assembled solution, we can
-          deploy it instantly, saving time and ensuring reliability from the
-          first flight.
-        </p>
-      </div>
-
-      {/* Image aligned to the right */}
-      <div className="flex justify-end">
-        <Image
-          src="/Pic 15.jpg"
-          alt="DJI Drone Flying"
-          width={570}
-          height={680}
-          className="rounded-lg object-cover"
-        />
-      </div>
-    </section>
-
+      <section
+        className="pb-16 grid grid-cols-1 md:grid-cols-2 gap-8 items-center px-6 md:px-10"
+        style={{ fontFamily: "Georgia, serif" }}
+      >
+        <div>
+          <h3 className="font-bold text-gray-900 mb-2 text-2xl">
+            1.{" "}
+            <span className="text-black text-xl sm:text-2xl">
+              Fully Integrated, Farm-Ready
+            </span>
+          </h3>
+          <p className="text-base sm:text-lg md:text-xl text-gray-800 leading-relaxed">
+            The Mavic 3 Multispectral comes equipped with both RGB and
+            multispectral sensors, making it ideal for professional agricultural
+            use. Since it is a complete, factory-assembled solution, we can
+            deploy it instantly, saving time and ensuring reliability from the
+            first flight.
+          </p>
+        </div>
+        <div className="flex justify-end">
+          <Image
+            src="/Pic 15.jpg"
+            alt="DJI Drone Flying"
+            className="uniform-img"
+            width={530}
+            height={390}
+            style={{ objectFit: "cover" }}
+          />
+        </div>
+      </section>
 
       {/* Section 3 */}
       <section
@@ -99,16 +97,17 @@ export default function OperationsPage() {
       >
         <div>
           <Image
-            src="/Rectangle 64.png"
+            src="/Pic 16.png"
             alt="Drone spraying NDVI"
+            className="uniform-img"
             width={530}
-            height={270}
-            className="rounded-lg w-full h-auto object-cover"
+            height={390}
+            style={{ objectFit: "cover" }}
           />
         </div>
         <div>
           <h3 className="font-bold text-gray-900 mb-2 text-2xl">
-            2.{' '}
+            2.{" "}
             <span className="text-black text-xl sm:text-2xl">
               Powerful Crop Insight Without the Wait
             </span>
@@ -130,7 +129,7 @@ export default function OperationsPage() {
       >
         <div>
           <h3 className="font-bold text-gray-900 mb-2 text-2xl">
-            3.{' '}
+            3.{" "}
             <span className="text-black text-xl sm:text-2xl">
               Efficiency from Day One
             </span>
@@ -144,11 +143,12 @@ export default function OperationsPage() {
         </div>
         <div>
           <Image
-            src="/Rectangle 65.png"
+            src="/Pic 17.jpg"
             alt="DJI Drone in air"
+            className="uniform-img"
             width={530}
-            height={270}
-            className="rounded-lg w-full h-auto object-cover"
+            height={390}
+            style={{ objectFit: "cover" }}
           />
         </div>
       </section>
@@ -172,11 +172,12 @@ export default function OperationsPage() {
       >
         <div>
           <Image
-            src="/Group 22 (1).png"
+            src="/Pic 18.jpg"
             alt="Locally assembled drone"
-            width={400}
-            height={1140}
-            className="w-full h-auto rounded-lg object-cover"
+            className="uniform-img"
+            width={530}
+            height={390}
+            style={{ objectFit: "cover" }}
           />
         </div>
         <div>
@@ -186,12 +187,12 @@ export default function OperationsPage() {
             Scalable Precision Farming
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-gray-800 mb-4 leading-relaxed">
-            We assemble our{' '}
+            We assemble our{" "}
             <span className="text-[#72AE1C] font-semibold">
               large-capacity spraying and fertilizer drones
-            </span>{' '}
+            </span>{" "}
             locally using high quality, industry-standard parts. These drones
-            are assembled at our innovation hub by our dedicated in-house{' '}
+            are assembled at our innovation hub by our dedicated in-house{" "}
             <span className="text-[#72AE1C] font-semibold">
               Engineer and Drone Technician
             </span>
@@ -233,3 +234,5 @@ export default function OperationsPage() {
     </div>
   );
 }
+
+
