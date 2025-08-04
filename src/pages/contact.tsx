@@ -74,7 +74,7 @@ export default function ContactPage() {
                 <FaEnvelope />
                 <span className="font-bold text-[#2E2E2E]">Email</span>
               </div>
-              <p className="text-gray-700">info@smartfarms-tech.com</p>
+              <p className="text-gray-700">infor@smartfarms-tech.com</p>
             </div>
 
             <div>
