@@ -83,8 +83,8 @@ export default function OperationsPage() {
             src="/Pic 15.jpg"
             alt="DJI Drone Flying"
             className="uniform-img"
-            width={530}
-            height={390}
+            width={520}
+            height={350}
             style={{ objectFit: "cover" }}
           />
         </div>
@@ -122,36 +122,37 @@ export default function OperationsPage() {
         </div>
       </section>
 
-      {/* Section 4 */}
       <section
-        className="pb-16 grid grid-cols-1 md:grid-cols-2 gap-8 items-center px-6 md:px-10"
-        style={{ fontFamily: "Georgia, serif" }}
-      >
-        <div>
-          <h3 className="font-bold text-gray-900 mb-2 text-2xl">
-            3.{" "}
-            <span className="text-black text-xl sm:text-2xl">
-              Efficiency from Day One
-            </span>
-          </h3>
-          <p className="text-base sm:text-lg md:text-xl text-gray-800 leading-relaxed">
-            Thanks to its plug-and-fly design, the Mavic 3 Multispectral helps
-            us reduce setup time and focus entirely on delivering quality
-            service. Whether it is mapping, surveying, or monitoring, this drone
-            helps us deliver precision agriculture solutions without delay.
-          </p>
-        </div>
-        <div>
-          <Image
-            src="/Pic 17.jpg"
-            alt="DJI Drone in air"
-            className="uniform-img"
-            width={530}
-            height={390}
-            style={{ objectFit: "cover" }}
-          />
-        </div>
-      </section>
+      className="pb-16 grid grid-cols-1 md:grid-cols-2 gap-8 items-center px-6 md:px-10"
+      style={{ fontFamily: "Georgia, serif" }}
+    >
+      <div>
+        <h3 className="font-bold text-gray-900 mb-2 text-2xl">
+          3.{" "}
+          <span className="text-black text-xl sm:text-2xl">
+            Efficiency from Day One
+          </span>
+        </h3>
+        <p className="text-base sm:text-lg md:text-xl text-gray-800 leading-relaxed">
+          Thanks to its plug-and-fly design, the Mavic 3 Multispectral helps us
+          reduce setup time and focus entirely on delivering quality service.
+          Whether it is mapping, surveying, or monitoring, this drone helps us
+          deliver precision agriculture solutions without delay.
+        </p>
+      </div>
+      <div className="w-full flex justify-center">
+        <Image
+          src="/Pic 17.jpg"
+          alt="DJI Drone in air"
+          width={530}
+          height={390}
+          className="rounded-lg w-full max-w-[530px] h-[390px] object-cover"
+          style={{
+            objectPosition: "center 45%", // slightly moves the image up to reduce zoom feel
+          }}
+        />
+      </div>
+    </section>
 
       {/* Final Note */}
       <div
