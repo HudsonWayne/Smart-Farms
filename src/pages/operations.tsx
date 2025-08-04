@@ -8,7 +8,7 @@ export default function OperationsPage() {
       {/* Hero Section */}
       <div className="relative w-full min-h-[60vh] md:min-h-[70vh] flex items-center justify-center">
         <Image
-          src="/Rectangle 233.png"
+          src="/Pic 29.jpg"
           alt="Drone spraying field"
           fill
           priority

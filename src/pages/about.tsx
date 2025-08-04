@@ -48,11 +48,11 @@ export default function AboutPage() {
       {/* Hero Section */}
       <div className="relative w-full min-h-[60vh] md:min-h-[70vh] flex items-center justify-center">
         <Image
-          src="/Rectangle 23.png"
+          src="/Pic 4.jpg"
           alt="Drone spraying field"
           fill
           priority
-          style={{ objectFit: "cover" }}
+          style={{ objectFit: "cover", borderRadius: "0px" }}
           className="absolute inset-0 w-full h-full"
           draggable={false}
         />
@@ -123,7 +123,7 @@ export default function AboutPage() {
         <div className="max-w-prose">
           <p
             className="text-gray-800 text-sm sm:text-base md:text-lg leading-relaxed text-justify"
-            style={{ fontFamily: "Georgia, serif", fontSize:"21.7px" }}
+            style={{ fontFamily: "Georgia, serif", fontSize: "21.7px" }}
           >
             “The agricultural sector in Zimbabwe contributes about 21% towards
             the country’s GDP. Out of this, more than 50% comes from smallholder
@@ -169,7 +169,10 @@ export default function AboutPage() {
                 className="text-center flex items-center justify-center"
                 style={{ fontFamily: "Georgia, serif" }}
               >
-                <h3 className="text-3xl sm:text-4xl font-bold" style={{ color: "#72AE1C" }}>
+                <h3
+                  className="text-3xl sm:text-4xl font-bold"
+                  style={{ color: "#72AE1C" }}
+                >
                   {card.title}
                 </h3>
               </div>
