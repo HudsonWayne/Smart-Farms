@@ -74,7 +74,7 @@ export default function OurTeamPage() {
         {/* Team Member 3 */}
         <div className="text-center">
           <img
-            src="/girl 2.png"
+            src="/ime.jpg"
             alt="Amanda N. Maphosa"
             className="w-full h-72 mx-auto mb-4 object-contain"
           />

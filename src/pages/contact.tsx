@@ -98,50 +98,65 @@ export default function ContactPage() {
         </div>
 
         {/* Right Column - Form */}
-        <form className="md:col-span-2 grid grid-cols-1 gap-6 text-base sm:text-lg">
-          <div className="grid md:grid-cols-2 gap-6">
-            <input
-              type="text"
-              placeholder="First Name"
-              className="border-b border-[#3B3B3B] p-2 focus:outline-none"
-            />
-            <input
-              type="text"
-              placeholder="Last Name"
-              className="border-b border-[#3B3B3B] p-2 focus:outline-none"
-            />
-          </div>
-          <div className="grid md:grid-cols-2 gap-6">
-            <input
-              type="email"
-              placeholder="Email"
-              className="border-b border-[#3B3B3B] p-2 focus:outline-none"
-            />
-            <input
-              type="tel"
-              placeholder="Phone number"
-              className="border-b border-[#3B3B3B] p-2 focus:outline-none"
-            />
-          </div>
-          <input
-            type="text"
-            placeholder="Subject"
-            className="border-b border-[#3B3B3B] p-2 focus:outline-none"
-          />
-          <textarea
-            rows={4}
-            placeholder="Message"
-            className="border-b border-[#3B3B3B] p-2 focus:outline-none resize-none"
-          />
-          <div>
-            <button
-              type="submit"
-              className="bg-[#0D0B28] text-white font-bold px-6 py-2 rounded-md hover:bg-[#1d1a3d] transition"
-            >
-              Send
-            </button>
-          </div>
-        </form>
+        <form
+  action="https://formspree.io/f/xrblyyjp"
+  method="POST"
+  className="md:col-span-2 grid grid-cols-1 gap-6 text-base sm:text-lg"
+>
+  <div className="grid md:grid-cols-2 gap-6">
+    <input
+      type="text"
+      name="firstName"
+      placeholder="First Name"
+      className="border-b border-[#3B3B3B] p-2 focus:outline-none"
+      required
+    />
+    <input
+      type="text"
+      name="lastName"
+      placeholder="Last Name"
+      className="border-b border-[#3B3B3B] p-2 focus:outline-none"
+      required
+    />
+  </div>
+  <div className="grid md:grid-cols-2 gap-6">
+    <input
+      type="email"
+      name="email"
+      placeholder="Email"
+      className="border-b border-[#3B3B3B] p-2 focus:outline-none"
+      required
+    />
+    <input
+      type="tel"
+      name="phone"
+      placeholder="Phone number"
+      className="border-b border-[#3B3B3B] p-2 focus:outline-none"
+    />
+  </div>
+  <input
+    type="text"
+    name="subject"
+    placeholder="Subject"
+    className="border-b border-[#3B3B3B] p-2 focus:outline-none"
+  />
+  <textarea
+    name="message"
+    rows={4}
+    placeholder="Message"
+    className="border-b border-[#3B3B3B] p-2 focus:outline-none resize-none"
+    required
+  />
+  <div>
+    <button
+      type="submit"
+      className="bg-[#0D0B28] text-white font-bold px-6 py-2 rounded-md hover:bg-[#1d1a3d] transition"
+    >
+      Send
+    </button>
+  </div>
+</form>
+
       </div>
 
       {/* Map Section */}

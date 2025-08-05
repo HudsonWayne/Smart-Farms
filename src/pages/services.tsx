@@ -12,7 +12,7 @@ export default function ServicesPage() {
       <div className="relative w-full min-h-[60vh] md:min-h-[70vh] flex items-center justify-center">
         {/* Background Image */}
         <Image
-          src="/Rectangle23.png" // Replace with your image path
+          src="/Pic 7.jpg" // Replace with your image path
           alt="Drone spraying field"
           fill
           priority
