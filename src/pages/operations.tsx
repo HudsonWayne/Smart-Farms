@@ -173,12 +173,12 @@ export default function OperationsPage() {
       >
         <div>
           <Image
-            src="/Pic 18.jpg"
+            src="/Group 22 (1).png"
             alt="Locally assembled drone"
-            className="uniform-img"
+            className="uniform-img2"
             width={530}
-            height={390}
-            style={{ objectFit: "cover" }}
+            height={790}
+            style={{ objectFit: "contain" }}
           />
         </div>
         <div>
