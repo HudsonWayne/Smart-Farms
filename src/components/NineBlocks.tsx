@@ -10,7 +10,7 @@ export default function OperationsPage() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="w-full h-60 md:h-[480px]">
             <Image
-              src="/Pic 7.jpg"
+              src="/Pic 1.jpg"
               alt="Land mapping, surveying and crop health monitoring"
               width={800}
               height={480}
