@@ -69,7 +69,7 @@ const SmartFarming = () => {
       {/* Right Image */}
       <div className="md:w-1/2 w-full">
         <Image
-          src="/simplicity.png"
+          src="/Pic 21.jpg"
           alt="Drone Farming"
           width={600}
           height={400}
