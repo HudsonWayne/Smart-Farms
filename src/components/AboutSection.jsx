@@ -6,7 +6,7 @@ const AboutSection = () => {
     <div className="relative w-full min-h-[60vh] md:min-h-[70vh] flex items-center justify-center">
       {/* Background Image */}
       <img
-        src="/Pic 25.jpg"
+        src="/Pic 12.jpg"
         alt="About Smart Farms"
         className="absolute inset-0 w-full h-full object-cover"
         draggable={false}
