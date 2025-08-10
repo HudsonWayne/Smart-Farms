@@ -120,6 +120,17 @@ export default function AboutPage() {
       </div>
 
       <div className="grid md:grid-cols-2 gap-12 items-center w-full px-4 md:px-8 lg:px-16 mb-16">
+        <div>
+          <Image
+            src="/Message from the Founder.jpg"
+            alt="Message from the Founder"
+            width={600}
+            height={200}
+          />
+        </div>
+
+
+
         <div className="max-w-prose">
           <p
             className="text-gray-800 text-sm sm:text-base md:text-lg leading-relaxed text-justify"
@@ -149,14 +160,7 @@ export default function AboutPage() {
             technologically empowered and thriving agricultural economy.”
           </p>
         </div>
-        <div>
-          <Image
-            src="/Message from the Founder.jpg"
-            alt="Message from the Founder"
-            width={600}
-            height={200}
-          />
-        </div>
+        
       </div>
 
       {/* Our Values Section */}
