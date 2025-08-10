@@ -61,4 +61,7 @@ html, body {
   .uniform-img {
     height: 220px;
   }
+  .about-pic{
+    height: 300px;
+  }
 }
