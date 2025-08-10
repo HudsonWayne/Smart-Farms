@@ -26,26 +26,28 @@ export default function OurServices() {
         </h3>
 
         {/* First Row of Images */}
-        <div className="grid md:grid-cols-3 gap-6 mb-12 text-left -mx-4">
-          {[
-            { src: "/Rectangle 8.png", alt: "High Resolution Camera", label: "High Resolution Camera" },
-            { src: "/Rectangle 9.png", alt: "AI Integrated", label: "AI Integrated" },
-            { src: "/Rectangle 10.png", alt: "Multispectral Sensor", label: "Multispectral Sensor" },
-          ].map((item, i) => (
-            <div className="px-4" key={i}>
-              <Image
-                src={item.src}
-                alt={item.alt}
-                width={400}
-                height={250}
-                className="w-full object-cover"
-              />
-              <p className="mt-3 ml-1 font-bold text-base sm:text-lg md:text-xl">
-                {item.label}
-              </p>
-            </div>
-          ))}
-        </div>
+<div className="grid md:grid-cols-3 gap-6 mb-12 text-left -mx-4">
+  {[
+    { src: "/Pic 5.jpg", alt: "High Resolution Camera", label: "High Resolution Camera", extraClass: "pic5-style" },
+    { src: "/Rectangle 9.png", alt: "AI Integrated", label: "AI Integrated" },
+    { src: "/Rectangle 10.png", alt: "Multispectral Sensor", label: "Multispectral Sensor" },
+  ].map((item, i) => (
+    <div className="px-4" key={i}>
+      <Image
+        src={item.src}
+        alt={item.alt}
+        width={400}
+        height={250}
+        className={`w-full object-cover ${item.extraClass || ""}`}
+      />
+      <p className="mt-3 ml-1 font-bold text-base sm:text-lg md:text-xl">
+        {item.label}
+      </p>
+    </div>
+  ))}
+</div>
+
+
 
         {/* Section 2 Title */}
         <div className="text-left mb-4 mt-16">

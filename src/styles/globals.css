@@ -45,6 +45,13 @@ html, body {
   border-radius: 0.5rem;
   object-fit: cover;
 }
+.pic5-style {
+  height: 328px;
+  border-radius: 1.5rem; /* rounded-2xl equivalent */
+  border: 3px solid rgb(114, 174, 28);
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(114, 174, 28, 0.5); /* green shadow with transparency */
+}
 
 @media (max-width: 640px) {
   .uniform-img {
