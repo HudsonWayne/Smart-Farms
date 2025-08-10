@@ -78,10 +78,11 @@ export default function AboutPage() {
       <div className="grid md:grid-cols-2 gap-12 items-center mt-10 mb-10 w-full px-4 md:px-8 lg:px-16 mt-[100px]">
         <div>
           <Image
-            src="/Rectangle 55 (1).png"
+            src="/Pic 25.jpeg"
             alt="Smart Fertilizer Application"
             width={750}
             height={250}
+            className="about-pic"
           />
         </div>
         <div className="max-w-prose">

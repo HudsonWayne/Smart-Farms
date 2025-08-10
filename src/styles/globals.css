@@ -52,6 +52,10 @@ html, body {
   object-fit: cover;
   box-shadow: 0 4px 12px rgba(114, 174, 28, 0.5); /* green shadow with transparency */
 }
+.about-pic{
+  height: 600px;
+  border-radius: 1rem;
+}
 
 @media (max-width: 640px) {
   .uniform-img {
