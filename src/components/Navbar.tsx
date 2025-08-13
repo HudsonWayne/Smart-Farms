@@ -33,7 +33,7 @@ const Navbar = () => {
       }}
     >
       {/* Navbar container */}
-      <div className="py-4 flex justify-between items-center w-full px-4 md:px-8 lg:px-16">
+      <div className="py-4 flex justify-between items-center w-full px-4 sm:px-6 lg:px-16">
         {/* Logo */}
         <Link href="/">
           <img
@@ -44,8 +44,8 @@ const Navbar = () => {
           />
         </Link>
 
-        {/* Desktop links */}
-        <div className="hidden md:flex items-center space-x-8">
+        {/* Desktop Links (hidden on tablet and mobile) */}
+        <div className="hidden lg:flex items-center space-x-8">
           {links.map(({ name, href }) => {
             const isActive = pathname === href;
             return (
@@ -71,29 +71,49 @@ const Navbar = () => {
           </Link>
         </div>
 
-        {/* Mobile menu toggle */}
-        <div className="md:hidden">
+        {/* Mobile & Tablet menu toggle */}
+        <div className="lg:hidden">
           <button
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label="Toggle menu"
             className="focus:outline-none"
           >
             {menuOpen ? (
-              <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              <svg
+                className="h-8 w-8"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
               </svg>
             ) : (
-              <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              <svg
+                className="h-8 w-8"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
               </svg>
             )}
           </button>
         </div>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile & Tablet Menu */}
       {menuOpen && (
-        <div className="md:hidden px-4 pb-4 bg-[#0C0332]">
+        <div className="lg:hidden px-4 pt-2 pb-4 bg-[#0C0332] space-y-1">
           {links.map(({ name, href }) => {
             const isActive = pathname === href;
             return (
