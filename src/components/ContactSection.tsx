@@ -7,47 +7,49 @@ import {
 
 const ContactSection = () => {
   return (
-    <section className="px-6 md:px-20 py-5 bg-white flex flex-col md:flex-row gap-10 items-start justify-between">
+    <section className="px-6 sm:px-10 md:px-16 lg:px-20 py-8 bg-white flex flex-col lg:flex-row gap-10 items-start justify-between">
       {/* Left Info Panel */}
-      <div className="md:w-1/2 max-w-md mt-[30px]">
+      <div className="w-full lg:w-1/2 max-w-md mt-6 lg:mt-0">
         <p
-          className="text-[#72AE1C] font-bold text-sm tracking-widest mb-2 uppercase"
+          className="text-[#72AE1C] font-bold text-sm sm:text-[14px] md:text-[15px] lg:text-sm tracking-widest mb-2 uppercase"
           style={{ fontFamily: "Georgia, serif" }}
         >
           Contact
         </p>
         <h2
-          className="text-3xl font-bold text-gray-800 mb-8"
+          className="text-2xl sm:text-3xl md:text-3xl lg:text-3xl font-bold text-gray-800 mb-6 lg:mb-8"
           style={{ fontFamily: "Georgia, serif" }}
         >
           Talk to Us
         </h2>
 
         <div
-          className="space-y-6 text-gray-800 text-base"
+          className="space-y-4 sm:space-y-5 md:space-y-6 text-gray-800 text-sm sm:text-base md:text-[15px] lg:text-base"
           style={{ fontFamily: "Georgia, serif" }}
         >
-          <div className="flex items-start gap-4">
-            <EnvelopeIcon className="text-[#72AE1C] w-6 h-6 mt-1" />
+          <div className="flex items-start gap-3 sm:gap-4">
+            <EnvelopeIcon className="text-[#72AE1C] w-5 h-5 sm:w-6 sm:h-6 mt-1" />
             <div>
-              <p className="font-semibold text-lg">Email</p>
-              <p>infor@smartfarms-tech.com</p>
+              <p className="font-semibold text-sm sm:text-lg md:text-[16px] lg:text-lg">Email</p>
+              <p className="text-sm sm:text-base md:text-[15px] lg:text-base">
+                infor@smartfarms-tech.com
+              </p>
             </div>
           </div>
 
-          <div className="flex items-start gap-4">
-            <PhoneIcon className="text-[#72AE1C] w-6 h-6 mt-1" />
+          <div className="flex items-start gap-3 sm:gap-4">
+            <PhoneIcon className="text-[#72AE1C] w-5 h-5 sm:w-6 sm:h-6 mt-1" />
             <div>
-              <p className="font-semibold text-lg">Phone</p>
-              <p>+263 777 963 398</p>
+              <p className="font-semibold text-sm sm:text-lg md:text-[16px] lg:text-lg">Phone</p>
+              <p className="text-sm sm:text-base md:text-[15px] lg:text-base">+263 777 963 398</p>
             </div>
           </div>
 
-          <div className="flex items-start gap-4">
-            <MapPinIcon className="text-[#72AE1C] w-6 h-6 mt-1" />
+          <div className="flex items-start gap-3 sm:gap-4">
+            <MapPinIcon className="text-[#72AE1C] w-5 h-5 sm:w-6 sm:h-6 mt-1" />
             <div>
-              <p className="font-semibold text-lg">Address</p>
-              <p>
+              <p className="font-semibold text-sm sm:text-lg md:text-[16px] lg:text-lg">Address</p>
+              <p className="text-sm sm:text-base md:text-[15px] lg:text-base">
                 443 Grasmere Lane, Borrowdale, Harare, Zimbabwe
               </p>
             </div>
@@ -56,17 +58,12 @@ const ContactSection = () => {
       </div>
 
       {/* Right Map iframe Panel */}
-      <div
-        className="
-          md:w-1/2 w-full 
-          max-w-3xl 
-          rounded-lg overflow-hidden shadow-lg
-        "
-      >
+      <div className="w-full lg:w-1/2 max-w-3xl rounded-lg overflow-hidden shadow-lg">
         <iframe
           title="Smart Farms Location"
           width="100%"
-          height="500"
+          height={300} // mobile default
+          className="sm:h-[400px] md:h-[450px] lg:h-[500px]"
           frameBorder="0"
           scrolling="no"
           marginHeight={0}
