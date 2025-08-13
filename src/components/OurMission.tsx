@@ -21,7 +21,7 @@ export default function OurMission() {
         <div>
           <h2 className="text-[#72AE1C] text-2xl font-bold mb-4">Our Mission</h2>
           <p
-            className="text-gray-800 text-[26px] leading-relaxed italic"
+            className="text-gray-800 text-[26px] md:text-[17px] leading-relaxed italic"
             style={{ fontFamily: "Georgia, serif" }}
           >
             Our mission is to empower small-scale farmers in Zimbabwe by leveraging drone
@@ -34,7 +34,7 @@ export default function OurMission() {
         <div className="order-2 md:order-1">
           <h2 className="text-[#72AE1C] text-2xl font-bold mb-4">Our Vision</h2>
           <p
-            className="text-gray-800 text-[24px] leading-relaxed italic"
+            className="text-gray-800 text-[24px] md:text-[17px] leading-relaxed italic"
             style={{ fontFamily: "Georgia, serif" }}
           >
             <em>
