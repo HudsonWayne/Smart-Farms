@@ -55,13 +55,11 @@ html, body {
 .about-pic{
   height: 600px;
   border-radius: 1rem;
+  object-fit: none;
 }
 
 @media (max-width: 640px) {
   .uniform-img {
     height: 220px;
-  }
-  .about-pic{
-    height: 300px;
   }
 }
