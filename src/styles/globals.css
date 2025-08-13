@@ -63,3 +63,10 @@ html, body {
     height: 220px;
   }
 }
+
+
+@media (max-width: 48rem) {
+    .the-text{
+        font-size: 18px;
+    }
+}
