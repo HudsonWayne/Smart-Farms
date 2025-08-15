@@ -13,13 +13,28 @@ const images = [
 
 const Carousel = () => {
   const [index, setIndex] = useState(0);
+  const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
+    // Preload images
+    let loadedCount = 0;
+    images.forEach((src) => {
+      const img = new Image();
+      img.src = src;
+      img.onload = () => {
+        loadedCount++;
+        if (loadedCount === images.length) {
+          setLoaded(true);
+        }
+      };
+    });
+
+    // Start carousel
     const interval = setInterval(() => {
       setIndex((prevIndex) => (prevIndex + 1) % images.length);
     }, 3000);
 
-    // Reset margins and disable horizontal scroll
+    // Reset margins & disable horizontal scroll
     document.documentElement.style.margin = "0";
     document.documentElement.style.padding = "0";
     document.body.style.margin = "0";
@@ -39,14 +54,16 @@ const Carousel = () => {
         }}
       >
         {/* Background Image */}
-        <img
-          src={images[index]}
-          alt={`Slide ${index}`}
-          className="absolute inset-0 w-full h-full object-cover object-center"
-          draggable={false}
-          loading="eager"
-          decoding="async"
-        />
+        {loaded && (
+          <img
+            src={images[index]}
+            alt={`Slide ${index}`}
+            className="absolute inset-0 w-full h-full object-cover object-center transition-opacity duration-700"
+            draggable={false}
+            loading="eager"
+            decoding="async"
+          />
+        )}
 
         {/* Dark Overlay */}
         <div className="absolute inset-0 bg-black opacity-60" />
@@ -61,7 +78,8 @@ const Carousel = () => {
               textShadow: "1px 1px 6px rgba(0, 0, 0, 0.6)",
             }}
           >
-            “Revolutionizing agriculture in Zimbabwe through advanced drone technology”
+            “Revolutionizing agriculture in Zimbabwe through advanced drone
+            technology”
           </h2>
         </div>
       </section>

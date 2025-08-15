@@ -53,7 +53,7 @@ html, body {
   box-shadow: 0 4px 12px rgba(114, 174, 28, 0.5); /* green shadow with transparency */
 }
 .about-pic{
-  height: 600px;
+  height: 800px;
   border-radius: 1rem;
   object-fit: none;
 }
