@@ -127,12 +127,17 @@ export default function AboutPage() {
             alt="Message from the Founder"
             width={600}
             height={200}
+            className="w-full h-auto"
           />
         </div>
 
-
-
-        <div className="max-w-prose">
+        {/* Scrollable text matching image height */}
+        <div
+          className="max-w-prose overflow-y-auto p-2"
+          style={{
+            maxHeight: "500px",
+          }}
+        >
           <p
             className="text-gray-800 text-sm sm:text-base md:text-lg leading-relaxed text-justify"
             style={{ fontFamily: "Georgia, serif", fontSize: "21.7px" }}
@@ -161,7 +166,6 @@ export default function AboutPage() {
             technologically empowered and thriving agricultural economy.”
           </p>
         </div>
-        
       </div>
 
       {/* Our Values Section */}
