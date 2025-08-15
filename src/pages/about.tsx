@@ -8,9 +8,7 @@ export default function AboutPage() {
 
   const toggleReadMore = (index: number) => {
     setExpandedCards((prev) =>
-      prev.includes(index)
-        ? prev.filter((i) => i !== index)
-        : [...prev, index]
+      prev.includes(index) ? prev.filter((i) => i !== index) : [...prev, index]
     );
   };
 
@@ -52,7 +50,7 @@ export default function AboutPage() {
           alt="Drone spraying field"
           fill
           priority
-          style={{ objectFit: "cover", borderRadius: "0px" }}
+          style={{ objectFit: "cover" }}
           className="absolute inset-0 w-full h-full"
           draggable={false}
         />
@@ -75,7 +73,7 @@ export default function AboutPage() {
       </div>
 
       {/* Who We Are */}
-      <div className="grid md:grid-cols-2 gap-12 items-center mt-10 mb-10 w-full px-4 md:px-8 lg:px-16 mt-[100px]">
+      <div className="grid md:grid-cols-2 gap-12 items-center w-full px-4 md:px-8 lg:px-16 mt-[100px] mb-10">
         <div>
           <Image
             src="/Pic 25.jpeg"
@@ -85,28 +83,30 @@ export default function AboutPage() {
             className="about-pic"
           />
         </div>
-        <div className="max-w-prose">
+        <div className="max-w-prose p-2">
           <h2
-            className="text-[36px] sm:text-[45px] md:text-[50px] lg:text-[60px] font-bold mb-6"
+            className="text-[36px] sm:text-[40px] md:text-[40px] lg:text-[60px] font-bold mb-6"
             style={{ fontFamily: "Georgia, serif", color: "#72AE1C" }}
           >
             Who We Are
           </h2>
-          <p
-            className="text-gray-800 text-sm sm:text-base md:text-lg leading-relaxed text-justify"
-            style={{ fontFamily: "Georgia, serif" }}
-          >
-            “Smart Farms is an enterprise committed to using innovation to
-            ensure food security, improve livelihoods, and transform rural
-            communities through precision agriculture solutions in Zimbabwe. We
-            take advantage of advanced high-resolution camera drones embedded
-            with smart sensors for land mapping, surveying, crop health
-            monitoring, and pesticide and fertilizer applications. Our actions
-            contribute to positive climate change, and we are on a goal to end
-            poverty and hunger. We want to help smallholders and medium-scale
-            farmers realize their value to the economy of the country through
-            their agricultural harvests.”
-          </p>
+          <div className="overflow-y-auto" style={{ maxHeight: "280px" }}>
+            <p
+              className="text-gray-800 text-sm sm:text-base md:text-lg leading-relaxed text-justify"
+              style={{ fontFamily: "Georgia, serif" }}
+            >
+              “Smart Farms is an enterprise committed to using innovation to
+              ensure food security, improve livelihoods, and transform rural
+              communities through precision agriculture solutions in Zimbabwe.
+              We take advantage of advanced high-resolution camera drones
+              embedded with smart sensors for land mapping, surveying, crop
+              health monitoring, and pesticide and fertilizer applications. Our
+              actions contribute to positive climate change, and we are on a
+              goal to end poverty and hunger. We want to help smallholders and
+              medium-scale farmers realize their value to the economy of the
+              country through their agricultural harvests.”
+            </p>
+          </div>
         </div>
       </div>
 
@@ -132,15 +132,10 @@ export default function AboutPage() {
         </div>
 
         {/* Scrollable text matching image height */}
-        <div
-          className="max-w-prose overflow-y-auto p-2"
-          style={{
-            maxHeight: "500px",
-          }}
-        >
+        <div className="max-w-prose overflow-y-auto p-2" style={{ maxHeight: "500px" }}>
           <p
             className="text-gray-800 text-sm sm:text-base md:text-lg leading-relaxed text-justify"
-            style={{ fontFamily: "Georgia, serif", fontSize: "21.7px" }}
+            style={{ fontFamily: "Georgia, serif", fontSize: "20px" }}
           >
             “The agricultural sector in Zimbabwe contributes about 21% towards
             the country’s GDP. Out of this, more than 50% comes from smallholder
