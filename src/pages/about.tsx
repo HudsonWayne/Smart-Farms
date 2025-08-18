@@ -85,7 +85,7 @@ export default function AboutPage() {
             className="about-pic md:h-[600px] md:object-cover"
           />
         </div>
-        <div className="max-w-prose">
+        <div className="max-w-prose" style={{marginTop:"190px"}}>
           <h2
             className="text-[36px] sm:text-[45px] md:text-[50px] lg:text-[60px] font-bold mb-6"
             style={{ fontFamily: "Georgia, serif", color: "#72AE1C" }}
