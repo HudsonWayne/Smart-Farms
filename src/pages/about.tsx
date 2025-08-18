@@ -75,7 +75,7 @@ export default function AboutPage() {
       </div>
 
       {/* Who We Are */}
-      <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-start mt-10 mb-10 w-full px-4 md:px-8 lg:px-16 mt-[100px]">
+      <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-start mt-[100px] w-full px-4 md:px-8 lg:px-16">
         <div className="flex justify-center">
           <Image
             src="/Pic 25.jpeg"
@@ -85,28 +85,30 @@ export default function AboutPage() {
             className="about-pic md:h-[600px] md:object-cover"
           />
         </div>
-        <div className="max-w-prose" style={{marginTop:"190px"}}>
+        <div className="max-w-prose" style={{ marginTop: "190px" }}>
           <h2
             className="text-[36px] sm:text-[45px] md:text-[50px] lg:text-[60px] font-bold mb-6"
             style={{ fontFamily: "Georgia, serif", color: "#72AE1C" }}
           >
             Who We Are
           </h2>
-          <p
-            className="text-gray-800 text-sm sm:text-base md:text-lg leading-relaxed text-justify md:h-[600px] md:overflow-y-auto"
-            style={{ fontFamily: "Georgia, serif" }}
-          >
-            “Smart Farms is an enterprise committed to using innovation to
-            ensure food security, improve livelihoods, and transform rural
-            communities through precision agriculture solutions in Zimbabwe. We
-            take advantage of advanced high-resolution camera drones embedded
-            with smart sensors for land mapping, surveying, crop health
-            monitoring, and pesticide and fertilizer applications. Our actions
-            contribute to positive climate change, and we are on a goal to end
-            poverty and hunger. We want to help smallholders and medium-scale
-            farmers realize their value to the economy of the country through
-            their agricultural harvests.”
-          </p>
+          <div className="md:h-[600px] md:overflow-y-auto pr-2">
+            <p
+              className="text-gray-800 text-sm sm:text-base md:text-lg leading-relaxed text-justify"
+              style={{ fontFamily: "Georgia, serif" }}
+            >
+              “Smart Farms is an enterprise committed to using innovation to
+              ensure food security, improve livelihoods, and transform rural
+              communities through precision agriculture solutions in Zimbabwe. We
+              take advantage of advanced high-resolution camera drones embedded
+              with smart sensors for land mapping, surveying, crop health
+              monitoring, and pesticide and fertilizer applications. Our actions
+              contribute to positive climate change, and we are on a goal to end
+              poverty and hunger. We want to help smallholders and medium-scale
+              farmers realize their value to the economy of the country through
+              their agricultural harvests.”
+            </p>
+          </div>
         </div>
       </div>
 
