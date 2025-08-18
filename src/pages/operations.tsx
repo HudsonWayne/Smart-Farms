@@ -123,36 +123,36 @@ export default function OperationsPage() {
       </section>
 
       <section
-      className="pb-16 grid grid-cols-1 md:grid-cols-2 gap-8 items-center px-6 md:px-10"
-      style={{ fontFamily: "Georgia, serif" }}
-    >
-      <div>
-        <h3 className="font-bold text-gray-900 mb-2 text-2xl">
-          3.{" "}
-          <span className="text-black text-xl sm:text-2xl">
-            Efficiency from Day One
-          </span>
-        </h3>
-        <p className="text-base sm:text-lg md:text-xl text-gray-800 leading-relaxed">
-          Thanks to its plug-and-fly design, the Mavic 3 Multispectral helps us
-          reduce setup time and focus entirely on delivering quality service.
-          Whether it is mapping, surveying, or monitoring, this drone helps us
-          deliver precision agriculture solutions without delay.
-        </p>
-      </div>
-      <div className="w-full flex justify-center">
-        <Image
-          src="/Pic 17.jpg"
-          alt="DJI Drone in air"
-          width={530}
-          height={390}
-          className="rounded-lg w-full max-w-[530px] h-[390px] object-cover"
-          style={{
-            objectPosition: "center 45%", // slightly moves the image up to reduce zoom feel
-          }}
-        />
-      </div>
-    </section>
+        className="pb-16 grid grid-cols-1 md:grid-cols-2 gap-8 items-center px-6 md:px-10"
+        style={{ fontFamily: "Georgia, serif" }}
+      >
+        <div>
+          <h3 className="font-bold text-gray-900 mb-2 text-2xl">
+            3.{" "}
+            <span className="text-black text-xl sm:text-2xl">
+              Efficiency from Day One
+            </span>
+          </h3>
+          <p className="text-base sm:text-lg md:text-xl text-gray-800 leading-relaxed">
+            Thanks to its plug-and-fly design, the Mavic 3 Multispectral helps us
+            reduce setup time and focus entirely on delivering quality service.
+            Whether it is mapping, surveying, or monitoring, this drone helps us
+            deliver precision agriculture solutions without delay.
+          </p>
+        </div>
+        <div className="w-full flex justify-center">
+          <Image
+            src="/Pic 17.jpg"
+            alt="DJI Drone in air"
+            width={530}
+            height={390}
+            className="rounded-lg w-full max-w-[530px] h-[390px] object-cover"
+            style={{
+              objectPosition: "center 45%",
+            }}
+          />
+        </div>
+      </section>
 
       {/* Final Note */}
       <div
@@ -168,72 +168,72 @@ export default function OperationsPage() {
 
       {/* Locally Assembled Drones */}
       <section
-        className="py-12 grid grid-cols-1 md:grid-cols-2 gap-16 items-center px-6 md:px-10"
+        className="py-12 flex flex-col md:flex-col-reverse md:grid md:grid-cols-2 gap-16 items-center px-6 md:px-10"
         style={{ fontFamily: "Georgia, serif" }}
       >
-        <div>
+        <div className="md:order-1">
           <Image
             src="/Group 22 (1).png"
             alt="Locally assembled drone"
-            className="uniform-img2"
+            className="uniform-img2 w-full"
             width={530}
             height={790}
             style={{ objectFit: "contain" }}
           />
         </div>
-        <div>
-          <h2 className="font-bold mb-6 text-2xl sm:text-3xl md:text-4xl text-[#72AE1C]">
-            Locally Assembled Spraying <br />
-            & Fertilizer Drones for <br />
-            Scalable Precision Farming
-          </h2>
-          <p className="text-base sm:text-lg md:text-xl text-gray-800 mb-4 leading-relaxed">
-            We assemble our{" "}
-            <span className="text-[#72AE1C] font-semibold">
-              large-capacity spraying and fertilizer drones
-            </span>{" "}
-            locally using high quality, industry-standard parts. These drones
-            are assembled at our innovation hub by our dedicated in-house{" "}
-            <span className="text-[#72AE1C] font-semibold">
-              Engineer and Drone Technician
-            </span>
-            , ensuring they are tailored to meet the specific needs of our
-            farmers.
-          </p>
+        <div className="md:order-2">
+          <div className="overflow-auto max-h-[80vh] md:max-h-[70vh] px-2">
+            <h2 className="font-bold mb-6 text-2xl sm:text-3xl md:text-4xl text-[#72AE1C]">
+              Locally Assembled Spraying <br />
+              & Fertilizer Drones for <br />
+              Scalable Precision Farming
+            </h2>
+            <p className="text-base sm:text-lg md:text-xl text-gray-800 mb-4 leading-relaxed">
+              We assemble our{" "}
+              <span className="text-[#72AE1C] font-semibold">
+                large-capacity spraying and fertilizer drones
+              </span>{" "}
+              locally using high quality, industry-standard parts. These drones
+              are assembled at our innovation hub by our dedicated in-house{" "}
+              <span className="text-[#72AE1C] font-semibold">
+                Engineer and Drone Technician
+              </span>
+              , ensuring they are tailored to meet the specific needs of our
+              farmers.
+            </p>
 
-          <p className="text-[#72AE1C] font-bold mb-1 text-lg md:text-xl">
-            1. Custom Assembly for Greater Flexibility
-          </p>
-          <p className="text-base sm:text-lg md:text-xl text-gray-800 mb-4 leading-relaxed">
-            Unlike compact drones, large spraying and fertilizer drones are
-            often bulky and difficult to ship when pre-assembled. To overcome
-            this challenge, we source all critical components, frames, tanks,
-            motors, pumps, nozzles, and flight controllers and assemble them
-            on-site.
-          </p>
+            <p className="text-[#72AE1C] font-bold mb-1 text-lg md:text-xl">
+              1. Custom Assembly for Greater Flexibility
+            </p>
+            <p className="text-base sm:text-lg md:text-xl text-gray-800 mb-4 leading-relaxed">
+              Unlike compact drones, large spraying and fertilizer drones are
+              often bulky and difficult to ship when pre-assembled. To overcome
+              this challenge, we source all critical components, frames, tanks,
+              motors, pumps, nozzles, and flight controllers and assemble them
+              on-site.
+            </p>
 
-          <p className="text-[#72AE1C] font-bold mb-1 text-lg md:text-xl">
-            2. Built by Experts, Backed by Innovation
-          </p>
-          <p className="text-base sm:text-lg md:text-xl text-gray-800 mb-4 leading-relaxed">
-            With our qualified Engineer overseeing the technical configuration
-            and our Technician handling calibration and testing, we ensure that
-            each drone is fully functional, reliable, and safe to operate.
-          </p>
+            <p className="text-[#72AE1C] font-bold mb-1 text-lg md:text-xl">
+              2. Built by Experts, Backed by Innovation
+            </p>
+            <p className="text-base sm:text-lg md:text-xl text-gray-800 mb-4 leading-relaxed">
+              With our qualified Engineer overseeing the technical configuration
+              and our Technician handling calibration and testing, we ensure that
+              each drone is fully functional, reliable, and safe to operate.
+            </p>
 
-          <p className="text-[#72AE1C] font-bold mb-1 text-lg md:text-xl">
-            3. Designed for Local Impact
-          </p>
-          <p className="text-base sm:text-lg md:text-xl text-gray-800 leading-relaxed">
-            Our locally assembled drones are made with the African farmer in
-            mind, durable, scalable, and easy to maintain. They represent our
-            commitment to homegrown innovation that delivers world-class
-            agricultural solutions.
-          </p>
+            <p className="text-[#72AE1C] font-bold mb-1 text-lg md:text-xl">
+              3. Designed for Local Impact
+            </p>
+            <p className="text-base sm:text-lg md:text-xl text-gray-800 leading-relaxed">
+              Our locally assembled drones are made with the African farmer in
+              mind, durable, scalable, and easy to maintain. They represent our
+              commitment to homegrown innovation that delivers world-class
+              agricultural solutions.
+            </p>
+          </div>
         </div>
       </section>
     </div>
   );
 }
-
-
