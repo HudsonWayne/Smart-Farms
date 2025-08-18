@@ -4,14 +4,6 @@ import Image from "next/image";
 import React, { useState } from "react";
 
 export default function AboutPage() {
-  const [expandedCards, setExpandedCards] = useState<number[]>([]);
-
-  const toggleReadMore = (index: number) => {
-    setExpandedCards((prev) =>
-      prev.includes(index) ? prev.filter((i) => i !== index) : [...prev, index]
-    );
-  };
-
   const cardData = [
     { title: "Our Values" },
     {
@@ -41,6 +33,16 @@ export default function AboutPage() {
     },
   ];
 
+  const [expandedCards, setExpandedCards] = useState<number[]>([]);
+
+  const toggleReadMore = (index: number) => {
+    setExpandedCards((prev) =>
+      prev.includes(index)
+        ? prev.filter((i) => i !== index)
+        : [...prev, index]
+    );
+  };
+
   return (
     <>
       {/* Hero Section */}
@@ -50,7 +52,7 @@ export default function AboutPage() {
           alt="Drone spraying field"
           fill
           priority
-          style={{ objectFit: "cover" }}
+          style={{ objectFit: "cover", borderRadius: "0px" }}
           className="absolute inset-0 w-full h-full"
           draggable={false}
         />
@@ -73,40 +75,38 @@ export default function AboutPage() {
       </div>
 
       {/* Who We Are */}
-      <div className="grid md:grid-cols-2 gap-12 items-center w-full px-4 md:px-8 lg:px-16 mt-[100px] mb-10">
-        <div>
+      <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-start mt-10 mb-10 w-full px-4 md:px-8 lg:px-16 mt-[100px]">
+        <div className="flex justify-center">
           <Image
             src="/Pic 25.jpeg"
             alt="Smart Fertilizer Application"
             width={750}
             height={250}
-            className="about-pic"
+            className="about-pic md:h-[600px] md:object-cover"
           />
         </div>
-        <div className="max-w-prose p-2">
+        <div className="max-w-prose">
           <h2
-            className="text-[36px] sm:text-[40px] md:text-[40px] lg:text-[60px] font-bold mb-6"
+            className="text-[36px] sm:text-[45px] md:text-[50px] lg:text-[60px] font-bold mb-6"
             style={{ fontFamily: "Georgia, serif", color: "#72AE1C" }}
           >
             Who We Are
           </h2>
-          <div className="overflow-y-auto" style={{ maxHeight: "280px" }}>
-            <p
-              className="text-gray-800 text-sm sm:text-base md:text-lg leading-relaxed text-justify"
-              style={{ fontFamily: "Georgia, serif" }}
-            >
-              “Smart Farms is an enterprise committed to using innovation to
-              ensure food security, improve livelihoods, and transform rural
-              communities through precision agriculture solutions in Zimbabwe.
-              We take advantage of advanced high-resolution camera drones
-              embedded with smart sensors for land mapping, surveying, crop
-              health monitoring, and pesticide and fertilizer applications. Our
-              actions contribute to positive climate change, and we are on a
-              goal to end poverty and hunger. We want to help smallholders and
-              medium-scale farmers realize their value to the economy of the
-              country through their agricultural harvests.”
-            </p>
-          </div>
+          <p
+            className="text-gray-800 text-sm sm:text-base md:text-lg leading-relaxed text-justify md:h-[600px] md:overflow-y-auto"
+            style={{ fontFamily: "Georgia, serif" }}
+          >
+            “Smart Farms is an enterprise committed to using innovation to
+            ensure food security, improve livelihoods, and transform rural
+            communities through precision agriculture solutions in Zimbabwe. We
+            take advantage of advanced high-resolution camera drones embedded
+            with smart sensors for land mapping, surveying, crop health
+            monitoring, and pesticide and fertilizer applications. Our actions
+            contribute to positive climate change, and we are on a goal to end
+            poverty and hunger. We want to help smallholders and medium-scale
+            farmers realize their value to the economy of the country through
+            their agricultural harvests.”
+          </p>
         </div>
       </div>
 
@@ -120,22 +120,20 @@ export default function AboutPage() {
         </h2>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-12 items-center w-full px-4 md:px-8 lg:px-16 mb-16">
-        <div>
+      <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-start w-full px-4 md:px-8 lg:px-16 mb-16">
+        <div className="flex justify-center">
           <Image
             src="/Message from the Founder.jpg"
             alt="Message from the Founder"
             width={600}
             height={200}
-            className="w-full h-auto"
+            className="md:h-[600px] md:object-cover"
           />
         </div>
-
-        {/* Scrollable text matching image height */}
-        <div className="max-w-prose overflow-y-auto p-2" style={{ maxHeight: "500px" }}>
+        <div className="max-w-prose">
           <p
-            className="text-gray-800 text-sm sm:text-base md:text-lg leading-relaxed text-justify"
-            style={{ fontFamily: "Georgia, serif", fontSize: "20px" }}
+            className="text-gray-800 text-sm sm:text-base md:text-lg leading-relaxed text-justify md:h-[600px] md:overflow-y-auto"
+            style={{ fontFamily: "Georgia, serif", fontSize: "21.7px" }}
           >
             “The agricultural sector in Zimbabwe contributes about 21% towards
             the country’s GDP. Out of this, more than 50% comes from smallholder
@@ -183,7 +181,7 @@ export default function AboutPage() {
             ) : (
               <div
                 key={index}
-                className="bg-[#190040] text-white p-6 rounded-2xl shadow-lg transition-transform hover:scale-[1.02]"
+                className="bg-[#190040] text-white p-6 rounded-2xl shadow-lg transition-transform hover:scale-[1.02] overflow-x-auto md:overflow-visible"
                 style={{ fontFamily: "Georgia, serif", textAlign: "justify" }}
               >
                 <h3
