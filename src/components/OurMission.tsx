@@ -23,7 +23,7 @@ export default function OurMission() {
         {/* Mission Image */}
         <div>
           <Image
-            src="/Pic 6.jpg"
+            src="/pic6.jpg"
             alt="Drone spraying crops"
             width={500}
             height={400}
