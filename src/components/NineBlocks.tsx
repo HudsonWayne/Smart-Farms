@@ -56,7 +56,7 @@ export default function OperationsPage() {
           </div>
           <div className="order-1 md:order-2 w-full h-60 sm:h-72 md:h-[480px]">
             <Image
-              src="/Pic 2.jpg"
+              src="/pic2.jpg"
               alt="AI-Powered Land Mapping & Surveying"
               width={800}
               height={480}
@@ -153,7 +153,7 @@ export default function OperationsPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
           <div className="w-full h-60 sm:h-72 md:h-[480px]">
             <Image
-              src="/Pic 6.jpg"
+              src="/pic6.jpg"
               alt="Smart Fertilizer Application with AI and Drone Technology"
               width={800}
               height={480}
@@ -195,7 +195,7 @@ export default function OperationsPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
           <div className="w-full h-60 sm:h-72 md:h-[480px]">
             <Image
-              src="/Pic 20.jpg"
+              src="/pic20.jpg"
               alt="AI-Driven Decision Making"
               width={800}
               height={480}
