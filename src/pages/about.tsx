@@ -82,10 +82,10 @@ export default function AboutPage() {
             alt="Smart Fertilizer Application"
             width={750}
             height={250}
-            className="about-pic md:h-[600px] md:object-cover"
+            className="w-full h-auto md:h-[600px] object-cover rounded-lg"
           />
         </div>
-        <div className="max-w-prose" style={{ marginTop: "190px" }}>
+        <div className="max-w-prose mt-8 md:mt-[190px]">
           <h2
             className="text-[36px] sm:text-[45px] md:text-[50px] lg:text-[60px] font-bold mb-6"
             style={{ fontFamily: "Georgia, serif", color: "#72AE1C" }}
@@ -129,7 +129,7 @@ export default function AboutPage() {
             alt="Message from the Founder"
             width={600}
             height={200}
-            className="md:h-[600px] md:object-cover"
+            className="w-full h-auto md:h-[600px] object-cover rounded-lg"
           />
         </div>
         <div className="max-w-prose">

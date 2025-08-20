@@ -58,6 +58,7 @@ html, body {
   object-fit: none;
 }
 
+
 @media (max-width: 640px) {
   .uniform-img {
     height: 220px;
