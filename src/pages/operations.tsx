@@ -173,16 +173,16 @@ export default function OperationsPage() {
       >
         <div className="md:order-1">
           <Image
-            src="/Group 22 (1).png"
+            src="/big.png"
             alt="Locally assembled drone"
             className="uniform-img2 w-full"
             width={530}
-            height={790}
+            height={990}
             style={{ objectFit: "contain" }}
           />
         </div>
         <div className="md:order-2">
-          <div className="overflow-auto max-h-[80vh] md:max-h-[70vh] px-2">
+          <div className="overflow-auto max-h-[80vh] md:max-h-[100vh] px-2">
             <h2 className="font-bold mb-6 text-2xl sm:text-3xl md:text-4xl text-[#72AE1C]">
               Locally Assembled Spraying <br />
               & Fertilizer Drones for <br />
