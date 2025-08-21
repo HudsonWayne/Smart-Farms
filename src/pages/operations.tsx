@@ -113,7 +113,7 @@ export default function OperationsPage() {
           <p className="text-base sm:text-lg md:text-lg lg:text-xl text-gray-800 leading-relaxed">
             This drone captures rich data in real time, enabling us to generate
             detailed vegetation indices like NDVI and NDRE. By analyzing these
-            images using built-in AI and Smart Farms' digital tools, we provide
+            images using built-in AI and Smart Farms digital tools, we provide
             farmers with fast, accurate insights on crop health, nutrient
             levels, and water stress.
           </p>

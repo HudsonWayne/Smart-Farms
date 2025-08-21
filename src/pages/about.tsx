@@ -67,7 +67,7 @@ export default function AboutPage() {
               className="text-xs sm:text-base md:text-lg lg:text-xl leading-relaxed max-w-4xl mx-auto px-2"
               style={{ fontFamily: "Georgia, serif", color:"white" }}
             >
-              Empowering Zimbabwe's small and medium-scale farmers with drone
+              Empowering Zimbabwe is small and medium-scale farmers with drone
               technology to increase crop yields, create jobs, and secure a
               sustainable agricultural future.
             </p>
