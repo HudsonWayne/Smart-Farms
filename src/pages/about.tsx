@@ -123,45 +123,46 @@ export default function AboutPage() {
       </div>
 
       <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-start w-full px-4 md:px-8 lg:px-16 mb-16">
-        <div className="flex justify-center">
-          <Image
-            src="/Message from the Founder.jpg"
-            alt="Message from the Founder"
-            width={600}
-            height={200}
-            className="w-full h-auto md:h-[600px] object-cover rounded-lg"
-          />
-        </div>
-        <div className="max-w-prose">
-          <p
-            className="text-gray-800 text-sm sm:text-base md:text-lg leading-relaxed text-justify md:h-[600px] md:overflow-y-auto"
-            style={{ fontFamily: "Georgia, serif", fontSize: "21.7px" }}
-          >
-            “The agricultural sector in Zimbabwe contributes about 21% towards
-            the country’s GDP. Out of this, more than 50% comes from smallholder
-            and medium-scale farmers yet they are still relying on traditional
-            methods of farming that are so outdated, imprecise, and
-            labor-intensive. Clearly, smallholder and medium-scale farmers are
-            under-represented as they have the potential to contribute so much
-            to the country’s economy. As someone who grew up in a farming
-            community, I have witnessed firsthand the struggles of my family and
-            neighbors, losing crops to unpredictable weather, pest attacks, and
-            the sheer exhaustion of manual labor. I have watched hard-working
-            farmers struggle to make a living, not because they lack knowledge
-            or effort, but because they lack access to modern tools and
-            technologies that could revolutionize their productivity. Smart
-            Farms was born out of my desire to change this narrative. By
-            integrating drone technology into agriculture, we are creating a
-            future where farmers can monitor crops, apply inputs with precision,
-            and make data-driven decisions—all with minimal effort and maximum
-            impact. Our mission is to empower these farmers, increase food
-            security, and promote sustainable farming practices. I believe that
-            with the right support and innovation, smallholder farmers will no
-            longer be left behind. They will become the backbone of a
-            technologically empowered and thriving agricultural economy.”
-          </p>
-        </div>
-      </div>
+  <div className="flex justify-center">
+    <Image
+      src="/Message from the Founder.jpg"
+      alt="Message from the Founder"
+      width={600}
+      height={600}
+      className="w-full h-auto object-contain rounded-lg"
+    />
+  </div>
+  <div className="max-w-prose">
+    <p
+      className="text-gray-800 text-sm sm:text-base md:text-lg leading-relaxed text-justify"
+      style={{ fontFamily: "Georgia, serif", fontSize: "22.4px" }}
+    >
+      “The agricultural sector in Zimbabwe contributes about 21% towards
+      the country’s GDP. Out of this, more than 50% comes from smallholder
+      and medium-scale farmers yet they are still relying on traditional
+      methods of farming that are so outdated, imprecise, and
+      labor-intensive. Clearly, smallholder and medium-scale farmers are
+      under-represented as they have the potential to contribute so much
+      to the country’s economy. As someone who grew up in a farming
+      community, I have witnessed firsthand the struggles of my family and
+      neighbors, losing crops to unpredictable weather, pest attacks, and
+      the sheer exhaustion of manual labor. I have watched hard-working
+      farmers struggle to make a living, not because they lack knowledge
+      or effort, but because they lack access to modern tools and
+      technologies that could revolutionize their productivity. Smart
+      Farms was born out of my desire to change this narrative. By
+      integrating drone technology into agriculture, we are creating a
+      future where farmers can monitor crops, apply inputs with precision,
+      and make data-driven decisions—all with minimal effort and maximum
+      impact. Our mission is to empower these farmers, increase food
+      security, and promote sustainable farming practices. I believe that
+      with the right support and innovation, smallholder farmers will no
+      longer be left behind. They will become the backbone of a
+      technologically empowered and thriving agricultural economy.”
+    </p>
+  </div>
+</div>
+
 
       {/* Our Values Section */}
       <div className="py-12 bg-white mb-[100px] w-full px-4 md:px-8 lg:px-16">
