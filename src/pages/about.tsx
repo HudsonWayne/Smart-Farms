@@ -44,29 +44,30 @@ export default function AboutPage() {
   };
 
   return (
-    <>
+    <div className="w-full">
       {/* Hero Section */}
-      <div className="relative w-full min-h-[60vh] md:min-h-[70vh] flex items-center justify-center">
+      <div className="relative w-full h-[50vh] sm:h-[60vh] md:h-[65vh] lg:h-[70vh] flex items-center justify-center">
         <Image
           src="/Pic 4.jpg"
           alt="Drone spraying field"
           fill
           priority
-          style={{ objectFit: "cover", borderRadius: "0px" }}
-          className="absolute inset-0 w-full h-full"
-          draggable={false}
+          className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black opacity-60" />
-        <div className="relative z-10 px-4 md:px-8 lg:px-16 text-center w-full">
+        <div className="relative z-10 px-4 sm:px-6 md:px-8 lg:px-16 text-center w-full">
           <div className="max-w-7xl mx-auto">
             <h1
-              className="text-[40px] sm:text-[60px] md:text-[70px] lg:text-[80px] font-bold mb-4"
+              className="text-xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-3 md:mb-4"
               style={{ fontFamily: "Georgia, serif", color: "#72AE1C" }}
             >
               About Us
             </h1>
-            <p className="text-white text-base sm:text-lg md:text-xl leading-relaxed font-[Georgia]">
-              Empowering Zimbabwe&apos;s small and medium-scale farmers with drone
+            <p 
+              className="text-xs sm:text-base md:text-lg lg:text-xl leading-relaxed max-w-4xl mx-auto px-2"
+              style={{ fontFamily: "Georgia, serif", color:"white" }}
+            >
+              Empowering Zimbabwe's small and medium-scale farmers with drone
               technology to increase crop yields, create jobs, and secure a
               sustainable agricultural future.
             </p>
@@ -75,129 +76,97 @@ export default function AboutPage() {
       </div>
 
       {/* Who We Are */}
-      <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-start mt-[100px] w-full px-4 md:px-8 lg:px-16">
-        <div className="flex justify-center">
-          <Image
-            src="/Pic 25.jpeg"
-            alt="Smart Fertilizer Application"
-            width={750}
-            height={250}
-            className="w-full h-auto md:h-[600px] object-cover rounded-lg"
-          />
-        </div>
-        <div className="max-w-prose mt-8 md:mt-[190px]">
-          <h2
-            className="text-[36px] sm:text-[45px] md:text-[50px] lg:text-[60px] font-bold mb-6"
-            style={{ fontFamily: "Georgia, serif", color: "#72AE1C" }}
-          >
-            Who We Are
-          </h2>
-          <div className="md:h-[600px] md:overflow-y-auto pr-2">
-            <p
-              className="text-gray-800 text-sm sm:text-base md:text-lg leading-relaxed text-justify"
-              style={{ fontFamily: "Georgia, serif" }}
+      <div className="w-full px-4 sm:px-6 md:px-8 lg:px-16 mt-12 sm:mt-16 md:mt-20 lg:mt-24">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-10 lg:gap-12 items-start">
+          <div className="order-2 lg:order-1 flex justify-center">
+            <Image
+              src="/Pic 25.jpeg"
+              alt="Smart Fertilizer Application"
+              width={750}
+              height={500}
+              className="w-full h-auto sm:h-80 md:h-96 lg:h-[500px] xl:h-[600px] object-cover rounded-lg"
+            />
+          </div>
+          <div className="order-1 lg:order-2">
+            <h2
+              className="text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 md:mb-6"
+              style={{ fontFamily: "Georgia, serif", color: "#72AE1C" }}
             >
-              “Smart Farms is an enterprise committed to using innovation to
+              Who We Are
+            </h2>
+            <p
+              className="text-xs sm:text-base md:text-lg leading-relaxed text-justify"
+              style={{ fontFamily: "Georgia, serif", fontSize:"20px" }}
+            >
+              Smart Farms is an enterprise committed to using innovation to
               ensure food security, improve livelihoods, and transform rural
-              communities through precision agriculture solutions in Zimbabwe. We
-              take advantage of advanced high-resolution camera drones embedded
+              communities through precision agriculture solutions in Zimbabwe.
+              We take advantage of advanced high-resolution camera drones embedded
               with smart sensors for land mapping, surveying, crop health
               monitoring, and pesticide and fertilizer applications. Our actions
               contribute to positive climate change, and we are on a goal to end
               poverty and hunger. We want to help smallholders and medium-scale
               farmers realize their value to the economy of the country through
-              their agricultural harvests.”
+              their agricultural harvests.
             </p>
           </div>
         </div>
       </div>
 
       {/* Message from the Founder */}
-      <div className="text-center my-12 mt-[100px] w-full px-4 md:px-8 lg:px-16">
+      <div className="w-full px-4 sm:px-6 md:px-8 lg:px-16 mt-16 sm:mt-20 md:mt-24 lg:mt-28 text-center">
         <h2
-          className="text-[36px] sm:text-[45px] md:text-[50px] lg:text-[60px] font-bold"
+          className="text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-8"
           style={{ fontFamily: "Georgia, serif", color: "#72AE1C" }}
         >
           Message from the Founder
         </h2>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-10 lg:gap-12 items-start mt-8">
+          <div className="flex justify-center">
+            <Image
+              src="/Message from the Founder.jpg"
+              alt="Message from the Founder"
+              width={600}
+              height={600}
+              className="w-full h-auto object-contain rounded-lg"
+            />
+          </div>
+          <div>
+            <p
+              className="text-xs sm:text-base md:text-lg lg:text-xl leading-relaxed text-justify"
+              style={{ fontFamily: "Georgia, serif", fontSize:"20px" }}
+            >
+             “The agricultural sector in Zimbabwe contributes about 21% towards the country’s GDP. Out of this, more than 50% comes from smallholder and medium-scale farmers yet they are still relying on traditional methods of farming that are so outdated, imprecise, and labor-intensive. Clearly, smallholder and medium-scale farmers are under-represented as they have the potential to contribute so much to the country’s economy. As someone who grew up in a farming community, I have witnessed firsthand the struggles of my family and neighbors, losing crops to unpredictable weather, pest attacks, and the sheer exhaustion of manual labor. I have watched hard-working farmers struggle to make a living, not because they lack knowledge or effort, but because they lack access to modern tools and technologies that could revolutionize their productivity. Smart Farms was born out of my desire to change this narrative. By integrating drone technology into agriculture, we are creating a future where farmers can monitor crops, apply inputs with precision, and make data-driven decisions—all with minimal effort and maximum impact. Our mission is to empower these farmers, increase food security, and promote sustainable farming practices. I believe that with the right support and innovation, smallholder farmers will no longer be left behind. They will become the backbone of a technologically empowered and thriving agricultural economy.”
+            </p>
+          </div>
+        </div>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-start w-full px-4 md:px-8 lg:px-16 mb-16">
-  <div className="flex justify-center">
-    <Image
-      src="/Message from the Founder.jpg"
-      alt="Message from the Founder"
-      width={600}
-      height={600}
-      className="w-full h-auto object-contain rounded-lg"
-    />
-  </div>
-  <div className="max-w-prose">
-    <p
-      className="text-gray-800 text-sm sm:text-base md:text-lg leading-relaxed text-justify"
-      style={{ fontFamily: "Georgia, serif", fontSize: "22.4px" }}
-    >
-      “The agricultural sector in Zimbabwe contributes about 21% towards
-      the country’s GDP. Out of this, more than 50% comes from smallholder
-      and medium-scale farmers yet they are still relying on traditional
-      methods of farming that are so outdated, imprecise, and
-      labor-intensive. Clearly, smallholder and medium-scale farmers are
-      under-represented as they have the potential to contribute so much
-      to the country’s economy. As someone who grew up in a farming
-      community, I have witnessed firsthand the struggles of my family and
-      neighbors, losing crops to unpredictable weather, pest attacks, and
-      the sheer exhaustion of manual labor. I have watched hard-working
-      farmers struggle to make a living, not because they lack knowledge
-      or effort, but because they lack access to modern tools and
-      technologies that could revolutionize their productivity. Smart
-      Farms was born out of my desire to change this narrative. By
-      integrating drone technology into agriculture, we are creating a
-      future where farmers can monitor crops, apply inputs with precision,
-      and make data-driven decisions—all with minimal effort and maximum
-      impact. Our mission is to empower these farmers, increase food
-      security, and promote sustainable farming practices. I believe that
-      with the right support and innovation, smallholder farmers will no
-      longer be left behind. They will become the backbone of a
-      technologically empowered and thriving agricultural economy.”
-    </p>
-  </div>
-</div>
-
-
       {/* Our Values Section */}
-      <div className="py-12 bg-white mb-[100px] w-full px-4 md:px-8 lg:px-16">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
+      <div className="w-full px-4 sm:px-6 md:px-8 lg:px-16 py-12 md:py-16 lg:py-20 bg-white mt-16 sm:mt-20 md:mt-24">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {cardData.map((card, index) =>
             index === 0 ? (
               <div
                 key={index}
-                className="text-center flex items-center justify-center"
+                className="col-span-1 sm:col-span-2 lg:col-span-1 text-center flex items-center justify-center py-4"
                 style={{ fontFamily: "Georgia, serif" }}
               >
-                <h3
-                  className="text-3xl sm:text-4xl font-bold"
-                  style={{ color: "#72AE1C" }}
-                >
+                <h3 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold" style={{ color: "#72AE1C" }}>
                   {card.title}
                 </h3>
               </div>
             ) : (
               <div
                 key={index}
-                className="bg-[#190040] text-white p-6 rounded-2xl shadow-lg transition-transform hover:scale-[1.02] overflow-x-auto md:overflow-visible"
+                className="bg-[#190040] text-white p-4 sm:p-5 md:p-6 rounded-2xl shadow-lg transition-transform hover:scale-[1.02] w-full overflow-x-auto md:overflow-visible"
                 style={{ fontFamily: "Georgia, serif", textAlign: "justify" }}
               >
-                <h3
-                  className="text-lg sm:text-xl font-bold mb-3"
-                  style={{ color: "#72AE1C" }}
-                >
+                <h3 className="text-xs sm:text-lg md:text-xl font-bold mb-3" style={{ color: "#72AE1C" }}>
                   {card.title}
                 </h3>
-                <p
-                  className={`text-sm sm:text-base ${
-                    expandedCards.includes(index) ? "" : "line-clamp-4"
-                  }`}
-                >
+                <p className={`${expandedCards.includes(index) ? "" : "line-clamp-4"} text-xs sm:text-base leading-relaxed`}>
                   {card.content}
                 </p>
                 <button
@@ -211,6 +180,6 @@ export default function AboutPage() {
           )}
         </div>
       </div>
-    </>
+    </div>
   );
 }
