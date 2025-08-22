@@ -62,7 +62,7 @@ export default function OurMission() {
         {/* Vision Image */}
         <div className="order-1 md:order-2">
           <Image
-            src="/Pic 3.jpg"
+            src="/pic3.jpg"
             alt="Drone on grass"
             width={500}
             height={400}
