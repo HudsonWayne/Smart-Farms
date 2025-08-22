@@ -48,7 +48,7 @@ export default function AboutPage() {
       {/* Hero Section */}
       <div className="relative w-full h-[50vh] sm:h-[60vh] md:h-[65vh] lg:h-[70vh] flex items-center justify-center">
         <Image
-          src="/Pic 4.jpg"
+          src="/pic4.jpg"
           alt="Drone spraying field"
           fill
           priority
