@@ -94,7 +94,7 @@ export default function OurTeamPage() {
             textAlign: "justify",
           }}
         >
-          “At Smart Farms, we are more than just a team, we are a movement of
+          At Smart Farms, we are more than just a team, we are a movement of
           passionate, young innovators committed to transforming agriculture
           through technology. Our team is proudly youth-led, driven by a deep
           understanding of the challenges faced by small-scale farmers and a
@@ -107,7 +107,7 @@ export default function OurTeamPage() {
           females, working side by side to challenge norms and ensure inclusive
           innovation in agriculture. Our diversity is our strength, helps us see
           problems differently, build empathy with the communities we serve, and
-          co-create solutions that are practical and impactful”.
+          co-create solutions that are practical and impactful.
         </p>
       </div>
     </div>
