@@ -26,7 +26,7 @@ const AboutSection = () => {
         >
           Smart Farms seeks to improve food security in Zimbabwe using advanced
           drone technology to assist smallholder and medium scale farmers with
-          land mapping and surveying, crop spraying and fertilizer application.
+          land mapping and surveying, crop health monitoring, spraying and fertlizer application.
         </p>
       </div>
     </div>
