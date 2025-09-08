@@ -96,7 +96,7 @@ export default function AboutPage() {
               className="text-xs sm:text-base md:text-lg leading-relaxed text-justify"
               style={{ fontFamily: "Georgia, serif", fontSize:"23.7px" }}
             >
-              “Smart Farms is an enterprise committed to using innovation to  ensure food security, improve livelihoods, and transform rural  communities through precision agriculture solutions in Zimbabwe.  We take advantage of advanced high resolution camera drones  embedded with smart sensors for land mapping, surveying, crop  health monitoring, and pesticide and fertilizer applications. Our  actions contribute to positive climate change, and we are on a goal to  end poverty and hunger. We want to help smallholders and medium  scale farmers realize their value to the economy of the country  through their agricultural harvests”. This should not be italicized.
+              Smart Farms is an enterprise committed to using innovation to  ensure food security, improve livelihoods, and transform rural  communities through precision agriculture solutions in Zimbabwe.  We take advantage of advanced high resolution camera drones  embedded with smart sensors for land mapping, surveying, crop  health monitoring, and pesticide and fertilizer applications. Our  actions contribute to positive climate change, and we are on a goal to  end poverty and hunger. We want to help smallholders and medium  scale farmers realize their value to the economy of the country  through their agricultural harvests. 
             </p>
           </div>
         </div>
